@@ -110,6 +110,13 @@ namespace QuanLyKyTucXa_main
                     return;
                 }
 
+                if (bll.ExistsTienDien(cbMaphong.Text, dtpNgaylap.Value))
+                {
+                    MessageBox.Show($"Đã tồn tại hóa đơn điện của phòng {cbMaphong.Text.Trim()} trong ngày {dtpNgaylap.Value.ToShortDateString()}",
+                                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 // Lấy chỉ số cũ từ hóa đơn gần nhất
                 int chisocu = bll.GetChiSoMoiGanNhat(cbMaphong.Text);
 

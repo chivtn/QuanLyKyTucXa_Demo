@@ -83,5 +83,11 @@ namespace QuanLy_BLL
         {
             return dal.SearchTienNuoc(keyword, truong);
         }
+
+        public bool ExistsTienNuoc(string maphong, DateTime ngaylap)
+        {
+            return dal.CheckExistsTienNuoc(maphong, ngaylap);
+        }
+
     }
 }

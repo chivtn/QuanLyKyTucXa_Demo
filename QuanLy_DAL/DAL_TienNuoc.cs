@@ -287,5 +287,18 @@ namespace QuanLy_DAL
                 DisConnect();
             }
         }
+
+        public bool CheckExistsTienNuoc(string maphong, DateTime ngaylap)
+        {
+            string sql = "SELECT COUNT(*) FROM TienNuoc WHERE Maphong = @maphong AND CONVERT(DATE, Ngaylap) = @ngaylap";
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@maphong", maphong),
+                new SqlParameter("@ngaylap", ngaylap.Date)
+            };
+            int count = (int)MyExecuteScalar(sql, CommandType.Text, parameters);
+            return count > 0;
+        }
+
     }
 }

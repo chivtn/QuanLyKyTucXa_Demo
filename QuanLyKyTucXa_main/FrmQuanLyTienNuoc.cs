@@ -109,6 +109,13 @@ namespace QuanLyKyTucXa_main
                     return;
                 }
 
+                if (bll.ExistsTienNuoc(cbMaphong.Text, dtpNgaylap.Value))
+                {
+                    MessageBox.Show($"Đã tồn tại hóa đơn nước của phòng {cbMaphong.Text.Trim()} trong ngày {dtpNgaylap.Value.ToShortDateString()}",
+                                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 // Lấy chỉ số nước cũ từ hóa đơn gần nhất
                 int chisocu = bll.GetChiSoMoiGanNhat(cbMaphong.Text);
 

@@ -17,9 +17,9 @@ namespace QuanLy_DAL
         {
             // Link của chi, mn đổi cái khác nha
             //string cnStr = "Data Source=DESKTOP-8862V4F\\LEGIANG2;Initial Catalog=QuanLyKyTucXa;Integrated Security=True;TrustServerCertificate=True";
-            //string cnStr = "Data Source=DESKTOP-AA20CEC\\LITTLETEETH;Initial Catalog=QuanLyKyTucXa;Integrated Security=True";
+            string cnStr = "Data Source=DESKTOP-AA20CEC\\LITTLETEETH;Initial Catalog=QuanLyKyTucXa;Integrated Security=True";
 
-            string cnStr = "Data Source=LAPTOP-MAMQ0DB1\\LION;Initial Catalog=QuanLyKyTucXa;Integrated Security=True";
+            //string cnStr = "Data Source=LAPTOP-MAMQ0DB1\\LION;Initial Catalog=QuanLyKyTucXa;Integrated Security=True";
             //string cnStr = "Data Source=DESKTOP-8862V4F\\LEGIANG2;Initial Catalog=QuanLyKyTucXa;Integrated Security=True;Trust Server Certificate=True";
             cn = new SqlConnection(cnStr);
         }
@@ -54,15 +54,19 @@ namespace QuanLy_DAL
             }
         }
 
-        public object MyExecuteScalar(string sql, CommandType type)
+        public object MyExecuteScalar(string sql, CommandType type, List<SqlParameter> parameters = null)
         {
             try
             {
                 Connect();
                 SqlCommand cmd = new SqlCommand(sql, cn);
                 cmd.CommandType = type;
-
-                return (cmd.ExecuteScalar());
+                if (parameters != null)
+                {
+                    foreach (var p in parameters)
+                        cmd.Parameters.Add(p);
+                }
+                return cmd.ExecuteScalar();
             }
             catch (SqlException ex)
             {
