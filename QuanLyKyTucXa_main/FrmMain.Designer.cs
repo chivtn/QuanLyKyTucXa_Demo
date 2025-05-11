@@ -33,49 +33,54 @@
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel_Top = new Guna.UI2.WinForms.Guna2Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picGuiMail = new System.Windows.Forms.PictureBox();
             this.guna2HtmlLabel45 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
             this.menuDK = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDSDangKy = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDKPhong = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnKyLuat = new Guna.UI2.WinForms.Guna2Button();
             this.menuCSVC = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnThietBi = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPhong = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDay = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQlCSVC = new Guna.UI2.WinForms.Guna2Button();
             this.menuDV = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnTienNuoc = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTienDien = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQLDichVu = new Guna.UI2.WinForms.Guna2Button();
             this.menuNhanSu = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnNguoiDung = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLuongNV = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQlNhanSu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnSinhVien = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.timeMenuNhanSu = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.timeMenuDichVu = new System.Windows.Forms.Timer(this.components);
             this.timeMenuCSVC = new System.Windows.Forms.Timer(this.components);
             this.timeMenuDangKy = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.picGuiMail = new System.Windows.Forms.PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDSDangKy = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDKPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
-            this.btnKyLuat = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThietBi = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDay = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQlCSVC = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTienNuoc = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTienDien = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQLDichVu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnNguoiDung = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLuongNV = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQlNhanSu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSinhVien = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.chatBotControl1 = new QuanLyKyTucXa_main.ChatBotControl();
+            this.btnToggleChatBot = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Panel_Top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGuiMail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.menuDK.SuspendLayout();
             this.menuCSVC.SuspendLayout();
@@ -83,15 +88,12 @@
             this.menuNhanSu.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panelMain.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGuiMail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ControlBox3
@@ -101,9 +103,10 @@
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(985, 3);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(736, 2);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(55, 38);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(41, 31);
             this.guna2ControlBox3.TabIndex = 2;
             // 
             // guna2DragControl1
@@ -125,21 +128,44 @@
             this.guna2Panel_Top.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel_Top.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.guna2Panel_Top.Location = new System.Drawing.Point(298, 0);
+            this.guna2Panel_Top.Location = new System.Drawing.Point(224, 0);
+            this.guna2Panel_Top.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel_Top.Name = "guna2Panel_Top";
-            this.guna2Panel_Top.Size = new System.Drawing.Size(1165, 57);
+            this.guna2Panel_Top.Size = new System.Drawing.Size(871, 46);
             this.guna2Panel_Top.TabIndex = 7;
             this.guna2Panel_Top.UseTransparentBackground = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_chat_bubble_50;
+            this.pictureBox2.Location = new System.Drawing.Point(536, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(54, 38);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // picGuiMail
+            // 
+            this.picGuiMail.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_gmail_logo_30;
+            this.picGuiMail.Location = new System.Drawing.Point(594, 4);
+            this.picGuiMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picGuiMail.Name = "picGuiMail";
+            this.picGuiMail.Size = new System.Drawing.Size(32, 37);
+            this.picGuiMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGuiMail.TabIndex = 0;
+            this.picGuiMail.TabStop = false;
+            this.picGuiMail.Click += new System.EventHandler(this.picGuiMail_Click);
             // 
             // guna2HtmlLabel45
             // 
             this.guna2HtmlLabel45.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel45.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel45.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel45.Location = new System.Drawing.Point(7, 10);
-            this.guna2HtmlLabel45.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel45.Location = new System.Drawing.Point(5, 8);
             this.guna2HtmlLabel45.Name = "guna2HtmlLabel45";
-            this.guna2HtmlLabel45.Size = new System.Drawing.Size(265, 39);
+            this.guna2HtmlLabel45.Size = new System.Drawing.Size(215, 32);
             this.guna2HtmlLabel45.TabIndex = 7;
             this.guna2HtmlLabel45.Text = "QUẢN LÝ KÝ TÚC XÁ";
             // 
@@ -149,9 +175,10 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(885, 18);
+            this.label1.Location = new System.Drawing.Point(664, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 23);
+            this.label1.Size = new System.Drawing.Size(53, 19);
             this.label1.TabIndex = 9;
             this.label1.Text = "Admin";
             // 
@@ -162,9 +189,10 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1046, 3);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(781, 2);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(55, 38);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(41, 31);
             this.guna2ControlBox2.TabIndex = 2;
             // 
             // guna2ControlBox1
@@ -173,10 +201,25 @@
             this.guna2ControlBox1.BackColor = System.Drawing.Color.Silver;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1107, 3);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(827, 2);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(55, 38);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(41, 31);
             this.guna2ControlBox1.TabIndex = 0;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.guna2PictureBox3.FillColor = System.Drawing.Color.DimGray;
+            this.guna2PictureBox3.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_male_user_30;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(631, 4);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(28, 37);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 8;
+            this.guna2PictureBox3.TabStop = false;
             // 
             // guna2Panel1
             // 
@@ -193,188 +236,10 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(298, 948);
+            this.guna2Panel1.Size = new System.Drawing.Size(224, 748);
             this.guna2Panel1.TabIndex = 6;
-            // 
-            // menuDK
-            // 
-            this.menuDK.Controls.Add(this.btnDSDangKy);
-            this.menuDK.Controls.Add(this.btnDKPhong);
-            this.menuDK.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuDK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.menuDK.Location = new System.Drawing.Point(0, 377);
-            this.menuDK.Name = "menuDK";
-            this.menuDK.Size = new System.Drawing.Size(298, 44);
-            this.menuDK.TabIndex = 25;
-            // 
-            // menuCSVC
-            // 
-            this.menuCSVC.Controls.Add(this.btnThietBi);
-            this.menuCSVC.Controls.Add(this.btnPhong);
-            this.menuCSVC.Controls.Add(this.btnDay);
-            this.menuCSVC.Controls.Add(this.btnQlCSVC);
-            this.menuCSVC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuCSVC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.menuCSVC.Location = new System.Drawing.Point(0, 279);
-            this.menuCSVC.Name = "menuCSVC";
-            this.menuCSVC.Size = new System.Drawing.Size(298, 46);
-            this.menuCSVC.TabIndex = 22;
-            // 
-            // menuDV
-            // 
-            this.menuDV.Controls.Add(this.btnTienNuoc);
-            this.menuDV.Controls.Add(this.btnTienDien);
-            this.menuDV.Controls.Add(this.btnQLDichVu);
-            this.menuDV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuDV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.menuDV.Location = new System.Drawing.Point(0, 231);
-            this.menuDV.Name = "menuDV";
-            this.menuDV.Size = new System.Drawing.Size(298, 48);
-            this.menuDV.TabIndex = 21;
-            // 
-            // menuNhanSu
-            // 
-            this.menuNhanSu.Controls.Add(this.btnNguoiDung);
-            this.menuNhanSu.Controls.Add(this.btnLuongNV);
-            this.menuNhanSu.Controls.Add(this.btnQuanLyNhanVien);
-            this.menuNhanSu.Controls.Add(this.btnQlNhanSu);
-            this.menuNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuNhanSu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.menuNhanSu.Location = new System.Drawing.Point(0, 181);
-            this.menuNhanSu.Name = "menuNhanSu";
-            this.menuNhanSu.Size = new System.Drawing.Size(298, 50);
-            this.menuNhanSu.TabIndex = 20;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.btnSinhVien);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 131);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(298, 50);
-            this.guna2Panel3.TabIndex = 11;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.panel3.Controls.Add(this.guna2PictureBox2);
-            this.panel3.Controls.Add(this.guna2PictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(298, 131);
-            this.panel3.TabIndex = 10;
-            // 
-            // timeMenuNhanSu
-            // 
-            this.timeMenuNhanSu.Interval = 10;
-            this.timeMenuNhanSu.Tick += new System.EventHandler(this.timeMenuNhanSu_Tick);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panelMain);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(298, 57);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1165, 891);
-            this.panel1.TabIndex = 8;
-            // 
-            // panelMain
-            // 
-            this.panelMain.Controls.Add(this.pictureBox1);
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 67);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1165, 824);
-            this.panelMain.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.panel2.Controls.Add(this.lblTitle);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1165, 67);
-            this.panel2.TabIndex = 0;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(551, 18);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(107, 32);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "HOME                        ";
-            // 
-            // timeMenuDichVu
-            // 
-            this.timeMenuDichVu.Interval = 10;
-            this.timeMenuDichVu.Tick += new System.EventHandler(this.timeMenuDichVu_Tick);
-            // 
-            // timeMenuCSVC
-            // 
-            this.timeMenuCSVC.Interval = 10;
-            this.timeMenuCSVC.Tick += new System.EventHandler(this.timeMenuCSVC_Tick);
-            // 
-            // timeMenuDangKy
-            // 
-            this.timeMenuDangKy.Interval = 10;
-            this.timeMenuDangKy.Tick += new System.EventHandler(this.timeMenuDangKy_Tick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::QuanLyKyTucXa_main.Properties.Resources.large_image_956df3bc70;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1165, 824);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 59;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_chat_bubble_50;
-            this.pictureBox2.Location = new System.Drawing.Point(714, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(72, 47);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // picGuiMail
-            // 
-            this.picGuiMail.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_gmail_logo_30;
-            this.picGuiMail.Location = new System.Drawing.Point(792, 5);
-            this.picGuiMail.Name = "picGuiMail";
-            this.picGuiMail.Size = new System.Drawing.Size(43, 45);
-            this.picGuiMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picGuiMail.TabIndex = 0;
-            this.picGuiMail.TabStop = false;
-            this.picGuiMail.Click += new System.EventHandler(this.picGuiMail_Click);
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.guna2PictureBox3.FillColor = System.Drawing.Color.DimGray;
-            this.guna2PictureBox3.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_male_user_30;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(841, 5);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(38, 45);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 8;
-            this.guna2PictureBox3.TabStop = false;
             // 
             // btnThongKe
             // 
@@ -389,15 +254,26 @@
             this.btnThongKe.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_circle_chart_36;
             this.btnThongKe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnThongKe.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnThongKe.Location = new System.Drawing.Point(0, 421);
-            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThongKe.Location = new System.Drawing.Point(0, 342);
             this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(298, 48);
+            this.btnThongKe.Size = new System.Drawing.Size(224, 39);
             this.btnThongKe.TabIndex = 26;
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnThongKe.TextOffset = new System.Drawing.Point(8, 0);
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            // 
+            // menuDK
+            // 
+            this.menuDK.Controls.Add(this.btnDSDangKy);
+            this.menuDK.Controls.Add(this.btnDKPhong);
+            this.menuDK.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuDK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuDK.Location = new System.Drawing.Point(0, 306);
+            this.menuDK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuDK.Name = "menuDK";
+            this.menuDK.Size = new System.Drawing.Size(224, 36);
+            this.menuDK.TabIndex = 25;
             // 
             // btnDSDangKy
             // 
@@ -412,9 +288,10 @@
             this.btnDSDangKy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnDSDangKy.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_stairs_up_27;
             this.btnDSDangKy.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDSDangKy.Location = new System.Drawing.Point(0, 49);
+            this.btnDSDangKy.Location = new System.Drawing.Point(0, 40);
+            this.btnDSDangKy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDSDangKy.Name = "btnDSDangKy";
-            this.btnDSDangKy.Size = new System.Drawing.Size(298, 43);
+            this.btnDSDangKy.Size = new System.Drawing.Size(224, 35);
             this.btnDSDangKy.TabIndex = 8;
             this.btnDSDangKy.Text = "Danh sách đăng ký ";
             this.btnDSDangKy.Click += new System.EventHandler(this.btnDSDangKy_Click);
@@ -433,9 +310,8 @@
             this.btnDKPhong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDKPhong.ImageOffset = new System.Drawing.Point(8, 0);
             this.btnDKPhong.Location = new System.Drawing.Point(0, 0);
-            this.btnDKPhong.Margin = new System.Windows.Forms.Padding(4);
             this.btnDKPhong.Name = "btnDKPhong";
-            this.btnDKPhong.Size = new System.Drawing.Size(298, 49);
+            this.btnDKPhong.Size = new System.Drawing.Size(224, 40);
             this.btnDKPhong.TabIndex = 7;
             this.btnDKPhong.Text = "Đăng ký phòng";
             this.btnDKPhong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -455,10 +331,9 @@
             this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
             this.btnDangXuat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDangXuat.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 888);
-            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 699);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(298, 60);
+            this.btnDangXuat.Size = new System.Drawing.Size(224, 49);
             this.btnDangXuat.TabIndex = 24;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.TextOffset = new System.Drawing.Point(8, 0);
@@ -477,15 +352,28 @@
             this.btnKyLuat.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_learning_26;
             this.btnKyLuat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKyLuat.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnKyLuat.Location = new System.Drawing.Point(0, 325);
-            this.btnKyLuat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKyLuat.Location = new System.Drawing.Point(0, 264);
             this.btnKyLuat.Name = "btnKyLuat";
-            this.btnKyLuat.Size = new System.Drawing.Size(298, 52);
+            this.btnKyLuat.Size = new System.Drawing.Size(224, 42);
             this.btnKyLuat.TabIndex = 23;
             this.btnKyLuat.Text = "Quản lý kỷ luật";
             this.btnKyLuat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKyLuat.TextOffset = new System.Drawing.Point(8, 0);
             this.btnKyLuat.Click += new System.EventHandler(this.btnKyLuat_Click);
+            // 
+            // menuCSVC
+            // 
+            this.menuCSVC.Controls.Add(this.btnThietBi);
+            this.menuCSVC.Controls.Add(this.btnPhong);
+            this.menuCSVC.Controls.Add(this.btnDay);
+            this.menuCSVC.Controls.Add(this.btnQlCSVC);
+            this.menuCSVC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuCSVC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuCSVC.Location = new System.Drawing.Point(0, 227);
+            this.menuCSVC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuCSVC.Name = "menuCSVC";
+            this.menuCSVC.Size = new System.Drawing.Size(224, 37);
+            this.menuCSVC.TabIndex = 22;
             // 
             // btnThietBi
             // 
@@ -500,9 +388,10 @@
             this.btnThietBi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnThietBi.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_electrical_26;
             this.btnThietBi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThietBi.Location = new System.Drawing.Point(0, 135);
+            this.btnThietBi.Location = new System.Drawing.Point(0, 110);
+            this.btnThietBi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThietBi.Name = "btnThietBi";
-            this.btnThietBi.Size = new System.Drawing.Size(298, 47);
+            this.btnThietBi.Size = new System.Drawing.Size(224, 38);
             this.btnThietBi.TabIndex = 10;
             this.btnThietBi.Text = "Thiết bị";
             this.btnThietBi.Click += new System.EventHandler(this.btnThietBi_Click);
@@ -520,9 +409,10 @@
             this.btnPhong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnPhong.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_bunk_bed_26;
             this.btnPhong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPhong.Location = new System.Drawing.Point(0, 91);
+            this.btnPhong.Location = new System.Drawing.Point(0, 74);
+            this.btnPhong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPhong.Name = "btnPhong";
-            this.btnPhong.Size = new System.Drawing.Size(298, 44);
+            this.btnPhong.Size = new System.Drawing.Size(224, 36);
             this.btnPhong.TabIndex = 9;
             this.btnPhong.Text = "Phòng";
             this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
@@ -540,9 +430,10 @@
             this.btnDay.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnDay.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_stairs_up_27;
             this.btnDay.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDay.Location = new System.Drawing.Point(0, 46);
+            this.btnDay.Location = new System.Drawing.Point(0, 37);
+            this.btnDay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDay.Name = "btnDay";
-            this.btnDay.Size = new System.Drawing.Size(298, 45);
+            this.btnDay.Size = new System.Drawing.Size(224, 37);
             this.btnDay.TabIndex = 8;
             this.btnDay.Text = "Dãy phòng";
             this.btnDay.Click += new System.EventHandler(this.btnDay_Click);
@@ -561,14 +452,26 @@
             this.btnQlCSVC.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQlCSVC.ImageOffset = new System.Drawing.Point(8, 0);
             this.btnQlCSVC.Location = new System.Drawing.Point(0, 0);
-            this.btnQlCSVC.Margin = new System.Windows.Forms.Padding(4);
             this.btnQlCSVC.Name = "btnQlCSVC";
-            this.btnQlCSVC.Size = new System.Drawing.Size(298, 46);
+            this.btnQlCSVC.Size = new System.Drawing.Size(224, 37);
             this.btnQlCSVC.TabIndex = 7;
             this.btnQlCSVC.Text = "Quản lý cơ sở vật chất";
             this.btnQlCSVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQlCSVC.TextOffset = new System.Drawing.Point(8, 0);
             this.btnQlCSVC.Click += new System.EventHandler(this.btnQlCSVC_Click);
+            // 
+            // menuDV
+            // 
+            this.menuDV.Controls.Add(this.btnTienNuoc);
+            this.menuDV.Controls.Add(this.btnTienDien);
+            this.menuDV.Controls.Add(this.btnQLDichVu);
+            this.menuDV.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuDV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuDV.Location = new System.Drawing.Point(0, 188);
+            this.menuDV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuDV.Name = "menuDV";
+            this.menuDV.Size = new System.Drawing.Size(224, 39);
+            this.menuDV.TabIndex = 21;
             // 
             // btnTienNuoc
             // 
@@ -583,9 +486,10 @@
             this.btnTienNuoc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnTienNuoc.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_water_26;
             this.btnTienNuoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnTienNuoc.Location = new System.Drawing.Point(0, 94);
+            this.btnTienNuoc.Location = new System.Drawing.Point(0, 77);
+            this.btnTienNuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTienNuoc.Name = "btnTienNuoc";
-            this.btnTienNuoc.Size = new System.Drawing.Size(298, 33);
+            this.btnTienNuoc.Size = new System.Drawing.Size(224, 27);
             this.btnTienNuoc.TabIndex = 9;
             this.btnTienNuoc.Text = "Tiền nước";
             this.btnTienNuoc.Click += new System.EventHandler(this.btnTienNuoc_Click);
@@ -603,9 +507,10 @@
             this.btnTienDien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnTienDien.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_lightning_bolt_26;
             this.btnTienDien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnTienDien.Location = new System.Drawing.Point(0, 49);
+            this.btnTienDien.Location = new System.Drawing.Point(0, 40);
+            this.btnTienDien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTienDien.Name = "btnTienDien";
-            this.btnTienDien.Size = new System.Drawing.Size(298, 45);
+            this.btnTienDien.Size = new System.Drawing.Size(224, 37);
             this.btnTienDien.TabIndex = 8;
             this.btnTienDien.Text = "Tiền điện";
             this.btnTienDien.Click += new System.EventHandler(this.btnTienDien_Click);
@@ -624,14 +529,27 @@
             this.btnQLDichVu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQLDichVu.ImageOffset = new System.Drawing.Point(8, 0);
             this.btnQLDichVu.Location = new System.Drawing.Point(0, 0);
-            this.btnQLDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.btnQLDichVu.Name = "btnQLDichVu";
-            this.btnQLDichVu.Size = new System.Drawing.Size(298, 49);
+            this.btnQLDichVu.Size = new System.Drawing.Size(224, 40);
             this.btnQLDichVu.TabIndex = 7;
             this.btnQLDichVu.Text = "Quản lý dịch vụ";
             this.btnQLDichVu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQLDichVu.TextOffset = new System.Drawing.Point(8, 0);
             this.btnQLDichVu.Click += new System.EventHandler(this.btnQLDichVu_Click);
+            // 
+            // menuNhanSu
+            // 
+            this.menuNhanSu.Controls.Add(this.btnNguoiDung);
+            this.menuNhanSu.Controls.Add(this.btnLuongNV);
+            this.menuNhanSu.Controls.Add(this.btnQuanLyNhanVien);
+            this.menuNhanSu.Controls.Add(this.btnQlNhanSu);
+            this.menuNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuNhanSu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuNhanSu.Location = new System.Drawing.Point(0, 147);
+            this.menuNhanSu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuNhanSu.Name = "menuNhanSu";
+            this.menuNhanSu.Size = new System.Drawing.Size(224, 41);
+            this.menuNhanSu.TabIndex = 20;
             // 
             // btnNguoiDung
             // 
@@ -646,9 +564,10 @@
             this.btnNguoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnNguoiDung.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_student_male_26;
             this.btnNguoiDung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnNguoiDung.Location = new System.Drawing.Point(0, 151);
+            this.btnNguoiDung.Location = new System.Drawing.Point(0, 122);
+            this.btnNguoiDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNguoiDung.Name = "btnNguoiDung";
-            this.btnNguoiDung.Size = new System.Drawing.Size(298, 37);
+            this.btnNguoiDung.Size = new System.Drawing.Size(224, 30);
             this.btnNguoiDung.TabIndex = 11;
             this.btnNguoiDung.Text = "Quản lý người dùng";
             this.btnNguoiDung.Click += new System.EventHandler(this.btnNguoiDung_Click);
@@ -666,9 +585,10 @@
             this.btnLuongNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnLuongNV.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_stack_of_money_24;
             this.btnLuongNV.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnLuongNV.Location = new System.Drawing.Point(0, 104);
+            this.btnLuongNV.Location = new System.Drawing.Point(0, 84);
+            this.btnLuongNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLuongNV.Name = "btnLuongNV";
-            this.btnLuongNV.Size = new System.Drawing.Size(298, 47);
+            this.btnLuongNV.Size = new System.Drawing.Size(224, 38);
             this.btnLuongNV.TabIndex = 9;
             this.btnLuongNV.Text = "Lương nhân viên";
             this.btnLuongNV.Click += new System.EventHandler(this.btnLuongNV_Click);
@@ -686,9 +606,10 @@
             this.btnQuanLyNhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnQuanLyNhanVien.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_employee_30;
             this.btnQuanLyNhanVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnQuanLyNhanVien.Location = new System.Drawing.Point(0, 53);
+            this.btnQuanLyNhanVien.Location = new System.Drawing.Point(0, 43);
+            this.btnQuanLyNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
-            this.btnQuanLyNhanVien.Size = new System.Drawing.Size(298, 51);
+            this.btnQuanLyNhanVien.Size = new System.Drawing.Size(224, 41);
             this.btnQuanLyNhanVien.TabIndex = 8;
             this.btnQuanLyNhanVien.Text = "Quản lý nhân viên";
             this.btnQuanLyNhanVien.Click += new System.EventHandler(this.btnQuanLyNhanVien_Click);
@@ -707,14 +628,24 @@
             this.btnQlNhanSu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQlNhanSu.ImageOffset = new System.Drawing.Point(8, 0);
             this.btnQlNhanSu.Location = new System.Drawing.Point(0, 0);
-            this.btnQlNhanSu.Margin = new System.Windows.Forms.Padding(4);
             this.btnQlNhanSu.Name = "btnQlNhanSu";
-            this.btnQlNhanSu.Size = new System.Drawing.Size(298, 53);
+            this.btnQlNhanSu.Size = new System.Drawing.Size(224, 43);
             this.btnQlNhanSu.TabIndex = 7;
             this.btnQlNhanSu.Text = "Quản lý nhân sự";
             this.btnQlNhanSu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQlNhanSu.TextOffset = new System.Drawing.Point(8, 0);
             this.btnQlNhanSu.Click += new System.EventHandler(this.guna2Button21_Click);
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.btnSinhVien);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 106);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(224, 41);
+            this.guna2Panel3.TabIndex = 11;
             // 
             // btnSinhVien
             // 
@@ -730,14 +661,25 @@
             this.btnSinhVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSinhVien.ImageOffset = new System.Drawing.Point(8, 0);
             this.btnSinhVien.Location = new System.Drawing.Point(0, 0);
-            this.btnSinhVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnSinhVien.Name = "btnSinhVien";
-            this.btnSinhVien.Size = new System.Drawing.Size(298, 49);
+            this.btnSinhVien.Size = new System.Drawing.Size(224, 40);
             this.btnSinhVien.TabIndex = 13;
             this.btnSinhVien.Text = "Quản lý sinh viên";
             this.btnSinhVien.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSinhVien.TextOffset = new System.Drawing.Point(8, 0);
             this.btnSinhVien.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.panel3.Controls.Add(this.guna2PictureBox2);
+            this.panel3.Controls.Add(this.guna2PictureBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(224, 106);
+            this.panel3.TabIndex = 10;
             // 
             // guna2PictureBox2
             // 
@@ -745,9 +687,10 @@
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Gray;
             this.guna2PictureBox2.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_menu_26;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(238, 96);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(178, 78);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(36, 28);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(27, 23);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 7;
             this.guna2PictureBox2.TabStop = false;
@@ -758,27 +701,137 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.DimGray;
             this.guna2PictureBox1.Image = global::QuanLyKyTucXa_main.Properties.Resources.ktx;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(183, 121);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(137, 98);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // timeMenuNhanSu
+            // 
+            this.timeMenuNhanSu.Interval = 10;
+            this.timeMenuNhanSu.Tick += new System.EventHandler(this.timeMenuNhanSu_Tick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panelMain);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(224, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(871, 702);
+            this.panel1.TabIndex = 8;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Controls.Add(this.chatBotControl1);
+            this.panelMain.Controls.Add(this.btnToggleChatBot);
+            this.panelMain.Controls.Add(this.pictureBox1);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 54);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(871, 648);
+            this.panelMain.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::QuanLyKyTucXa_main.Properties.Resources.large_image_956df3bc70;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(871, 648);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 59;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.panel2.Controls.Add(this.lblTitle);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.ForeColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(871, 54);
+            this.panel2.TabIndex = 0;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(411, 15);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(80, 26);
+            this.lblTitle.TabIndex = 1;
+            this.lblTitle.Text = "HOME                        ";
+            // 
+            // timeMenuDichVu
+            // 
+            this.timeMenuDichVu.Interval = 10;
+            this.timeMenuDichVu.Tick += new System.EventHandler(this.timeMenuDichVu_Tick);
+            // 
+            // timeMenuCSVC
+            // 
+            this.timeMenuCSVC.Interval = 10;
+            this.timeMenuCSVC.Tick += new System.EventHandler(this.timeMenuCSVC_Tick);
+            // 
+            // timeMenuDangKy
+            // 
+            this.timeMenuDangKy.Interval = 10;
+            this.timeMenuDangKy.Tick += new System.EventHandler(this.timeMenuDangKy_Tick);
+            // 
+            // chatBotControl1
+            // 
+            this.chatBotControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.chatBotControl1.BackColor = System.Drawing.Color.Transparent;
+            this.chatBotControl1.Location = new System.Drawing.Point(562, 216);
+            this.chatBotControl1.Name = "chatBotControl1";
+            this.chatBotControl1.Size = new System.Drawing.Size(260, 345);
+            this.chatBotControl1.TabIndex = 61;
+            // 
+            // btnToggleChatBot
+            // 
+            this.btnToggleChatBot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnToggleChatBot.BackColor = System.Drawing.Color.Transparent;
+            this.btnToggleChatBot.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnToggleChatBot.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnToggleChatBot.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnToggleChatBot.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnToggleChatBot.FillColor = System.Drawing.Color.Transparent;
+            this.btnToggleChatBot.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnToggleChatBot.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnToggleChatBot.Image = global::QuanLyKyTucXa_main.Properties.Resources.chat_box;
+            this.btnToggleChatBot.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnToggleChatBot.Location = new System.Drawing.Point(770, 567);
+            this.btnToggleChatBot.Name = "btnToggleChatBot";
+            this.btnToggleChatBot.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnToggleChatBot.Size = new System.Drawing.Size(52, 50);
+            this.btnToggleChatBot.TabIndex = 60;
+            this.btnToggleChatBot.Click += new System.EventHandler(this.btnToggleChatBot_Click);
+            // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1463, 948);
+            this.ClientSize = new System.Drawing.Size(1095, 748);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Panel_Top);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmMain";
             this.Text = "FrmMain";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.guna2Panel_Top.ResumeLayout(false);
             this.guna2Panel_Top.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGuiMail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.menuDK.ResumeLayout(false);
             this.menuCSVC.ResumeLayout(false);
@@ -786,15 +839,12 @@
             this.menuNhanSu.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panelMain.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGuiMail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -845,5 +895,7 @@
         private Guna.UI2.WinForms.Guna2Button btnSinhVien;
         private System.Windows.Forms.Timer timeMenuDangKy;
         private Guna.UI2.WinForms.Guna2Button btnThongKe;
+        private ChatBotControl chatBotControl1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnToggleChatBot;
     }
 }

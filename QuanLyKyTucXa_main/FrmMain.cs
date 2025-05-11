@@ -44,6 +44,10 @@ namespace QuanLyKyTucXa_main
             // Đảm bảo không bị giới hạn chiều rộng
             lblTitle.MaximumSize = new Size(panel2.Width, 0); // nếu cần
             lblTitle.Left = (panel2.Width - lblTitle.PreferredWidth) / 2;
+
+            //ly them chatbot 
+            chatBotControl1.BringToFront();
+            btnToggleChatBot.BringToFront();
         }
 
 
@@ -99,6 +103,8 @@ namespace QuanLyKyTucXa_main
         private void FrmMain_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            chatBotControl1.Visible = false; //ly 
+
             //homeControl = new Homecontrol();
             //LoadUserControl(homeControl);
         }
@@ -210,11 +216,6 @@ namespace QuanLyKyTucXa_main
             openChildForm(new FrmThongBaoSinhVien(), new Size(129, 26), new Point(308, 15));
         }
 
-        private void btnToggleChatBot_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             this.Hide(); // Ẩn tạm FrmMainMenu đi trước
@@ -277,6 +278,11 @@ namespace QuanLyKyTucXa_main
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             openChildForm(new FrmHome(), new Size(192, 26), new Point(325, 15));
+        }
+
+        private void btnToggleChatBot_Click(object sender, EventArgs e)
+        {
+            chatBotControl1.Visible = !chatBotControl1.Visible;
         }
     }
 }

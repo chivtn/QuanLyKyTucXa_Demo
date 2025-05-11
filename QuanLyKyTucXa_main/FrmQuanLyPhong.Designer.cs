@@ -72,13 +72,11 @@ namespace QuanLyKyTucXa_main
             this.txtMaphong = new Guna.UI2.WinForms.Guna2TextBox();
             this.checkBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.chatBotControl1 = new QuanLyKyTucXa_main.ChatBotControl();
             this.btnTimkiem = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnThem = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnXoa = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnLammoi = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnCapnhap = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnToggleChatBot = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -586,14 +584,6 @@ namespace QuanLyKyTucXa_main
             this.guna2Elipse2.BorderRadius = 30;
             this.guna2Elipse2.TargetControl = this.dgvPhong;
             // 
-            // chatBotControl1
-            // 
-            this.chatBotControl1.BackColor = System.Drawing.Color.Transparent;
-            this.chatBotControl1.Location = new System.Drawing.Point(793, 294);
-            this.chatBotControl1.Name = "chatBotControl1";
-            this.chatBotControl1.Size = new System.Drawing.Size(260, 345);
-            this.chatBotControl1.TabIndex = 56;
-            // 
             // btnTimkiem
             // 
             this.btnTimkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -685,38 +675,16 @@ namespace QuanLyKyTucXa_main
             this.btnCapnhap.TabIndex = 47;
             this.btnCapnhap.Click += new System.EventHandler(this.btnCapnhap_Click);
             // 
-            // btnToggleChatBot
-            // 
-            this.btnToggleChatBot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnToggleChatBot.BackColor = System.Drawing.Color.Transparent;
-            this.btnToggleChatBot.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnToggleChatBot.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnToggleChatBot.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnToggleChatBot.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnToggleChatBot.FillColor = System.Drawing.Color.Transparent;
-            this.btnToggleChatBot.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnToggleChatBot.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnToggleChatBot.Image = global::QuanLyKyTucXa_main.Properties.Resources.chat_box;
-            this.btnToggleChatBot.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnToggleChatBot.Location = new System.Drawing.Point(1001, 645);
-            this.btnToggleChatBot.Name = "btnToggleChatBot";
-            this.btnToggleChatBot.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnToggleChatBot.Size = new System.Drawing.Size(52, 50);
-            this.btnToggleChatBot.TabIndex = 50;
-            this.btnToggleChatBot.Click += new System.EventHandler(this.btnToggleChatBot_Click);
-            // 
             // FrmQuanLyPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1083, 716);
-            this.Controls.Add(this.chatBotControl1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnToggleChatBot);
             this.Controls.Add(this.dgvPhong);
             this.Name = "FrmQuanLyPhong";
             this.Text = "FrmQuanLyPhong";
@@ -742,7 +710,6 @@ namespace QuanLyKyTucXa_main
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2CircleButton btnToggleChatBot;
         private DataGridViewTextBoxColumn maphong;
         private DataGridViewTextBoxColumn tenphong;
         private DataGridViewTextBoxColumn sosv;
@@ -775,7 +742,6 @@ namespace QuanLyKyTucXa_main
         private Guna.UI2.WinForms.Guna2ComboBox cbLoaiphong;
         private Guna.UI2.WinForms.Guna2CheckBox checkBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private ChatBotControl chatBotControl1;
         // private ChatBotControl chatBotControl1;
     }
 }
