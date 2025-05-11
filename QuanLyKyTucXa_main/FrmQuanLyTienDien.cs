@@ -68,23 +68,24 @@ namespace QuanLyKyTucXa_main
 
         private void ClearInputs()
         {
-            txtMahoadon.Enabled = true;
             txtMahoadon.Clear();
-            txtMahoadon.Enabled = false;
-
             cbMaphong.SelectedIndex = -1;
             dtpNgaylap.Value = DateTime.Now;
             txtChisomoi.Clear();
             cbTrangthai.SelectedIndex = -1;
-
-            txtTiendien.Enabled = true;
             txtTiendien.Clear();
-            txtTiendien.Enabled = false;
         }
 
         private void btnLammoi_Click(object sender, EventArgs e)
         {
-            ClearInputs();
+            txtMahoadon.Enabled = true;    // Bật tạm để có thể gán giá trị
+            txtMahoadon.Text = "";         // Xóa nội dung
+            txtMahoadon.Enabled = false;   // Tắt lại để readonly + xám
+
+            txtTiendien.Enabled = true;
+            txtTiendien.Text = "";
+            txtTiendien.Enabled = false;
+
             FrmQuanLyTienDien_Load(sender, e);
         }
 
@@ -267,7 +268,7 @@ namespace QuanLyKyTucXa_main
 
                 bll.DeleteTienDien(txtMahoadon.Text);
                 LoadTienDien();
-                btnLammoi_Click(sender, e);
+                ClearInputs();
             }
             else if (dlr == DialogResult.No)
                 return;
