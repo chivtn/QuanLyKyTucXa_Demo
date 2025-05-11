@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cbQuanly = new System.Windows.Forms.ComboBox();
             this.txtTenday = new System.Windows.Forms.TextBox();
-            this.txtTrangthai = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label6 = new System.Windows.Forms.Label();
+            this.cbTrangthai = new System.Windows.Forms.ComboBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel4.SuspendLayout();
@@ -79,16 +79,6 @@
             this.txtTenday.Name = "txtTenday";
             this.txtTenday.Size = new System.Drawing.Size(242, 38);
             this.txtTenday.TabIndex = 22;
-            // 
-            // txtTrangthai
-            // 
-            this.txtTrangthai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTrangthai.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrangthai.Location = new System.Drawing.Point(257, 480);
-            this.txtTrangthai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTrangthai.Name = "txtTrangthai";
-            this.txtTrangthai.Size = new System.Drawing.Size(242, 38);
-            this.txtTrangthai.TabIndex = 24;
             // 
             // label5
             // 
@@ -147,6 +137,7 @@
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BorderRadius = 30;
+            this.guna2CustomGradientPanel1.Controls.Add(this.cbTrangthai);
             this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
             this.guna2CustomGradientPanel1.Controls.Add(this.cbQuanly);
@@ -154,12 +145,11 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.txtMaday);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtTenday);
             this.guna2CustomGradientPanel1.Controls.Add(this.label2);
-            this.guna2CustomGradientPanel1.Controls.Add(this.txtTrangthai);
             this.guna2CustomGradientPanel1.Controls.Add(this.label3);
             this.guna2CustomGradientPanel1.Controls.Add(this.label5);
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(36, 66);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(633, 634);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(633, 683);
             this.guna2CustomGradientPanel1.TabIndex = 36;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
@@ -360,6 +350,16 @@
             this.label6.Text = "Danh sách Dãy Phòng";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // cbTrangthai
+            // 
+            this.cbTrangthai.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTrangthai.FormattingEnabled = true;
+            this.cbTrangthai.Location = new System.Drawing.Point(257, 477);
+            this.cbTrangthai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbTrangthai.Name = "cbTrangthai";
+            this.cbTrangthai.Size = new System.Drawing.Size(242, 39);
+            this.cbTrangthai.TabIndex = 78;
+            // 
             // FrmQuanLyDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -387,7 +387,6 @@
 
         private System.Windows.Forms.ComboBox cbQuanly;
         private System.Windows.Forms.TextBox txtTenday;
-        private System.Windows.Forms.TextBox txtTrangthai;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -407,5 +406,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn trangthai;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbTrangthai;
     }
 }

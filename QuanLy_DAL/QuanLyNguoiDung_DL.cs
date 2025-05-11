@@ -43,15 +43,15 @@ namespace QuanLy_DAL
             }
         }
 
-        public bool ThemNguoiDung(NguoiDung nguoiDung)
+        public bool ThemNguoiDung(QuanLyNguoiDung quanLyNguoiDung)
         {
-            string sql = "INSERT INTO NguoiDung (tendangnhap, matkhau, quyen) VALUES (@tendangnhap, @matkhau)";
+            string sql = "INSERT INTO NguoiDung (tendangnhap, matkhau) VALUES (@tendangnhap, @matkhau)";
             try
             {
                 Connect();
                 SqlCommand cmd = new SqlCommand(sql, cn);
-                cmd.Parameters.AddWithValue("@tendangnhap", nguoiDung.tendangnhap);
-                cmd.Parameters.AddWithValue("@matkhau", nguoiDung.matkhau);
+                cmd.Parameters.AddWithValue("@tendangnhap", quanLyNguoiDung.tendangnhap);
+                cmd.Parameters.AddWithValue("@matkhau", quanLyNguoiDung.matkhau);
                 int result = cmd.ExecuteNonQuery();
                 return result > 0;
             }
@@ -64,16 +64,16 @@ namespace QuanLy_DAL
                 DisConnect();
             }
         }
-        public bool SuaNguoiDung(QuanLyNguoiDung nguoiDung)
+        public bool SuaNguoiDung(QuanLyNguoiDung quanLyNguoiDung)
         {
             string sql = "UPDATE NguoiDung SET tendangnhap = @tendangnhap, matkhau = @matkhau WHERE manguoidung = @manguoidung";
             try
             {
                 Connect();
                 SqlCommand cmd = new SqlCommand(sql, cn);
-                cmd.Parameters.AddWithValue("@tendangnhap", nguoiDung.tendangnhap);
-                cmd.Parameters.AddWithValue("@matkhau", nguoiDung.matkhau);
-                cmd.Parameters.AddWithValue("@manguoidung", nguoiDung.manguoidung);
+                cmd.Parameters.AddWithValue("@tendangnhap", quanLyNguoiDung.tendangnhap);
+                cmd.Parameters.AddWithValue("@matkhau", quanLyNguoiDung.matkhau);
+                cmd.Parameters.AddWithValue("@manguoidung", quanLyNguoiDung.manguoidung);
                 int result = cmd.ExecuteNonQuery();
                 return result > 0;
             }

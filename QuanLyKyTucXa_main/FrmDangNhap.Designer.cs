@@ -31,7 +31,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.GcbShowpassword = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMatkhau = new System.Windows.Forms.TextBox();
             this.txtTaikhoan = new System.Windows.Forms.TextBox();
@@ -85,22 +85,22 @@
             this.GcbShowpassword.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.GcbShowpassword.CheckedChanged += new System.EventHandler(this.GcbShowpassword_CheckedChanged);
             // 
-            // guna2Button1
+            // BtnThoat
             // 
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(605, 332);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(144, 53);
-            this.guna2Button1.TabIndex = 14;
-            this.guna2Button1.Text = "Thoát";
-            this.guna2Button1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.BtnThoat.BorderRadius = 20;
+            this.BtnThoat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnThoat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnThoat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnThoat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnThoat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnThoat.ForeColor = System.Drawing.Color.White;
+            this.BtnThoat.Location = new System.Drawing.Point(605, 332);
+            this.BtnThoat.Name = "BtnThoat";
+            this.BtnThoat.Size = new System.Drawing.Size(144, 53);
+            this.BtnThoat.TabIndex = 14;
+            this.BtnThoat.Text = "Thoát";
+            this.BtnThoat.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.BtnThoat.Click += new System.EventHandler(this.BtnThoat_Click);
             // 
             // label1
             // 
@@ -222,7 +222,7 @@
             this.Controls.Add(this.txtMatkhau);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.GBtnThoat);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.BtnThoat);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDangNhap";
@@ -247,7 +247,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button BtnThoat;
         private Guna.UI2.WinForms.Guna2CheckBox GcbShowpassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

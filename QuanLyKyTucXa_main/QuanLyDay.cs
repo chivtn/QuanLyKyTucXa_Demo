@@ -33,8 +33,17 @@ namespace QuanLyKyTucXa_main
             cbQuanly.DataSource = nhanViens;
             cbQuanly.DisplayMember = "tennv";
             cbQuanly.ValueMember = "manv";
+
+            LoadPhuCapCombobox();
         }
 
+        private void LoadPhuCapCombobox()
+        {
+            cbTrangthai.Items.Clear();
+            cbTrangthai.Items.Add("Đang hoạt động");
+            cbTrangthai.Items.Add("Đang vệ sinh");
+            cbTrangthai.Items.Add("Đang bảo trì");
+        }
         private void dgvDay_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -43,7 +52,7 @@ namespace QuanLyKyTucXa_main
                 txtMaday.Text = row.Cells["maday"].Value.ToString();
                 txtTenday.Text = row.Cells["tenday"].Value.ToString();
                 cbQuanly.Text = row.Cells["quanly"].Value.ToString(); // Giả sử ComboBox bind ValueMember là manv
-                txtTrangthai.Text = row.Cells["trangthai"].Value.ToString();
+                cbTrangthai.Text = row.Cells["trangthai"].Value.ToString();
             }
         }
 
@@ -77,7 +86,7 @@ namespace QuanLyKyTucXa_main
                                                                            // Xóa trắng các ô nhập
                         txtMaday.Clear();
                         txtTenday.Clear();
-                        txtTrangthai.Clear();
+                        cbTrangthai.Items.Clear();
                     }
                     else
                     {
@@ -104,7 +113,7 @@ namespace QuanLyKyTucXa_main
             if (string.IsNullOrEmpty(txtMaday.Text) ||
                 string.IsNullOrEmpty(txtTenday.Text) ||
                 cbQuanly.SelectedValue == null ||
-                string.IsNullOrEmpty(txtTrangthai.Text))
+                string.IsNullOrEmpty(cbTrangthai.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 return;
@@ -117,7 +126,7 @@ namespace QuanLyKyTucXa_main
                     txtMaday.Text.Trim(),
                     txtTenday.Text.Trim(),
                     cbQuanly.Text.Trim(), // Lấy mã NV từ ValueMember
-                    txtTrangthai.Text.Trim()
+                    cbTrangthai.Text.Trim()
                 );
 
                 // Gọi BL để cập nhật vào database
@@ -131,7 +140,7 @@ namespace QuanLyKyTucXa_main
                     // Xóa trắng các ô nhập
                     txtMaday.Clear();
                     txtTenday.Clear();
-                    txtTrangthai.Clear();
+                    cbTrangthai.Items.Clear();
                 }
                 else
                 {
@@ -150,7 +159,7 @@ namespace QuanLyKyTucXa_main
             if (string.IsNullOrEmpty(txtMaday.Text) ||
                 string.IsNullOrEmpty(txtTenday.Text) ||
                 cbQuanly.SelectedValue == null ||
-                string.IsNullOrEmpty(txtTrangthai.Text))
+                string.IsNullOrEmpty(cbTrangthai.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 return;
@@ -163,7 +172,7 @@ namespace QuanLyKyTucXa_main
                     txtMaday.Text.Trim(),
                     txtTenday.Text.Trim(),
                     cbQuanly.Text.Trim(), // Lấy mã NV từ ValueMember
-                    txtTrangthai.Text.Trim()
+                    cbTrangthai.Text.Trim()
                 );
 
                 // Gọi BL để thêm vào database
@@ -177,7 +186,7 @@ namespace QuanLyKyTucXa_main
                     // Xóa trắng các ô nhập
                     txtMaday.Clear();
                     txtTenday.Clear();
-                    txtTrangthai.Clear();
+                    cbTrangthai.Items.Clear();
                 }
                 else
                 {

@@ -70,7 +70,7 @@
             this.groupBox1.Controls.Add(this.txtTimkiem);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox1.Location = new System.Drawing.Point(70, 20);
+            this.groupBox1.Location = new System.Drawing.Point(70, 37);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -206,7 +206,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvNguoidung.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvNguoidung.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvNguoidung.Location = new System.Drawing.Point(0, 66);
+            this.dgvNguoidung.Location = new System.Drawing.Point(147, 59);
             this.dgvNguoidung.Name = "dgvNguoidung";
             this.dgvNguoidung.RowHeadersVisible = false;
             this.dgvNguoidung.RowHeadersWidth = 51;
@@ -261,9 +261,9 @@
             this.guna2CustomGradientPanel1.BorderRadius = 30;
             this.guna2CustomGradientPanel1.Controls.Add(this.label11);
             this.guna2CustomGradientPanel1.Controls.Add(this.dgvNguoidung);
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(824, 147);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(713, 29);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(609, 419);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(886, 419);
             this.guna2CustomGradientPanel1.TabIndex = 53;
             // 
             // label11
@@ -271,7 +271,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(220, 24);
+            this.label11.Location = new System.Drawing.Point(347, 18);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(214, 25);
             this.label11.TabIndex = 61;
@@ -283,9 +283,9 @@
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnXoa);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnSua);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnThem);
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(824, 607);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(775, 462);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(609, 113);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(768, 150);
             this.guna2CustomGradientPanel2.TabIndex = 54;
             // 
             // GBtnXoa
@@ -300,9 +300,9 @@
             this.GBtnXoa.ForeColor = System.Drawing.Color.White;
             this.GBtnXoa.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_delete_100__2_;
             this.GBtnXoa.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnXoa.Location = new System.Drawing.Point(427, 25);
+            this.GBtnXoa.Location = new System.Drawing.Point(555, 44);
             this.GBtnXoa.Name = "GBtnXoa";
-            this.GBtnXoa.Size = new System.Drawing.Size(162, 59);
+            this.GBtnXoa.Size = new System.Drawing.Size(162, 68);
             this.GBtnXoa.TabIndex = 57;
             this.GBtnXoa.Text = "Xóa";
             this.GBtnXoa.Click += new System.EventHandler(this.GBtnXoa_Click);
@@ -319,9 +319,9 @@
             this.GBtnSua.ForeColor = System.Drawing.Color.White;
             this.GBtnSua.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_edit_100;
             this.GBtnSua.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnSua.Location = new System.Drawing.Point(225, 25);
+            this.GBtnSua.Location = new System.Drawing.Point(307, 44);
             this.GBtnSua.Name = "GBtnSua";
-            this.GBtnSua.Size = new System.Drawing.Size(162, 59);
+            this.GBtnSua.Size = new System.Drawing.Size(162, 68);
             this.GBtnSua.TabIndex = 56;
             this.GBtnSua.Text = "Sửa";
             this.GBtnSua.Click += new System.EventHandler(this.GBtnSua_Click);
@@ -338,9 +338,9 @@
             this.GBtnThem.ForeColor = System.Drawing.Color.White;
             this.GBtnThem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_plus_100__1_;
             this.GBtnThem.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnThem.Location = new System.Drawing.Point(25, 25);
+            this.GBtnThem.Location = new System.Drawing.Point(70, 44);
             this.GBtnThem.Name = "GBtnThem";
-            this.GBtnThem.Size = new System.Drawing.Size(162, 59);
+            this.GBtnThem.Size = new System.Drawing.Size(162, 68);
             this.GBtnThem.TabIndex = 55;
             this.GBtnThem.Text = "Thêm";
             this.GBtnThem.Click += new System.EventHandler(this.GBtnThem_Click);
@@ -354,7 +354,7 @@
             this.guna2CustomGradientPanel3.Controls.Add(this.txtTendangnhap);
             this.guna2CustomGradientPanel3.Controls.Add(this.txtId);
             this.guna2CustomGradientPanel3.Controls.Add(this.txtMatkhau);
-            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(206, 147);
+            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(206, 29);
             this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
             this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(452, 249);
             this.guna2CustomGradientPanel3.TabIndex = 55;
@@ -369,7 +369,7 @@
             this.GBtnTimkiem.ForeColor = System.Drawing.Color.White;
             this.GBtnTimkiem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_search_100;
             this.GBtnTimkiem.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnTimkiem.Location = new System.Drawing.Point(70, 199);
+            this.GBtnTimkiem.Location = new System.Drawing.Point(70, 222);
             this.GBtnTimkiem.Name = "GBtnTimkiem";
             this.GBtnTimkiem.Size = new System.Drawing.Size(323, 45);
             this.GBtnTimkiem.TabIndex = 52;
@@ -381,16 +381,16 @@
             this.guna2CustomGradientPanel4.BorderRadius = 25;
             this.guna2CustomGradientPanel4.Controls.Add(this.GBtnTimkiem);
             this.guna2CustomGradientPanel4.Controls.Add(this.groupBox1);
-            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(206, 439);
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(206, 307);
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
-            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(452, 281);
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(452, 305);
             this.guna2CustomGradientPanel4.TabIndex = 56;
             // 
             // FrmQuanLyNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(255)))), ((int)(((byte)(219)))));
+            this.BackColor = System.Drawing.Color.SlateBlue;
             this.ClientSize = new System.Drawing.Size(1761, 950);
             this.Controls.Add(this.guna2CustomGradientPanel4);
             this.Controls.Add(this.guna2CustomGradientPanel3);

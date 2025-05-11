@@ -81,12 +81,6 @@
     <Compile Include="DanhSachNhanVien.Designer.cs">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAdmin.Designer.cs">
-      <DependentUpon>FrmAdmin.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmBaoCaoNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,12 +128,6 @@
     </Compile>
     <Compile Include="FrmDangNhap.Designer.cs">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmDoiMatKhau.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmDoiMatKhau.Designer.cs">
-      <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmQuanLyKyLuat.cs">
       <SubType>Form</SubType>
@@ -248,9 +236,6 @@
     <EmbeddedResource Include="DanhSachNhanVien.resx">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAdmin.resx">
-      <DependentUpon>FrmAdmin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmBaoCaoNhanVien.resx">
       <DependentUpon>FrmBaoCaoNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,9 +259,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmDoiMatKhau.resx">
-      <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuanLyKyLuat.resx">
       <DependentUpon>FrmQuanLyKyLuat.cs</DependentUpon>

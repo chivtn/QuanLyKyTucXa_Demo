@@ -53,19 +53,14 @@ namespace QuanLyKyTucXa_main
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void GcbShowpassword_CheckedChanged(object sender, EventArgs e)
         {
             txtMatkhau.PasswordChar = GcbShowpassword.Checked ? '\0' : '*';
+        }
+
+        private void BtnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }  
 }

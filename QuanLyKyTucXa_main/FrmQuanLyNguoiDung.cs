@@ -40,13 +40,14 @@ namespace QuanLyKyTucXa_main
                 }
 
                 // Tạo đối tượng người dùng
-                NguoiDung nguoiDung = new NguoiDung(
+                QuanLyNguoiDung quanLyNguoiDung = new QuanLyNguoiDung(
+                    txtId.Text,
                     txtTendangnhap.Text.Trim(),
                     txtMatkhau.Text.Trim()
                 );
 
                 // Thêm vào CSDL
-                bool result = quanLyNguoiDung_BL.ThemNguoiDung(nguoiDung);
+                bool result = quanLyNguoiDung_BL.ThemNguoiDung(quanLyNguoiDung);
                 if (result)
                 {
                     MessageBox.Show("Thêm người dùng thành công!");
@@ -78,14 +79,14 @@ namespace QuanLyKyTucXa_main
                 }
 
                 // Tạo đối tượng người dùng từ thông tin đã chỉnh sửa
-                QuanLyNguoiDung nguoiDung = new QuanLyNguoiDung(
+                QuanLyNguoiDung quanLyNguoiDung = new QuanLyNguoiDung(
                     txtId.Text,
                     txtTendangnhap.Text.Trim(),
                     txtMatkhau.Text.Trim()
                 );
 
                 // Gọi phương thức sửa từ BLL
-                bool result = quanLyNguoiDung_BL.SuaNguoiDung(nguoiDung);
+                bool result = quanLyNguoiDung_BL.SuaNguoiDung(quanLyNguoiDung);
                 if (result)
                 {
                     MessageBox.Show("Cập nhật thành công!");

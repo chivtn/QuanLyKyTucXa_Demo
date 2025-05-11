@@ -28,22 +28,22 @@ namespace QuanLy_BLL
                 throw ex;
             }
         }
-        public bool ThemNguoiDung(NguoiDung nguoiDung)
+        public bool ThemNguoiDung(QuanLyNguoiDung quanLyNguoiDung)
         {
             try
             {
-                return quanLyNguoiDung_DL.ThemNguoiDung(nguoiDung);
+                return quanLyNguoiDung_DL.ThemNguoiDung(quanLyNguoiDung);
             }
             catch (SqlException ex)
             {
                 throw ex;
             }
         }
-        public bool SuaNguoiDung(QuanLyNguoiDung nguoiDung)
+        public bool SuaNguoiDung(QuanLyNguoiDung quanLyNguoiDung)
         {
             try
             {
-                return quanLyNguoiDung_DL.SuaNguoiDung(nguoiDung);
+                return quanLyNguoiDung_DL.SuaNguoiDung(quanLyNguoiDung);
             }
             catch (SqlException ex)
             {

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using TransferObject;
 using QuanLy_BLL;
 using System.Data.SqlClient;
+using iTextSharp.text;
 
 namespace QuanLyKyTucXa_main
 {
@@ -21,6 +22,30 @@ namespace QuanLyKyTucXa_main
             InitializeComponent();
             sinhVienDangKy_BL = new SinhVienDangKy_BL();
 
+        }
+
+        private void FrmDangKyPhong_Load(object sender, EventArgs e)
+        {
+            LoadLoaiUuTienCombobox();
+            LoadKhoaCombobox();
+        }
+
+        private void LoadLoaiUuTienCombobox()
+        {
+            cbLoaiuutien.Items.Clear();
+            cbLoaiuutien.Items.Add("Bình thường");
+            cbLoaiuutien.Items.Add("Hộ nghèo");
+            cbLoaiuutien.Items.Add("Gia đình thương binh liệt sĩ");
+            cbLoaiuutien.Items.Add("Du học sinh");
+        }
+
+        private void LoadKhoaCombobox()
+        {
+            cbLoaiuutien.Items.Clear();
+            cbLoaiuutien.Items.Add("K21");
+            cbLoaiuutien.Items.Add("K22");
+            cbLoaiuutien.Items.Add("K23");
+            cbLoaiuutien.Items.Add("K24");
         }
 
         // Phương thức xóa form
@@ -101,5 +126,7 @@ namespace QuanLyKyTucXa_main
         {
             this.Close();
         }
+
+        
     }
 }

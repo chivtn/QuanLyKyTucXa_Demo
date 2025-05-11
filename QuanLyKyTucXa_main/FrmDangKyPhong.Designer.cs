@@ -83,11 +83,6 @@
             // 
             this.cbLoaiuutien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbLoaiuutien.FormattingEnabled = true;
-            this.cbLoaiuutien.Items.AddRange(new object[] {
-            "Bình thường",
-            "Hộ nghèo",
-            "Gia đình thương binh liệt sĩ",
-            "Du học sinh"});
             this.cbLoaiuutien.Location = new System.Drawing.Point(1070, 529);
             this.cbLoaiuutien.Margin = new System.Windows.Forms.Padding(4);
             this.cbLoaiuutien.Name = "cbLoaiuutien";
@@ -98,18 +93,7 @@
             // 
             this.cbKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbKhoa.FormattingEnabled = true;
-            this.cbKhoa.Items.AddRange(new object[] {
-            "K7",
-            "K8",
-            "K9",
-            "K10",
-            "K11",
-            "K12",
-            "K13",
-            "K14",
-            "K15",
-            "K16"});
-            this.cbKhoa.Location = new System.Drawing.Point(660, 117);
+            this.cbKhoa.Location = new System.Drawing.Point(660, 132);
             this.cbKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.cbKhoa.Name = "cbKhoa";
             this.cbKhoa.Size = new System.Drawing.Size(160, 33);
@@ -207,7 +191,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(950, 399);
+            this.label6.Location = new System.Drawing.Point(540, 140);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 25);
@@ -319,6 +303,7 @@
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnDangky);
             this.guna2CustomGradientPanel2.Controls.Add(this.cbKhoa);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtLop);
+            this.guna2CustomGradientPanel2.Controls.Add(this.label6);
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(410, 256);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(957, 522);
@@ -381,7 +366,6 @@
             this.Controls.Add(this.txtMasv);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -390,6 +374,7 @@
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Name = "FrmDangKyPhong";
             this.Text = "Đăng Ký Phòng";
+            this.Load += new System.EventHandler(this.FrmDangKyPhong_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
