@@ -483,6 +483,16 @@ namespace QuanLyKyTucXa_main.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_plus_100__1_2 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-plus-100 (1)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_popup_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-popup-100", resourceCulture);

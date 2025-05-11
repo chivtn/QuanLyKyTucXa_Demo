@@ -547,5 +547,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-circle-chart-36.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-100 %281%292.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

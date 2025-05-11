@@ -60,6 +60,8 @@ namespace QuanLyKyTucXa_main
         private void ClearInputs()
         {
             txtMaphong.Clear();
+            txtMaphong.Enabled = true;
+
             txtTenphong.Clear();
 
             txtSosvhientai.Enabled = true;
@@ -177,6 +179,7 @@ namespace QuanLyKyTucXa_main
             {
                 var phong = (Phong)dgvPhong.Rows[e.RowIndex].DataBoundItem;
                 txtMaphong.Text = phong.Maphong;
+                txtMaphong.Enabled = false;
                 txtTenphong.Text = phong.Tenphong;
                 txtSosvhientai.Text = phong.Sosv.ToString();
                 txtSosvtoida.Text = phong.Sosvtoida.ToString();

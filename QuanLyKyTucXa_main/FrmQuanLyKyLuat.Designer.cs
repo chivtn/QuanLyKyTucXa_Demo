@@ -46,8 +46,12 @@
             this.cbMasv = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtMakyluat = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnThem = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnXoa = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnLammoi = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnCapnhap = new Guna.UI2.WinForms.Guna2CircleButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTimkiem = new Guna.UI2.WinForms.Guna2CircleButton();
             this.txtTimkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.rbMasv = new System.Windows.Forms.RadioButton();
@@ -60,10 +64,6 @@
             this.tienphat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnTimkiem = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnThem = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnXoa = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnCapnhap = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -251,6 +251,43 @@
             this.panel2.Size = new System.Drawing.Size(559, 69);
             this.panel2.TabIndex = 45;
             // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.White;
+            this.btnThem.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_plus_100__1_2;
+            this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThem.FillColor = System.Drawing.Color.Transparent;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Location = new System.Drawing.Point(31, 3);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnThem.Size = new System.Drawing.Size(63, 59);
+            this.btnThem.TabIndex = 46;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_trash_can_100;
+            this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoa.FillColor = System.Drawing.Color.Transparent;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(309, 3);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnXoa.Size = new System.Drawing.Size(63, 59);
+            this.btnXoa.TabIndex = 48;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
             // btnLammoi
             // 
             this.btnLammoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -270,6 +307,26 @@
             this.btnLammoi.TabIndex = 48;
             this.btnLammoi.Click += new System.EventHandler(this.btnLammoi_Click);
             // 
+            // btnCapnhap
+            // 
+            this.btnCapnhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCapnhap.BackColor = System.Drawing.Color.White;
+            this.btnCapnhap.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_done_100;
+            this.btnCapnhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCapnhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapnhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapnhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCapnhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCapnhap.FillColor = System.Drawing.Color.Transparent;
+            this.btnCapnhap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCapnhap.ForeColor = System.Drawing.Color.White;
+            this.btnCapnhap.Location = new System.Drawing.Point(171, 3);
+            this.btnCapnhap.Name = "btnCapnhap";
+            this.btnCapnhap.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCapnhap.Size = new System.Drawing.Size(63, 59);
+            this.btnCapnhap.TabIndex = 47;
+            this.btnCapnhap.Click += new System.EventHandler(this.btnCapnhap_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
@@ -285,6 +342,23 @@
             this.groupBox1.TabIndex = 46;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm theo";
+            // 
+            // btnTimkiem
+            // 
+            this.btnTimkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTimkiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTimkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTimkiem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnTimkiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimkiem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_search_100;
+            this.btnTimkiem.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnTimkiem.Location = new System.Drawing.Point(174, 81);
+            this.btnTimkiem.Name = "btnTimkiem";
+            this.btnTimkiem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnTimkiem.Size = new System.Drawing.Size(36, 36);
+            this.btnTimkiem.TabIndex = 46;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // txtTimkiem
             // 
@@ -442,80 +516,6 @@
             // 
             this.guna2Elipse2.BorderRadius = 30;
             this.guna2Elipse2.TargetControl = this.dgvKyluat;
-            // 
-            // btnTimkiem
-            // 
-            this.btnTimkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimkiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimkiem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnTimkiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimkiem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_search_100;
-            this.btnTimkiem.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTimkiem.Location = new System.Drawing.Point(174, 81);
-            this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTimkiem.Size = new System.Drawing.Size(36, 36);
-            this.btnTimkiem.TabIndex = 46;
-            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.White;
-            this.btnThem.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_plus_100__1_;
-            this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThem.FillColor = System.Drawing.Color.Transparent;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(31, 3);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnThem.Size = new System.Drawing.Size(63, 59);
-            this.btnThem.TabIndex = 46;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_trash_can_100;
-            this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXoa.FillColor = System.Drawing.Color.Transparent;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(309, 3);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnXoa.Size = new System.Drawing.Size(63, 59);
-            this.btnXoa.TabIndex = 48;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnCapnhap
-            // 
-            this.btnCapnhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCapnhap.BackColor = System.Drawing.Color.White;
-            this.btnCapnhap.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_done_100;
-            this.btnCapnhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCapnhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCapnhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCapnhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCapnhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCapnhap.FillColor = System.Drawing.Color.Transparent;
-            this.btnCapnhap.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCapnhap.ForeColor = System.Drawing.Color.White;
-            this.btnCapnhap.Location = new System.Drawing.Point(171, 3);
-            this.btnCapnhap.Name = "btnCapnhap";
-            this.btnCapnhap.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnCapnhap.Size = new System.Drawing.Size(63, 59);
-            this.btnCapnhap.TabIndex = 47;
-            this.btnCapnhap.Click += new System.EventHandler(this.btnCapnhap_Click);
             // 
             // FrmQuanLyKyLuat
             // 

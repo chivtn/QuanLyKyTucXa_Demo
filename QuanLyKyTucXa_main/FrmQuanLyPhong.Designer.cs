@@ -53,16 +53,10 @@ namespace QuanLyKyTucXa_main
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnToggleChatBot = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnThem = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnXoa = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnLammoi = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnCapnhap = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbTktheomaday = new System.Windows.Forms.RadioButton();
-            this.btnTimkiem = new Guna.UI2.WinForms.Guna2CircleButton();
             this.txtTimkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.rbTktheoma = new System.Windows.Forms.RadioButton();
@@ -79,6 +73,12 @@ namespace QuanLyKyTucXa_main
             this.checkBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.chatBotControl1 = new QuanLyKyTucXa_main.ChatBotControl();
+            this.btnTimkiem = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnThem = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnXoa = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnLammoi = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnCapnhap = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnToggleChatBot = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -127,8 +127,7 @@ namespace QuanLyKyTucXa_main
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvPhong.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPhong.EnableHeadersVisualStyles = false;
-            this.dgvPhong.Location = new System.Drawing.Point(45, 503);
-            this.dgvPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPhong.Location = new System.Drawing.Point(34, 409);
             this.dgvPhong.Name = "dgvPhong";
             this.dgvPhong.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -143,7 +142,7 @@ namespace QuanLyKyTucXa_main
             this.dgvPhong.RowHeadersWidth = 62;
             this.dgvPhong.RowTemplate.Height = 28;
             this.dgvPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPhong.Size = new System.Drawing.Size(1359, 254);
+            this.dgvPhong.Size = new System.Drawing.Size(1019, 206);
             this.dgvPhong.TabIndex = 42;
             this.dgvPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhong_CellClick);
             // 
@@ -207,10 +206,9 @@ namespace QuanLyKyTucXa_main
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label6.Location = new System.Drawing.Point(535, 283);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(401, 230);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 23);
+            this.label6.Size = new System.Drawing.Size(33, 19);
             this.label6.TabIndex = 27;
             this.label6.Text = "Dãy";
             // 
@@ -218,10 +216,9 @@ namespace QuanLyKyTucXa_main
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label5.Location = new System.Drawing.Point(535, 194);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(401, 158);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 23);
+            this.label5.Size = new System.Drawing.Size(57, 19);
             this.label5.TabIndex = 26;
             this.label5.Text = "Xếp loại";
             // 
@@ -229,10 +226,9 @@ namespace QuanLyKyTucXa_main
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label4.Location = new System.Drawing.Point(535, 21);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(401, 17);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 23);
+            this.label4.Size = new System.Drawing.Size(72, 19);
             this.label4.TabIndex = 25;
             this.label4.Text = "Tình trạng";
             // 
@@ -240,10 +236,9 @@ namespace QuanLyKyTucXa_main
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label9.Location = new System.Drawing.Point(535, 102);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(401, 83);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 23);
+            this.label9.Size = new System.Drawing.Size(78, 19);
             this.label9.TabIndex = 24;
             this.label9.Text = "Loại phòng";
             // 
@@ -251,10 +246,9 @@ namespace QuanLyKyTucXa_main
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label3.Location = new System.Drawing.Point(21, 283);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(16, 230);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 23);
+            this.label3.Size = new System.Drawing.Size(121, 19);
             this.label3.TabIndex = 23;
             this.label3.Text = "Số sinh viên tối đa";
             // 
@@ -262,10 +256,9 @@ namespace QuanLyKyTucXa_main
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label7.Location = new System.Drawing.Point(21, 194);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(16, 158);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(163, 23);
+            this.label7.Size = new System.Drawing.Size(131, 19);
             this.label7.TabIndex = 22;
             this.label7.Text = "Số sinh viên hiện tại";
             // 
@@ -273,10 +266,9 @@ namespace QuanLyKyTucXa_main
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label2.Location = new System.Drawing.Point(21, 102);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(16, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 23);
+            this.label2.Size = new System.Drawing.Size(74, 19);
             this.label2.TabIndex = 29;
             this.label2.Text = "Tên phòng";
             // 
@@ -284,33 +276,11 @@ namespace QuanLyKyTucXa_main
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label1.Location = new System.Drawing.Point(21, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(16, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 23);
+            this.label1.Size = new System.Drawing.Size(73, 19);
             this.label1.TabIndex = 21;
             this.label1.Text = "Mã phòng";
-            // 
-            // btnToggleChatBot
-            // 
-            this.btnToggleChatBot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnToggleChatBot.BackColor = System.Drawing.Color.Transparent;
-            this.btnToggleChatBot.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnToggleChatBot.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnToggleChatBot.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnToggleChatBot.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnToggleChatBot.FillColor = System.Drawing.Color.Transparent;
-            this.btnToggleChatBot.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnToggleChatBot.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnToggleChatBot.Image = global::QuanLyKyTucXa_main.Properties.Resources.chat_box;
-            this.btnToggleChatBot.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnToggleChatBot.Location = new System.Drawing.Point(1335, 825);
-            this.btnToggleChatBot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnToggleChatBot.Name = "btnToggleChatBot";
-            this.btnToggleChatBot.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnToggleChatBot.Size = new System.Drawing.Size(69, 62);
-            this.btnToggleChatBot.TabIndex = 50;
-            this.btnToggleChatBot.Click += new System.EventHandler(this.btnToggleChatBot_Click);
             // 
             // panel1
             // 
@@ -319,89 +289,10 @@ namespace QuanLyKyTucXa_main
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnLammoi);
             this.panel1.Controls.Add(this.btnCapnhap);
-            this.panel1.Location = new System.Drawing.Point(45, 378);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(34, 307);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(891, 85);
+            this.panel1.Size = new System.Drawing.Size(668, 69);
             this.panel1.TabIndex = 52;
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.White;
-            this.btnThem.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_plus_100__1_;
-            this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThem.FillColor = System.Drawing.Color.Transparent;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(35, 4);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnThem.Size = new System.Drawing.Size(84, 73);
-            this.btnThem.TabIndex = 46;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_trash_can_100;
-            this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXoa.FillColor = System.Drawing.Color.Transparent;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(527, 4);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnXoa.Size = new System.Drawing.Size(84, 73);
-            this.btnXoa.TabIndex = 48;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnLammoi
-            // 
-            this.btnLammoi.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_synchronize_100__1_;
-            this.btnLammoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnLammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLammoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLammoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLammoi.FillColor = System.Drawing.Color.Transparent;
-            this.btnLammoi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLammoi.ForeColor = System.Drawing.Color.White;
-            this.btnLammoi.Location = new System.Drawing.Point(752, 4);
-            this.btnLammoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnLammoi.Name = "btnLammoi";
-            this.btnLammoi.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnLammoi.Size = new System.Drawing.Size(84, 73);
-            this.btnLammoi.TabIndex = 48;
-            this.btnLammoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            // 
-            // btnCapnhap
-            // 
-            this.btnCapnhap.BackColor = System.Drawing.Color.White;
-            this.btnCapnhap.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_done_100;
-            this.btnCapnhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCapnhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCapnhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCapnhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCapnhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCapnhap.FillColor = System.Drawing.Color.Transparent;
-            this.btnCapnhap.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCapnhap.ForeColor = System.Drawing.Color.White;
-            this.btnCapnhap.Location = new System.Drawing.Point(279, 4);
-            this.btnCapnhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnCapnhap.Name = "btnCapnhap";
-            this.btnCapnhap.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnCapnhap.Size = new System.Drawing.Size(84, 73);
-            this.btnCapnhap.TabIndex = 47;
-            this.btnCapnhap.Click += new System.EventHandler(this.btnCapnhap_Click);
             // 
             // guna2Elipse1
             // 
@@ -419,11 +310,9 @@ namespace QuanLyKyTucXa_main
             this.groupBox1.Controls.Add(this.rbTktheoma);
             this.groupBox1.Controls.Add(this.rbTktheoten);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.groupBox1.Location = new System.Drawing.Point(1075, 26);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(806, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(315, 283);
+            this.groupBox1.Size = new System.Drawing.Size(236, 230);
             this.groupBox1.TabIndex = 53;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm theo";
@@ -431,32 +320,13 @@ namespace QuanLyKyTucXa_main
             // rbTktheomaday
             // 
             this.rbTktheomaday.AutoSize = true;
-            this.rbTktheomaday.Location = new System.Drawing.Point(25, 106);
-            this.rbTktheomaday.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbTktheomaday.Location = new System.Drawing.Point(19, 86);
             this.rbTktheomaday.Name = "rbTktheomaday";
-            this.rbTktheomaday.Size = new System.Drawing.Size(201, 27);
+            this.rbTktheomaday.Size = new System.Drawing.Size(163, 23);
             this.rbTktheomaday.TabIndex = 48;
             this.rbTktheomaday.TabStop = true;
             this.rbTktheomaday.Text = "Tìm kiếm theo mã dãy";
             this.rbTktheomaday.UseVisualStyleBackColor = true;
-            // 
-            // btnTimkiem
-            // 
-            this.btnTimkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimkiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimkiem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnTimkiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimkiem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_search_100;
-            this.btnTimkiem.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTimkiem.Location = new System.Drawing.Point(245, 180);
-            this.btnTimkiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTimkiem.Size = new System.Drawing.Size(48, 44);
-            this.btnTimkiem.TabIndex = 46;
-            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // txtTimkiem
             // 
@@ -471,31 +341,29 @@ namespace QuanLyKyTucXa_main
             this.txtTimkiem.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTimkiem.ForeColor = System.Drawing.Color.Black;
             this.txtTimkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimkiem.Location = new System.Drawing.Point(23, 180);
-            this.txtTimkiem.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtTimkiem.Location = new System.Drawing.Point(17, 146);
+            this.txtTimkiem.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.PlaceholderText = "";
             this.txtTimkiem.SelectedText = "";
-            this.txtTimkiem.Size = new System.Drawing.Size(215, 44);
+            this.txtTimkiem.Size = new System.Drawing.Size(161, 36);
             this.txtTimkiem.TabIndex = 47;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(29, 153);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(22, 124);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(203, 23);
+            this.label10.Size = new System.Drawing.Size(163, 19);
             this.label10.TabIndex = 3;
             this.label10.Text = "Nhập thông tin tìm kiếm:";
             // 
             // rbTktheoma
             // 
             this.rbTktheoma.AutoSize = true;
-            this.rbTktheoma.Location = new System.Drawing.Point(25, 34);
-            this.rbTktheoma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbTktheoma.Location = new System.Drawing.Point(19, 28);
             this.rbTktheoma.Name = "rbTktheoma";
-            this.rbTktheoma.Size = new System.Drawing.Size(224, 27);
+            this.rbTktheoma.Size = new System.Drawing.Size(181, 23);
             this.rbTktheoma.TabIndex = 0;
             this.rbTktheoma.TabStop = true;
             this.rbTktheoma.Text = "Tìm kiếm theo mã phòng";
@@ -504,10 +372,9 @@ namespace QuanLyKyTucXa_main
             // rbTktheoten
             // 
             this.rbTktheoten.AutoSize = true;
-            this.rbTktheoten.Location = new System.Drawing.Point(25, 70);
-            this.rbTktheoten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbTktheoten.Location = new System.Drawing.Point(19, 57);
             this.rbTktheoten.Name = "rbTktheoten";
-            this.rbTktheoten.Size = new System.Drawing.Size(225, 27);
+            this.rbTktheoten.Size = new System.Drawing.Size(182, 23);
             this.rbTktheoten.TabIndex = 1;
             this.rbTktheoten.TabStop = true;
             this.rbTktheoten.Text = "Tìm kiếm theo tên phòng";
@@ -531,10 +398,9 @@ namespace QuanLyKyTucXa_main
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(31, 26);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(23, 21);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(964, 345);
+            this.panel2.Size = new System.Drawing.Size(723, 280);
             this.panel2.TabIndex = 54;
             // 
             // cbDay
@@ -549,10 +415,9 @@ namespace QuanLyKyTucXa_main
             this.cbDay.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbDay.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbDay.ItemHeight = 30;
-            this.cbDay.Location = new System.Drawing.Point(676, 274);
-            this.cbDay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDay.Location = new System.Drawing.Point(507, 223);
             this.cbDay.Name = "cbDay";
-            this.cbDay.Size = new System.Drawing.Size(213, 36);
+            this.cbDay.Size = new System.Drawing.Size(161, 36);
             this.cbDay.TabIndex = 63;
             // 
             // cbXeploai
@@ -567,10 +432,9 @@ namespace QuanLyKyTucXa_main
             this.cbXeploai.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbXeploai.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbXeploai.ItemHeight = 30;
-            this.cbXeploai.Location = new System.Drawing.Point(676, 180);
-            this.cbXeploai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbXeploai.Location = new System.Drawing.Point(507, 146);
             this.cbXeploai.Name = "cbXeploai";
-            this.cbXeploai.Size = new System.Drawing.Size(213, 36);
+            this.cbXeploai.Size = new System.Drawing.Size(161, 36);
             this.cbXeploai.TabIndex = 62;
             // 
             // cbLoaiphong
@@ -585,10 +449,9 @@ namespace QuanLyKyTucXa_main
             this.cbLoaiphong.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbLoaiphong.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbLoaiphong.ItemHeight = 30;
-            this.cbLoaiphong.Location = new System.Drawing.Point(676, 90);
-            this.cbLoaiphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbLoaiphong.Location = new System.Drawing.Point(507, 73);
             this.cbLoaiphong.Name = "cbLoaiphong";
-            this.cbLoaiphong.Size = new System.Drawing.Size(213, 36);
+            this.cbLoaiphong.Size = new System.Drawing.Size(161, 36);
             this.cbLoaiphong.TabIndex = 61;
             // 
             // txtTinhtrang
@@ -605,12 +468,12 @@ namespace QuanLyKyTucXa_main
             this.txtTinhtrang.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTinhtrang.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtTinhtrang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTinhtrang.Location = new System.Drawing.Point(676, 7);
-            this.txtTinhtrang.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtTinhtrang.Location = new System.Drawing.Point(507, 6);
+            this.txtTinhtrang.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtTinhtrang.Name = "txtTinhtrang";
             this.txtTinhtrang.PlaceholderText = "";
             this.txtTinhtrang.SelectedText = "";
-            this.txtTinhtrang.Size = new System.Drawing.Size(215, 44);
+            this.txtTinhtrang.Size = new System.Drawing.Size(161, 36);
             this.txtTinhtrang.TabIndex = 60;
             // 
             // txtSosvhientai
@@ -627,12 +490,12 @@ namespace QuanLyKyTucXa_main
             this.txtSosvhientai.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtSosvhientai.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSosvhientai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSosvhientai.Location = new System.Drawing.Point(223, 180);
-            this.txtSosvhientai.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtSosvhientai.Location = new System.Drawing.Point(167, 146);
+            this.txtSosvhientai.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtSosvhientai.Name = "txtSosvhientai";
             this.txtSosvhientai.PlaceholderText = "";
             this.txtSosvhientai.SelectedText = "";
-            this.txtSosvhientai.Size = new System.Drawing.Size(215, 44);
+            this.txtSosvhientai.Size = new System.Drawing.Size(161, 36);
             this.txtSosvhientai.TabIndex = 59;
             // 
             // txtSosvtoida
@@ -648,12 +511,12 @@ namespace QuanLyKyTucXa_main
             this.txtSosvtoida.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtSosvtoida.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSosvtoida.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSosvtoida.Location = new System.Drawing.Point(223, 274);
-            this.txtSosvtoida.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtSosvtoida.Location = new System.Drawing.Point(167, 223);
+            this.txtSosvtoida.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtSosvtoida.Name = "txtSosvtoida";
             this.txtSosvtoida.PlaceholderText = "";
             this.txtSosvtoida.SelectedText = "";
-            this.txtSosvtoida.Size = new System.Drawing.Size(215, 44);
+            this.txtSosvtoida.Size = new System.Drawing.Size(161, 36);
             this.txtSosvtoida.TabIndex = 55;
             // 
             // txtTenphong
@@ -669,12 +532,12 @@ namespace QuanLyKyTucXa_main
             this.txtTenphong.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTenphong.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtTenphong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenphong.Location = new System.Drawing.Point(223, 90);
-            this.txtTenphong.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtTenphong.Location = new System.Drawing.Point(167, 73);
+            this.txtTenphong.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtTenphong.Name = "txtTenphong";
             this.txtTenphong.PlaceholderText = "";
             this.txtTenphong.SelectedText = "";
-            this.txtTenphong.Size = new System.Drawing.Size(215, 44);
+            this.txtTenphong.Size = new System.Drawing.Size(161, 36);
             this.txtTenphong.TabIndex = 54;
             // 
             // txtMaphong
@@ -690,12 +553,12 @@ namespace QuanLyKyTucXa_main
             this.txtMaphong.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMaphong.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMaphong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaphong.Location = new System.Drawing.Point(223, 7);
-            this.txtMaphong.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtMaphong.Location = new System.Drawing.Point(167, 6);
+            this.txtMaphong.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtMaphong.Name = "txtMaphong";
             this.txtMaphong.PlaceholderText = "";
             this.txtMaphong.SelectedText = "";
-            this.txtMaphong.Size = new System.Drawing.Size(215, 44);
+            this.txtMaphong.Size = new System.Drawing.Size(161, 36);
             this.txtMaphong.TabIndex = 53;
             // 
             // checkBox1
@@ -707,10 +570,9 @@ namespace QuanLyKyTucXa_main
             this.checkBox1.CheckedState.BorderThickness = 0;
             this.checkBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.checkBox1.Location = new System.Drawing.Point(1117, 316);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Location = new System.Drawing.Point(823, 257);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(247, 27);
+            this.checkBox1.Size = new System.Drawing.Size(200, 23);
             this.checkBox1.TabIndex = 55;
             this.checkBox1.Text = "Danh sách phòng còn trống";
             this.checkBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -726,21 +588,129 @@ namespace QuanLyKyTucXa_main
             // 
             // chatBotControl1
             // 
-            this.chatBotControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.chatBotControl1.BackColor = System.Drawing.Color.Transparent;
-            this.chatBotControl1.Location = new System.Drawing.Point(1057, 393);
-            this.chatBotControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chatBotControl1.Location = new System.Drawing.Point(793, 294);
             this.chatBotControl1.Name = "chatBotControl1";
-            this.chatBotControl1.Size = new System.Drawing.Size(347, 425);
+            this.chatBotControl1.Size = new System.Drawing.Size(260, 345);
             this.chatBotControl1.TabIndex = 56;
-            this.chatBotControl1.Load += new System.EventHandler(this.chatBotControl1_Load);
+            // 
+            // btnTimkiem
+            // 
+            this.btnTimkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTimkiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTimkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTimkiem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnTimkiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimkiem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_search_100;
+            this.btnTimkiem.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnTimkiem.Location = new System.Drawing.Point(184, 146);
+            this.btnTimkiem.Name = "btnTimkiem";
+            this.btnTimkiem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnTimkiem.Size = new System.Drawing.Size(36, 36);
+            this.btnTimkiem.TabIndex = 46;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.White;
+            this.btnThem.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_plus_100__1_2;
+            this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThem.FillColor = System.Drawing.Color.Transparent;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Location = new System.Drawing.Point(26, 3);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnThem.Size = new System.Drawing.Size(63, 59);
+            this.btnThem.TabIndex = 46;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_trash_can_100;
+            this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoa.FillColor = System.Drawing.Color.Transparent;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(395, 3);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnXoa.Size = new System.Drawing.Size(63, 59);
+            this.btnXoa.TabIndex = 48;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnLammoi
+            // 
+            this.btnLammoi.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_synchronize_100__1_;
+            this.btnLammoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLammoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLammoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLammoi.FillColor = System.Drawing.Color.Transparent;
+            this.btnLammoi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLammoi.ForeColor = System.Drawing.Color.White;
+            this.btnLammoi.Location = new System.Drawing.Point(564, 3);
+            this.btnLammoi.Name = "btnLammoi";
+            this.btnLammoi.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnLammoi.Size = new System.Drawing.Size(63, 59);
+            this.btnLammoi.TabIndex = 48;
+            this.btnLammoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
+            // btnCapnhap
+            // 
+            this.btnCapnhap.BackColor = System.Drawing.Color.White;
+            this.btnCapnhap.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_done_100;
+            this.btnCapnhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCapnhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapnhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapnhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCapnhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCapnhap.FillColor = System.Drawing.Color.Transparent;
+            this.btnCapnhap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCapnhap.ForeColor = System.Drawing.Color.White;
+            this.btnCapnhap.Location = new System.Drawing.Point(203, 3);
+            this.btnCapnhap.Name = "btnCapnhap";
+            this.btnCapnhap.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCapnhap.Size = new System.Drawing.Size(63, 59);
+            this.btnCapnhap.TabIndex = 47;
+            this.btnCapnhap.Click += new System.EventHandler(this.btnCapnhap_Click);
+            // 
+            // btnToggleChatBot
+            // 
+            this.btnToggleChatBot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnToggleChatBot.BackColor = System.Drawing.Color.Transparent;
+            this.btnToggleChatBot.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnToggleChatBot.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnToggleChatBot.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnToggleChatBot.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnToggleChatBot.FillColor = System.Drawing.Color.Transparent;
+            this.btnToggleChatBot.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnToggleChatBot.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnToggleChatBot.Image = global::QuanLyKyTucXa_main.Properties.Resources.chat_box;
+            this.btnToggleChatBot.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnToggleChatBot.Location = new System.Drawing.Point(1001, 645);
+            this.btnToggleChatBot.Name = "btnToggleChatBot";
+            this.btnToggleChatBot.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnToggleChatBot.Size = new System.Drawing.Size(52, 50);
+            this.btnToggleChatBot.TabIndex = 50;
+            this.btnToggleChatBot.Click += new System.EventHandler(this.btnToggleChatBot_Click);
             // 
             // FrmQuanLyPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1445, 901);
+            this.ClientSize = new System.Drawing.Size(1083, 716);
             this.Controls.Add(this.chatBotControl1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.panel2);
@@ -748,7 +718,6 @@ namespace QuanLyKyTucXa_main
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnToggleChatBot);
             this.Controls.Add(this.dgvPhong);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmQuanLyPhong";
             this.Text = "FrmQuanLyPhong";
             this.Load += new System.EventHandler(this.FrmQuanLyPhong_Load);
