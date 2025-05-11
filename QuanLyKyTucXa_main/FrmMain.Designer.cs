@@ -41,8 +41,6 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDanhSachPhong = new System.Windows.Forms.Button();
-            this.btnQuanlynguoidung = new System.Windows.Forms.Button();
             this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
             this.btnKyLuat = new Guna.UI2.WinForms.Guna2Button();
             this.menuCSVC = new Guna.UI2.WinForms.Guna2Panel();
@@ -59,22 +57,25 @@
             this.btnLuongNV = new Guna.UI2.WinForms.Guna2Button();
             this.btnQuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.btnQlNhanSu = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.timeMenuNhanSu = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.btnToggleChatBot = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.chatBotControl1 = new QuanLyKyTucXa_main.ChatBotControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.timeMenuDichVu = new System.Windows.Forms.Timer(this.components);
             this.timeMenuCSVC = new System.Windows.Forms.Timer(this.components);
-            this.BtnDangkyphong = new System.Windows.Forms.Button();
+            this.btnNguoiDung = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.menuDK = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDSDangKy = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDKPhong = new Guna.UI2.WinForms.Guna2Button();
+            this.timeMenuDangKy = new System.Windows.Forms.Timer(this.components);
+            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel_Top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGuiMail)).BeginInit();
@@ -83,7 +84,6 @@
             this.menuCSVC.SuspendLayout();
             this.menuDV.SuspendLayout();
             this.menuNhanSu.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -91,6 +91,8 @@
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            this.menuDK.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ControlBox3
@@ -133,7 +135,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_chat_bubble_50;
-            this.pictureBox2.Location = new System.Drawing.Point(621, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(714, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(72, 47);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,7 +145,7 @@
             // picGuiMail
             // 
             this.picGuiMail.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_gmail_logo_30;
-            this.picGuiMail.Location = new System.Drawing.Point(699, 5);
+            this.picGuiMail.Location = new System.Drawing.Point(792, 5);
             this.picGuiMail.Name = "picGuiMail";
             this.picGuiMail.Size = new System.Drawing.Size(43, 45);
             this.picGuiMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -156,7 +158,7 @@
             this.guna2HtmlLabel45.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel45.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel45.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel45.Location = new System.Drawing.Point(20, 11);
+            this.guna2HtmlLabel45.Location = new System.Drawing.Point(7, 10);
             this.guna2HtmlLabel45.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel45.Name = "guna2HtmlLabel45";
             this.guna2HtmlLabel45.Size = new System.Drawing.Size(265, 39);
@@ -169,7 +171,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(792, 18);
+            this.label1.Location = new System.Drawing.Point(885, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 23);
             this.label1.TabIndex = 9;
@@ -204,7 +206,7 @@
             this.guna2PictureBox3.FillColor = System.Drawing.Color.DimGray;
             this.guna2PictureBox3.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_male_user_30;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(748, 5);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(841, 5);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(38, 45);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -214,9 +216,8 @@
             // guna2Panel1
             // 
             this.guna2Panel1.AutoScroll = true;
-            this.guna2Panel1.Controls.Add(this.BtnDangkyphong);
-            this.guna2Panel1.Controls.Add(this.btnDanhSachPhong);
-            this.guna2Panel1.Controls.Add(this.btnQuanlynguoidung);
+            this.guna2Panel1.Controls.Add(this.btnThongKe);
+            this.guna2Panel1.Controls.Add(this.menuDK);
             this.guna2Panel1.Controls.Add(this.btnDangXuat);
             this.guna2Panel1.Controls.Add(this.btnKyLuat);
             this.guna2Panel1.Controls.Add(this.menuCSVC);
@@ -230,26 +231,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(298, 948);
             this.guna2Panel1.TabIndex = 6;
-            // 
-            // btnDanhSachPhong
-            // 
-            this.btnDanhSachPhong.Location = new System.Drawing.Point(0, 707);
-            this.btnDanhSachPhong.Name = "btnDanhSachPhong";
-            this.btnDanhSachPhong.Size = new System.Drawing.Size(157, 71);
-            this.btnDanhSachPhong.TabIndex = 26;
-            this.btnDanhSachPhong.Text = "Danh Sách Phòng";
-            this.btnDanhSachPhong.UseVisualStyleBackColor = true;
-            this.btnDanhSachPhong.Click += new System.EventHandler(this.btnDanhSachPhong_Click);
-            // 
-            // btnQuanlynguoidung
-            // 
-            this.btnQuanlynguoidung.Location = new System.Drawing.Point(0, 630);
-            this.btnQuanlynguoidung.Name = "btnQuanlynguoidung";
-            this.btnQuanlynguoidung.Size = new System.Drawing.Size(157, 71);
-            this.btnQuanlynguoidung.TabIndex = 25;
-            this.btnQuanlynguoidung.Text = "Quản Lý Người Dùng";
-            this.btnQuanlynguoidung.UseVisualStyleBackColor = true;
-            this.btnQuanlynguoidung.Click += new System.EventHandler(this.btnQuanlynguoidung_Click);
             // 
             // btnDangXuat
             // 
@@ -286,7 +267,7 @@
             this.btnKyLuat.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_learning_26;
             this.btnKyLuat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKyLuat.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnKyLuat.Location = new System.Drawing.Point(0, 324);
+            this.btnKyLuat.Location = new System.Drawing.Point(0, 317);
             this.btnKyLuat.Margin = new System.Windows.Forms.Padding(4);
             this.btnKyLuat.Name = "btnKyLuat";
             this.btnKyLuat.Size = new System.Drawing.Size(298, 44);
@@ -303,9 +284,10 @@
             this.menuCSVC.Controls.Add(this.btnDay);
             this.menuCSVC.Controls.Add(this.btnQlCSVC);
             this.menuCSVC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuCSVC.Location = new System.Drawing.Point(0, 275);
+            this.menuCSVC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuCSVC.Location = new System.Drawing.Point(0, 273);
             this.menuCSVC.Name = "menuCSVC";
-            this.menuCSVC.Size = new System.Drawing.Size(298, 49);
+            this.menuCSVC.Size = new System.Drawing.Size(298, 44);
             this.menuCSVC.TabIndex = 22;
             // 
             // btnThietBi
@@ -321,7 +303,7 @@
             this.btnThietBi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnThietBi.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_electrical_26;
             this.btnThietBi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThietBi.Location = new System.Drawing.Point(0, 138);
+            this.btnThietBi.Location = new System.Drawing.Point(0, 135);
             this.btnThietBi.Name = "btnThietBi";
             this.btnThietBi.Size = new System.Drawing.Size(298, 47);
             this.btnThietBi.TabIndex = 10;
@@ -341,7 +323,7 @@
             this.btnPhong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnPhong.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_bunk_bed_26;
             this.btnPhong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPhong.Location = new System.Drawing.Point(0, 94);
+            this.btnPhong.Location = new System.Drawing.Point(0, 91);
             this.btnPhong.Name = "btnPhong";
             this.btnPhong.Size = new System.Drawing.Size(298, 44);
             this.btnPhong.TabIndex = 9;
@@ -361,7 +343,7 @@
             this.btnDay.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.btnDay.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_stairs_up_27;
             this.btnDay.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDay.Location = new System.Drawing.Point(0, 49);
+            this.btnDay.Location = new System.Drawing.Point(0, 46);
             this.btnDay.Name = "btnDay";
             this.btnDay.Size = new System.Drawing.Size(298, 45);
             this.btnDay.TabIndex = 8;
@@ -384,7 +366,7 @@
             this.btnQlCSVC.Location = new System.Drawing.Point(0, 0);
             this.btnQlCSVC.Margin = new System.Windows.Forms.Padding(4);
             this.btnQlCSVC.Name = "btnQlCSVC";
-            this.btnQlCSVC.Size = new System.Drawing.Size(298, 49);
+            this.btnQlCSVC.Size = new System.Drawing.Size(298, 46);
             this.btnQlCSVC.TabIndex = 7;
             this.btnQlCSVC.Text = "Quản lý cơ sở vật chất";
             this.btnQlCSVC.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -397,9 +379,10 @@
             this.menuDV.Controls.Add(this.btnTienDien);
             this.menuDV.Controls.Add(this.btnQLDichVu);
             this.menuDV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuDV.Location = new System.Drawing.Point(0, 226);
+            this.menuDV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuDV.Location = new System.Drawing.Point(0, 229);
             this.menuDV.Name = "menuDV";
-            this.menuDV.Size = new System.Drawing.Size(298, 49);
+            this.menuDV.Size = new System.Drawing.Size(298, 44);
             this.menuDV.TabIndex = 21;
             // 
             // btnTienNuoc
@@ -417,7 +400,7 @@
             this.btnTienNuoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTienNuoc.Location = new System.Drawing.Point(0, 94);
             this.btnTienNuoc.Name = "btnTienNuoc";
-            this.btnTienNuoc.Size = new System.Drawing.Size(298, 41);
+            this.btnTienNuoc.Size = new System.Drawing.Size(298, 33);
             this.btnTienNuoc.TabIndex = 9;
             this.btnTienNuoc.Text = "Tiền nước";
             this.btnTienNuoc.Click += new System.EventHandler(this.btnTienNuoc_Click);
@@ -467,14 +450,16 @@
             // 
             // menuNhanSu
             // 
+            this.menuNhanSu.Controls.Add(this.btnNguoiDung);
             this.menuNhanSu.Controls.Add(this.btnQlSV);
             this.menuNhanSu.Controls.Add(this.btnLuongNV);
             this.menuNhanSu.Controls.Add(this.btnQuanLyNhanVien);
             this.menuNhanSu.Controls.Add(this.btnQlNhanSu);
             this.menuNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuNhanSu.Location = new System.Drawing.Point(0, 177);
+            this.menuNhanSu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuNhanSu.Location = new System.Drawing.Point(0, 179);
             this.menuNhanSu.Name = "menuNhanSu";
-            this.menuNhanSu.Size = new System.Drawing.Size(298, 49);
+            this.menuNhanSu.Size = new System.Drawing.Size(298, 50);
             this.menuNhanSu.TabIndex = 20;
             // 
             // btnQlSV
@@ -492,7 +477,7 @@
             this.btnQlSV.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQlSV.Location = new System.Drawing.Point(0, 151);
             this.btnQlSV.Name = "btnQlSV";
-            this.btnQlSV.Size = new System.Drawing.Size(298, 55);
+            this.btnQlSV.Size = new System.Drawing.Size(298, 42);
             this.btnQlSV.TabIndex = 10;
             this.btnQlSV.Text = "Quản lý sinh viên";
             this.btnQlSV.Click += new System.EventHandler(this.btnQlSV_Click);
@@ -534,8 +519,7 @@
             this.btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
             this.btnQuanLyNhanVien.Size = new System.Drawing.Size(298, 51);
             this.btnQuanLyNhanVien.TabIndex = 8;
-            this.btnQuanLyNhanVien.Text = "          Quản lý nhân viên";
-            this.btnQuanLyNhanVien.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnQuanLyNhanVien.Text = "Quản lý nhân viên";
             this.btnQuanLyNhanVien.Click += new System.EventHandler(this.btnQuanLyNhanVien_Click);
             // 
             // btnQlNhanSu
@@ -561,38 +545,6 @@
             this.btnQlNhanSu.TextOffset = new System.Drawing.Point(8, 0);
             this.btnQlNhanSu.Click += new System.EventHandler(this.guna2Button21_Click);
             // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.btnHome);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 131);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(298, 46);
-            this.guna2Panel3.TabIndex = 11;
-            // 
-            // btnHome
-            // 
-            this.btnHome.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(215)))));
-            this.btnHome.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.btnHome.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_home_26__1_;
-            this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnHome.Location = new System.Drawing.Point(0, 0);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(298, 49);
-            this.btnHome.TabIndex = 13;
-            this.btnHome.Text = "Trang chủ";
-            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
@@ -610,7 +562,7 @@
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Gray;
             this.guna2PictureBox2.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_menu_26;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(250, 96);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(238, 96);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(36, 28);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -648,8 +600,6 @@
             // 
             // panelMain
             // 
-            this.panelMain.Controls.Add(this.btnToggleChatBot);
-            this.panelMain.Controls.Add(this.chatBotControl1);
             this.panelMain.Controls.Add(this.pictureBox1);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(0, 67);
@@ -657,36 +607,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1165, 824);
             this.panelMain.TabIndex = 1;
-            // 
-            // btnToggleChatBot
-            // 
-            this.btnToggleChatBot.BackColor = System.Drawing.Color.Transparent;
-            this.btnToggleChatBot.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnToggleChatBot.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnToggleChatBot.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnToggleChatBot.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnToggleChatBot.FillColor = System.Drawing.Color.Transparent;
-            this.btnToggleChatBot.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnToggleChatBot.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnToggleChatBot.Image = global::QuanLyKyTucXa_main.Properties.Resources.chat_box;
-            this.btnToggleChatBot.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnToggleChatBot.Location = new System.Drawing.Point(921, 642);
-            this.btnToggleChatBot.Margin = new System.Windows.Forms.Padding(4);
-            this.btnToggleChatBot.Name = "btnToggleChatBot";
-            this.btnToggleChatBot.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnToggleChatBot.Size = new System.Drawing.Size(71, 56);
-            this.btnToggleChatBot.TabIndex = 57;
-            this.btnToggleChatBot.Click += new System.EventHandler(this.btnToggleChatBot_Click);
-            // 
-            // chatBotControl1
-            // 
-            this.chatBotControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.chatBotControl1.BackColor = System.Drawing.Color.Transparent;
-            this.chatBotControl1.Location = new System.Drawing.Point(655, 355);
-            this.chatBotControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.chatBotControl1.Name = "chatBotControl1";
-            this.chatBotControl1.Size = new System.Drawing.Size(258, 343);
-            this.chatBotControl1.TabIndex = 58;
             // 
             // pictureBox1
             // 
@@ -732,15 +652,139 @@
             this.timeMenuCSVC.Interval = 10;
             this.timeMenuCSVC.Tick += new System.EventHandler(this.timeMenuCSVC_Tick);
             // 
-            // BtnDangkyphong
+            // btnNguoiDung
             // 
-            this.BtnDangkyphong.Location = new System.Drawing.Point(0, 784);
-            this.BtnDangkyphong.Name = "BtnDangkyphong";
-            this.BtnDangkyphong.Size = new System.Drawing.Size(157, 71);
-            this.BtnDangkyphong.TabIndex = 27;
-            this.BtnDangkyphong.Text = "Đăng Ký Phòng";
-            this.BtnDangkyphong.UseVisualStyleBackColor = true;
-            this.BtnDangkyphong.Click += new System.EventHandler(this.BtnDangkyphong_Click);
+            this.btnNguoiDung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNguoiDung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNguoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNguoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNguoiDung.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNguoiDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.btnNguoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNguoiDung.ForeColor = System.Drawing.Color.White;
+            this.btnNguoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.btnNguoiDung.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_student_male_26;
+            this.btnNguoiDung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnNguoiDung.Location = new System.Drawing.Point(0, 193);
+            this.btnNguoiDung.Name = "btnNguoiDung";
+            this.btnNguoiDung.Size = new System.Drawing.Size(298, 37);
+            this.btnNguoiDung.TabIndex = 11;
+            this.btnNguoiDung.Text = "Quản lý người dùng";
+            this.btnNguoiDung.Click += new System.EventHandler(this.btnNguoiDung_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(215)))));
+            this.btnHome.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnHome.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_home_26__1_;
+            this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnHome.Location = new System.Drawing.Point(0, 0);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(298, 49);
+            this.btnHome.TabIndex = 13;
+            this.btnHome.Text = "Trang chủ";
+            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.btnHome);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 131);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(298, 48);
+            this.guna2Panel3.TabIndex = 11;
+            // 
+            // menuDK
+            // 
+            this.menuDK.Controls.Add(this.btnDSDangKy);
+            this.menuDK.Controls.Add(this.btnDKPhong);
+            this.menuDK.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuDK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuDK.Location = new System.Drawing.Point(0, 361);
+            this.menuDK.Name = "menuDK";
+            this.menuDK.Size = new System.Drawing.Size(298, 44);
+            this.menuDK.TabIndex = 25;
+            // 
+            // btnDSDangKy
+            // 
+            this.btnDSDangKy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDSDangKy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDSDangKy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDSDangKy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDSDangKy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDSDangKy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.btnDSDangKy.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnDSDangKy.ForeColor = System.Drawing.Color.White;
+            this.btnDSDangKy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.btnDSDangKy.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_stairs_up_27;
+            this.btnDSDangKy.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDSDangKy.Location = new System.Drawing.Point(0, 49);
+            this.btnDSDangKy.Name = "btnDSDangKy";
+            this.btnDSDangKy.Size = new System.Drawing.Size(298, 43);
+            this.btnDSDangKy.TabIndex = 8;
+            this.btnDSDangKy.Text = "Danh sách đăng ký ";
+            this.btnDSDangKy.Click += new System.EventHandler(this.btnDSDangKy_Click);
+            // 
+            // btnDKPhong
+            // 
+            this.btnDKPhong.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btnDKPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDKPhong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnDKPhong.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDKPhong.ForeColor = System.Drawing.Color.White;
+            this.btnDKPhong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnDKPhong.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnDKPhong.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnDKPhong.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_company_26;
+            this.btnDKPhong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDKPhong.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnDKPhong.Location = new System.Drawing.Point(0, 0);
+            this.btnDKPhong.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDKPhong.Name = "btnDKPhong";
+            this.btnDKPhong.Size = new System.Drawing.Size(298, 49);
+            this.btnDKPhong.TabIndex = 7;
+            this.btnDKPhong.Text = "Đăng ký phòng";
+            this.btnDKPhong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDKPhong.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnDKPhong.Click += new System.EventHandler(this.btnDKPhong_Click);
+            // 
+            // timeMenuDangKy
+            // 
+            this.timeMenuDangKy.Interval = 10;
+            this.timeMenuDangKy.Tick += new System.EventHandler(this.timeMenuDangKy_Tick);
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongKe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(215)))));
+            this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnThongKe.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_home_26__1_;
+            this.btnThongKe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnThongKe.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnThongKe.Location = new System.Drawing.Point(0, 405);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(298, 49);
+            this.btnThongKe.TabIndex = 26;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnThongKe.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // FrmMain
             // 
@@ -763,7 +807,6 @@
             this.menuCSVC.ResumeLayout(false);
             this.menuDV.ResumeLayout(false);
             this.menuNhanSu.ResumeLayout(false);
-            this.guna2Panel3.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -771,6 +814,8 @@
             this.panelMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
+            this.menuDK.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -787,8 +832,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Button btnHome;
         private System.Windows.Forms.Timer timeMenuNhanSu;
         private Guna.UI2.WinForms.Guna2Panel menuNhanSu;
         private Guna.UI2.WinForms.Guna2Button btnQuanLyNhanVien;
@@ -815,11 +858,14 @@
         private Guna.UI2.WinForms.Guna2Button btnDangXuat;
         private System.Windows.Forms.PictureBox picGuiMail;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2CircleButton btnToggleChatBot;
-        private ChatBotControl chatBotControl1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnQuanlynguoidung;
-        private System.Windows.Forms.Button btnDanhSachPhong;
-        private System.Windows.Forms.Button BtnDangkyphong;
+        private Guna.UI2.WinForms.Guna2Button btnNguoiDung;
+        private Guna.UI2.WinForms.Guna2Panel menuDK;
+        private Guna.UI2.WinForms.Guna2Button btnDSDangKy;
+        private Guna.UI2.WinForms.Guna2Button btnDKPhong;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Button btnHome;
+        private System.Windows.Forms.Timer timeMenuDangKy;
+        private Guna.UI2.WinForms.Guna2Button btnThongKe;
     }
 }

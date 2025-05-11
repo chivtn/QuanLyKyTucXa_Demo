@@ -53,7 +53,7 @@ namespace QuanLyKyTucXa_main
             if (menuNSExpand == false)
             {
                 menuNhanSu.Height += 10;
-                if (menuNhanSu.Height >= 155)
+                if (menuNhanSu.Height >= 199)
                 {
                     timeMenuNhanSu.Stop();
                     menuNSExpand = true;
@@ -62,7 +62,7 @@ namespace QuanLyKyTucXa_main
             else
             {
                 menuNhanSu.Height -= 10;
-                if (menuNhanSu.Height <= 49)
+                if (menuNhanSu.Height <= 45)
                 {
                     timeMenuNhanSu.Stop();
                     menuNSExpand = false;
@@ -88,6 +88,10 @@ namespace QuanLyKyTucXa_main
         private void btnQlSV_Click(object sender, EventArgs e)
         {
             openChildForm(new FrmQuanLySinhVien(), new Size(180, 26), new Point(325, 15));
+        }
+        private void btnNguoiDung_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmQuanLyNguoiDung(), new Size(192, 26), new Point(325, 15));
         }
 
 
@@ -209,7 +213,7 @@ namespace QuanLyKyTucXa_main
 
         private void btnToggleChatBot_Click(object sender, EventArgs e)
         {
-            chatBotControl1.Visible = !chatBotControl1.Visible;
+
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
@@ -224,17 +228,56 @@ namespace QuanLyKyTucXa_main
         // Phần này t tự thêm vào sửa lại nhé
         private void btnQuanlynguoidung_Click(object sender, EventArgs e)
         {
-            openChildForm(new FrmQuanLyNguoiDung(), new Size(192, 26), new Point(325, 15));
+            //openChildForm(new FrmQuanLyNguoiDung(), new Size(192, 26), new Point(325, 15));
         }
 
         private void btnDanhSachPhong_Click(object sender, EventArgs e)
         {
-            openChildForm(new DanhSachDangKy(), new Size(192, 26), new Point(325, 15));
+            //openChildForm(new DanhSachDangKy(), new Size(192, 26), new Point(325, 15));
         }
 
         private void BtnDangkyphong_Click(object sender, EventArgs e)
         {
+            //openChildForm(new FrmDangKyPhong(), new Size(192, 26), new Point(325, 15));
+        }
+
+
+        private void timeMenuDangKy_Tick(object sender, EventArgs e)
+        {
+            if (menuNSExpand == false)
+            {
+                menuDK.Height += 10;
+                if (menuDK.Height >= 142)
+                {
+                    timeMenuDangKy.Stop();
+                    menuNSExpand = true;
+                }
+            }
+            else
+            {
+                menuDK.Height -= 10;
+                if (menuDK.Height <= 41)
+                {
+                    timeMenuDangKy.Stop();
+                    menuNSExpand = false;
+                }
+            }
+        }
+
+        private void btnDKPhong_Click(object sender, EventArgs e)
+        {
+            timeMenuDangKy.Start();
             openChildForm(new FrmDangKyPhong(), new Size(192, 26), new Point(325, 15));
+        }
+
+        private void btnDSDangKy_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DanhSachDangKy(), new Size(192, 26), new Point(325, 15));
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmHome(), new Size(192, 26), new Point(325, 15));
         }
     }
 }
