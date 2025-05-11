@@ -92,20 +92,12 @@ CREATE TABLE TienNuoc (
 
 -- Bảng NhanVien
 CREATE TABLE NhanVien (
-    manv NCHAR(10) PRIMARY KEY,
-    tennv NVARCHAR(50),
-    gioitinh NVARCHAR(10),
-    ngaysinh DATE,
-    diachi NVARCHAR(50),
-    sodienthoai NCHAR(15),
-    luongcoban FLOAT,
-    hesoluong FLOAT,
-    phucap FLOAT,
-    khautru FLOAT,
-    songaycong NCHAR(10),
-    ngaythanhtoan DATE,
-    tongluong FLOAT,
-    trangthai NCHAR(50)
+    manv NCHAR(10) PRIMARY KEY not null,
+    tennv NVARCHAR(50) null,
+    gioitinh NVARCHAR(10) NULL,
+    ngaysinh DATE NULL,
+    diachi NVARCHAR(50) NULL,
+    sodienthoai NCHAR(15) NULL
 );
 
 -- Bảng LuongNhanVien
@@ -151,8 +143,11 @@ INSERT INTO Day VALUES
 -- Phòng
 INSERT INTO Phong VALUES
 (N'p101', N'Phòng 101', 4, 5, N'Thiếu', N'Nam', N'Thường', N'd1'),
-(N'p102', N'Phòng 102', 3, 3, N'Đủ', N'Nam', N'Vip', N'd1'),
-(N'p103', N'Phòng 103', 3, 5, N'Thiếu', N'Nữ', N'Thường', N'd2');
+(N'p102', N'Phòng 102', 5, 5, N'Đủ', N'Nam', N'Vip', N'd1'),
+(N'p103', N'Phòng 103', 3, 5, N'Thiếu', N'Nữ', N'Thường', N'd2'),
+(N'p104', N'Phòng 104', 1, 5, N'Thiếu', N'Nữ', N'Thường', N'd2'),
+(N'p105', N'Phòng 105', 1, 5, N'Thiếu', N'Nam', N'Thường', N'd2'),
+(N'p106', N'Phòng 106', 1, 5, N'Thiếu', N'Nam', N'Thường', N'd1');
 
 -- Sinh viên
 INSERT INTO SinhVien VALUES
@@ -215,16 +210,13 @@ INSERT INTO TienNuoc (maphong, ngaylap, chisocu, chisomoi, sokhoitieuthu, tongti
 -- Nhân viên
 INSERT INTO NhanVien (manv, tennv, gioitinh, ngaysinh, diachi, sodienthoai) VALUES
 (N'nv01', N'Phạm Hiếu', N'Nam', '2000-05-16', N'Hà Nội', N'091131213'),
-(N'nv02', N'Thái Long', N'Nam', '2001-05-18', N'Hải Phòng', N'09122134'),
-(N'nv03', N'Huyền Thanh', N'Nữ', '1999-09-01', N'Hà Nội', N'090000001'),
-(N'nv04', N'Lê Độ', N'Nam', '1998-08-08', N'Bình Định', N'090000002');
+(N'nv02', N'Thái Long', N'Nam', '2001-05-18', N'Hải Phòng', N'09122134');
 
 -- Lương nhân viên
 INSERT INTO LuongNhanVien (manv, tennv, thang, luongcoban, phucap, thuongphat) VALUES
 (N'nv01', N'Phạm Hiếu', N'05-2025' , 5000000,500000, 200000),
-(N'nv02', N'Thái Long', N'05-2025', 8000000,400000, 200000),
-(N'nv03', N'Huyền Thanh', N'05-2025', 7500000,450000, -100000),
-(N'nv04', N'Lê Độ', N'05-2025', 6000000,300000, -100000);
+(N'nv02', N'Thái Long', N'05-2025', 8000000,400000, 200000);
+
 
 -- Người dùng
 INSERT INTO NguoiDung (tendangnhap, matkhau) VALUES
@@ -235,5 +227,4 @@ INSERT INTO NguoiDung (tendangnhap, matkhau) VALUES
 INSERT INTO KyLuat (masv, kyluat, ngaykyluat, tienphat) VALUES
 (N'sv01', N'Dập cầu dao ký túc xá', '2021-06-01', 100000),
 (N'sv02', N'Đánh nhau', '2021-05-31', 50000);
-
 
