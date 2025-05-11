@@ -56,11 +56,12 @@ CREATE TABLE SinhVienDangKy (
 
 -- Bảng ThietBi
 CREATE TABLE ThietBi (
-    maphong NCHAR(10),
-    tenthietbi NVARCHAR(50),
-    soluong INT,
-    tinhtrang NVARCHAR(50),
-    CONSTRAINT FK_ThietBi_Phong FOREIGN KEY (maphong) REFERENCES Phong(maphong)
+    MaThietBi INT PRIMARY KEY IDENTITY(1,1),
+    Maphong NCHAR(10) NOT NULL,
+    TenThietBi NVARCHAR(100) NOT NULL,
+    SoLuong INT NOT NULL,
+    TinhTrang NVARCHAR(100),
+    CONSTRAINT FK_ThietBi_Phong FOREIGN KEY (Maphong) REFERENCES Phong(maphong)
 );
 
 -- Bảng TienDien
@@ -91,12 +92,20 @@ CREATE TABLE TienNuoc (
 
 -- Bảng NhanVien
 CREATE TABLE NhanVien (
-    manv NCHAR(10) PRIMARY KEY not null,
-    tennv NVARCHAR(50) null,
-    gioitinh NVARCHAR(10) NULL,
-    ngaysinh DATE NULL,
-    diachi NVARCHAR(50) NULL,
-    sodienthoai NCHAR(15) NULL
+    manv NCHAR(10) PRIMARY KEY,
+    tennv NVARCHAR(50),
+    gioitinh NVARCHAR(10),
+    ngaysinh DATE,
+    diachi NVARCHAR(50),
+    sodienthoai NCHAR(15),
+    luongcoban FLOAT,
+    hesoluong FLOAT,
+    phucap FLOAT,
+    khautru FLOAT,
+    songaycong NCHAR(10),
+    ngaythanhtoan DATE,
+    tongluong FLOAT,
+    trangthai NCHAR(50)
 );
 
 -- Bảng LuongNhanVien
@@ -136,29 +145,26 @@ CREATE TABLE KyLuat (
 
 -- Dãy
 INSERT INTO Day VALUES
-(N'd1', N'Dãy 1', N'Thái Long', N'Đang hoạt động'),
-(N'd2', N'Dãy 2', N'Thái Long', N'Đang hoạt động');
+(N'd1', N'Dãy 1', N'Thái Long', N'Bình thường'),
+(N'd2', N'Dãy 2', N'Thái Long', N'Bình thường');
 
 -- Phòng
 INSERT INTO Phong VALUES
 (N'p101', N'Phòng 101', 4, 5, N'Thiếu', N'Nam', N'Thường', N'd1'),
-(N'p102', N'Phòng 102', 5, 5, N'Đủ', N'Nam', N'Vip', N'd1'),
-(N'p103', N'Phòng 103', 3, 5, N'Thiếu', N'Nữ', N'Thường', N'd2'),
-(N'p104', N'Phòng 104', 1, 5, N'Thiếu', N'Nữ', N'Thường', N'd2'),
-(N'p105', N'Phòng 105', 1, 5, N'Thiếu', N'Nam', N'Thường', N'd2'),
-(N'p106', N'Phòng 106', 1, 5, N'Thiếu', N'Nam', N'Thường', N'd1');
+(N'p102', N'Phòng 102', 3, 3, N'Đủ', N'Nam', N'Vip', N'd1'),
+(N'p103', N'Phòng 103', 3, 5, N'Thiếu', N'Nữ', N'Thường', N'd2');
 
 -- Sinh viên
 INSERT INTO SinhVien VALUES
-(N'sv01', N'Nguyễn Hùng', N'Nam', CAST(N'2021-05-26' AS Date), N'Hà Nội', 'hung@gmail.com' ,N'K21', N'CNTT1', N'Bình thường',N'p101'),
-(N'sv02', N'Chung An', N'Nam', CAST(N'2000-05-26' AS Date), N'Hải Phòng', 'hung@gmail.com' ,N'K22', N'CNTT2', N'Bình thường',N'p101'),
-(N'sv03', N'Trung Anh', N'Nam', CAST(N'2000-07-03' AS Date), N'Nam Định', 'hung@gmail.com' ,N'K22', N'CNTT3', N'Gia đình thương binh liệt sĩ', N'p102'),
-(N'sv04', N'Khánh Ly', N'Nữ', CAST(N'2000-03-14' AS Date), N'Bình Thuận','hung@gmail.com' ,N'K23', N'CNTT4', N'Bình thường', N'p103'),
-(N'sv05', N'Thu Lăng', N'Nữ', CAST(N'2000-03-15' AS Date), N'Bình Dương', 'hung@gmail.com' ,N'K23', N'CNTT5', N'Bình thường', N'p103'),
-(N'sv06', N'Exodia', N'Nữ', CAST(N'2001-02-14' AS Date), N'Mexico', 'hung@gmail.com' ,N'K24', N'CNTT6', N'Du học sinh', N'p103'),
-(N'sv08', N'Phúc Bồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Tây Nguyên', 'hung@gmail.com' ,N'K24', N'KHMT1', N'Bình thường', N'p101'),
-(N'sv09', N'Minh Quân', N'Nam', CAST(N'2000-06-02' AS Date), N'Hạ Long', 'hung@gmail.com' ,N'K24', N'CNTT1', N'Bình thường',  N'p101'),
-(N'sv10', N'Lam Hồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Cao Bằng','hung@gmail.com', N'K24',  N'KHMT2', N'Du học sinh', N'p102');
+(N'sv01', N'Nguyễn Hùng', N'Nam', CAST(N'2021-05-26' AS Date), N'Hà Nội', 'hung@gmail.com' ,N'K13', N'CNTT1', N'Bình thường',N'p101'),
+(N'sv02', N'Chung An', N'Nam', CAST(N'2000-05-26' AS Date), N'Hải Phòng', 'hung@gmail.com' ,N'K11', N'CNTT2', N'Bình thường',N'p101'),
+(N'sv03', N'Trung Anh', N'Nam', CAST(N'2000-07-03' AS Date), N'Nam Định', 'hung@gmail.com' ,N'K12', N'CNTT3', N'Gia đình thương binh liệt sĩ', N'p102'),
+(N'sv04', N'Khánh Ly', N'Nữ', CAST(N'2000-03-14' AS Date), N'Bình Thuận','hung@gmail.com' ,N'K13', N'CNTT4', N'Bình thường', N'p103'),
+(N'sv05', N'Thu Lăng', N'Nữ', CAST(N'2000-03-15' AS Date), N'Bình Dương', 'hung@gmail.com' ,N'K13', N'CNTT5', N'Bình thường', N'p103'),
+(N'sv06', N'Exodia', N'Nữ', CAST(N'2001-02-14' AS Date), N'Mexico', 'hung@gmail.com' ,N'K13', N'CNTT6', N'Du học sinh', N'p103'),
+(N'sv08', N'Phúc Bồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Tây Nguyên', 'hung@gmail.com' ,N'K11', N'KHMT1', N'Bình thường', N'p101'),
+(N'sv09', N'Minh Quân', N'Nam', CAST(N'2000-06-02' AS Date), N'Hạ Long', 'hung@gmail.com' ,N'K10', N'CNTT1', N'Bình thường',  N'p101'),
+(N'sv10', N'Lam Hồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Cao Bằng','hung@gmail.com', N'K11',  N'KHMT2', N'Du học sinh', N'p102');
 
 
 -- Sinh viên đăng ký
@@ -184,9 +190,16 @@ INSERT INTO SinhVienDangKy VALUES
 (N'sv29', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K24', N'CNTT4', N'Bình thường');
 
 -- Thiết bị
-INSERT INTO ThietBi VALUES
-(N'p101', N'Giường', 5, N'Bình thường'),
-(N'p101', N'Quạt trần', 2, N'Bình thường');
+INSERT INTO ThietBi (Maphong, TenThietBi, SoLuong, TinhTrang) VALUES 
+('p101', N'Máy giặt', 1, N'Cũ'),
+('p101', N'Máy giặt', 1, N'Mới'),
+('p101', N'Quạt đứng', 2, N'Bình thường'),
+
+('p102', N'Máy lạnh', 1, N'Hoạt động tốt'),
+('p102', N'Bàn học', 3, N'Mới'),
+
+('p103', N'Tủ quần áo', 2, N'Đã sơn lại'),
+('p103', N'Quạt trần', 1, N'Hỏng nhẹ');
 
 -- Tiền điện
 INSERT INTO TienDien (maphong, ngaylap, chisocu, chisomoi, sodientieuthu, tongtien, trangthai) VALUES 
@@ -202,13 +215,16 @@ INSERT INTO TienNuoc (maphong, ngaylap, chisocu, chisomoi, sokhoitieuthu, tongti
 -- Nhân viên
 INSERT INTO NhanVien (manv, tennv, gioitinh, ngaysinh, diachi, sodienthoai) VALUES
 (N'nv01', N'Phạm Hiếu', N'Nam', '2000-05-16', N'Hà Nội', N'091131213'),
-(N'nv02', N'Thái Long', N'Nam', '2001-05-18', N'Hải Phòng', N'09122134');
+(N'nv02', N'Thái Long', N'Nam', '2001-05-18', N'Hải Phòng', N'09122134'),
+(N'nv03', N'Huyền Thanh', N'Nữ', '1999-09-01', N'Hà Nội', N'090000001'),
+(N'nv04', N'Lê Độ', N'Nam', '1998-08-08', N'Bình Định', N'090000002');
 
 -- Lương nhân viên
 INSERT INTO LuongNhanVien (manv, tennv, thang, luongcoban, phucap, thuongphat) VALUES
 (N'nv01', N'Phạm Hiếu', N'05-2025' , 5000000,500000, 200000),
-(N'nv02', N'Thái Long', N'05-2025', 8000000,400000, 200000);
-
+(N'nv02', N'Thái Long', N'05-2025', 8000000,400000, 200000),
+(N'nv03', N'Huyền Thanh', N'05-2025', 7500000,450000, -100000),
+(N'nv04', N'Lê Độ', N'05-2025', 6000000,300000, -100000);
 
 -- Người dùng
 INSERT INTO NguoiDung (tendangnhap, matkhau) VALUES
@@ -221,4 +237,3 @@ INSERT INTO KyLuat (masv, kyluat, ngaykyluat, tienphat) VALUES
 (N'sv02', N'Đánh nhau', '2021-05-31', 50000);
 
 
-select * from TienDien
