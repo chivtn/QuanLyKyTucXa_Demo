@@ -318,6 +318,9 @@
     <EmbeddedResource Include="QuanLyDay.resx">
       <DependentUpon>QuanLyDay.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="DejaVuSans.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

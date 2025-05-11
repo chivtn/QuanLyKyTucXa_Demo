@@ -351,7 +351,7 @@ namespace QuanLyKyTucXa_main
             PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
 
             // Load font DejaVu hỗ trợ tiếng Việt
-            string fontPath = Path.Combine(Application.StartupPath, @"Fonts\DejaVuSans.ttf");
+            string fontPath = Path.Combine(Application.StartupPath, @"DejaVuSans.ttf");
             BaseFont bf = BaseFont.CreateFont(fontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
             iTextSharp.text.Font font = new iTextSharp.text.Font(bf, 12, iTextSharp.text.Font.NORMAL);
 
