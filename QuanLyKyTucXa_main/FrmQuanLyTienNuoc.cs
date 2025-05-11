@@ -213,7 +213,7 @@ namespace QuanLyKyTucXa_main
                 }
 
                 int mahoadon = int.Parse(txtMahoadon.Text);
-                int chisocu = bll.GetChiSoCu(cbMaphong.Text);
+                int chisocu = int.Parse(dgvTiennuoc.SelectedRows[0].Cells["chisocu"].Value.ToString());
 
                 if (chisomoi <= chisocu)
                 {
