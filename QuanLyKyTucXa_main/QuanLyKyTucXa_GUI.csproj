@@ -541,5 +541,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-contacts-941.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-open-door-70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-computer-support-70.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

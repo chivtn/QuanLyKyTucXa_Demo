@@ -20,15 +20,17 @@ namespace QuanLyKyTucXa_main
         }
         ThongKeTienDien_BL thongkedBL = new ThongKeTienDien_BL();
         ThongKeLuongNuoc_BL thongkenBL = new ThongKeLuongNuoc_BL();
-        //ThongKeSL_BL thongKeHeThongBL = new ThongKeSL_BL();
+        ThongKe_BL thongKeHeThongBL = new ThongKe_BL();
 
         private void FrmHome_Load(object sender, EventArgs e)
         {
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "yyyy";
 
-            //    lblSLsinhvien.Text = thongKeHeThongBL.LayTongSinhVien().ToString();
-            //    lblSLphong.Text = thongKeHeThongBL.LayTongPhong().ToString();
+            var thongKe = thongKeHeThongBL.LayThongKe();
+            lblSLsinhvien.Text = thongKe.SoLuongSinhVien.ToString();
+            lblSLphong.Text = thongKe.SoLuongPhong.ToString();
+            lblSLThietB.Text = thongKe.SoLuongThietBi.ToString();
 
         }
 

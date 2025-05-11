@@ -53,6 +53,7 @@
     <Compile Include="SinhVienDangKy.cs" />
     <Compile Include="ThietBi.cs" />
     <Compile Include="ThongKeLuongNuoc.cs" />
+    <Compile Include="ThongKeSL.cs" />
     <Compile Include="ThongKeTienDien.cs" />
     <Compile Include="TienDien.cs" />
     <Compile Include="TienNuoc.cs" />

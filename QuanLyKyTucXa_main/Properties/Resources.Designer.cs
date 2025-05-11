@@ -183,6 +183,16 @@ namespace QuanLyKyTucXa_main.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_computer_support_70 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-computer-support-70", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_contacts_94 {
             get {
                 object obj = ResourceManager.GetObject("icons8-contacts-94", resourceCulture);
@@ -413,6 +423,16 @@ namespace QuanLyKyTucXa_main.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_open_door_70 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-open-door-70", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_pay_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-pay-100", resourceCulture);
@@ -546,6 +566,16 @@ namespace QuanLyKyTucXa_main.Properties {
         internal static System.Drawing.Bitmap icons8_stairs_up_27 {
             get {
                 object obj = ResourceManager.GetObject("icons8-stairs-up-27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_student_70 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-student-70", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

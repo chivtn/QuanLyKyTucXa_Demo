@@ -59,6 +59,7 @@
     <Compile Include="ThongBaoGmail_BL.cs" />
     <Compile Include="ThongKeLuongNuoc_BL.cs" />
     <Compile Include="ThongKeTienDien_BL.cs" />
+    <Compile Include="ThongKe_BL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuanLy_DAL\QuanLy_DAL.csproj">
