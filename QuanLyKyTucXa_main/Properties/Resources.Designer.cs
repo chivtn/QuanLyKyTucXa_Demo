@@ -163,6 +163,16 @@ namespace QuanLyKyTucXa_main.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_circle_chart_36 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-circle-chart-36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_close_100__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-close-100 (1)", resourceCulture);
@@ -586,6 +596,16 @@ namespace QuanLyKyTucXa_main.Properties {
         internal static System.Drawing.Bitmap icons8_student_male_26 {
             get {
                 object obj = ResourceManager.GetObject("icons8-student-male-26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_student_male_261 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-student-male-261", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

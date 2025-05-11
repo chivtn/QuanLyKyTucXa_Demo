@@ -53,7 +53,7 @@ namespace QuanLyKyTucXa_main
             if (menuNSExpand == false)
             {
                 menuNhanSu.Height += 10;
-                if (menuNhanSu.Height >= 199)
+                if (menuNhanSu.Height >= 155)
                 {
                     timeMenuNhanSu.Stop();
                     menuNSExpand = true;
@@ -105,8 +105,7 @@ namespace QuanLyKyTucXa_main
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            //LoadUserControl(homeControl);
-            openChildForm(new FrmHome(), new Size(192, 26), new Point(325, 15));
+            openChildForm(new FrmQuanLySinhVien(), new Size(180, 26), new Point(325, 15));
 
         }
 

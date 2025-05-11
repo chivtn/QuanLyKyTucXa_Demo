@@ -551,7 +551,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.rbTktheoma = new System.Windows.Forms.RadioButton();
             this.rbTkTheoMaphong = new System.Windows.Forms.RadioButton();
@@ -591,30 +590,14 @@
             this.lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maphong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaiuutien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnCapnhat = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLammoi = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnXoas = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.guna2CustomGradientPanel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoa.FlatAppearance.BorderSize = 0;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnXoa.Location = new System.Drawing.Point(165, 10);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            this.btnXoa.Size = new System.Drawing.Size(94, 77);
-            this.btnXoa.TabIndex = 36;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label11
             // 
@@ -935,6 +918,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.txtEmail);
             this.panel2.Controls.Add(this.txtTensv);
             this.panel2.Controls.Add(this.label10);
@@ -970,14 +954,15 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvSinhVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvSinhVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.dgvSinhVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvSinhVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSinhVien.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvSinhVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvSinhVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvSinhVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(105)))), ((int)(((byte)(148)))));
@@ -1095,38 +1080,63 @@
             this.loaiuutien.MinimumWidth = 6;
             this.loaiuutien.Name = "loaiuutien";
             // 
-            // btnCapnhat
+            // btnLammoi
             // 
-            this.btnCapnhat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCapnhat.FlatAppearance.BorderSize = 0;
-            this.btnCapnhat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapnhat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCapnhat.Location = new System.Drawing.Point(17, 10);
-            this.btnCapnhat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCapnhat.Name = "btnCapnhat";
-            this.btnCapnhat.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            this.btnCapnhat.Size = new System.Drawing.Size(96, 77);
-            this.btnCapnhat.TabIndex = 37;
-            this.btnCapnhat.Text = "Cập nhật";
-            this.btnCapnhat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCapnhat.UseVisualStyleBackColor = true;
-            this.btnCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
+            this.btnLammoi.BackColor = System.Drawing.Color.White;
+            this.btnLammoi.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_synchronize_100__1_;
+            this.btnLammoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLammoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLammoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLammoi.FillColor = System.Drawing.Color.Transparent;
+            this.btnLammoi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLammoi.ForeColor = System.Drawing.Color.White;
+            this.btnLammoi.Location = new System.Drawing.Point(51, 8);
+            this.btnLammoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLammoi.Name = "btnLammoi";
+            this.btnLammoi.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnLammoi.Size = new System.Drawing.Size(84, 73);
+            this.btnLammoi.TabIndex = 58;
+            this.btnLammoi.Click += new System.EventHandler(this.btnLammoi_Click);
             // 
-            // panel1
+            // btnXoas
             // 
-            this.panel1.Controls.Add(this.btnCapnhat);
-            this.panel1.Controls.Add(this.btnXoa);
-            this.panel1.Location = new System.Drawing.Point(743, 305);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(289, 102);
-            this.panel1.TabIndex = 57;
+            this.btnXoas.BackColor = System.Drawing.Color.White;
+            this.btnXoas.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_trash_can_100;
+            this.btnXoas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnXoas.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoas.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoas.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoas.FillColor = System.Drawing.Color.Transparent;
+            this.btnXoas.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXoas.ForeColor = System.Drawing.Color.White;
+            this.btnXoas.Location = new System.Drawing.Point(183, 10);
+            this.btnXoas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoas.Name = "btnXoas";
+            this.btnXoas.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnXoas.Size = new System.Drawing.Size(84, 73);
+            this.btnXoas.TabIndex = 59;
+            this.btnXoas.Click += new System.EventHandler(this.btnXoas_Click);
+            // 
+            // guna2CustomGradientPanel4
+            // 
+            this.guna2CustomGradientPanel4.BorderRadius = 30;
+            this.guna2CustomGradientPanel4.Controls.Add(this.btnXoas);
+            this.guna2CustomGradientPanel4.Controls.Add(this.btnLammoi);
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(608, 305);
+            this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(424, 92);
+            this.guna2CustomGradientPanel4.TabIndex = 77;
             // 
             // FrmQuanLySinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(1445, 901);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.guna2CustomGradientPanel4);
             this.Controls.Add(this.dgvSinhVien);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
@@ -1138,9 +1148,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
-            //>>>>>>> c9bca57 (fix loi giang)
+
         }
 
         //<<<<<<< HEAD
@@ -1189,7 +1199,6 @@
         //}
         //=======
         #endregion
-        private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RadioButton rbTktheoma;
         private System.Windows.Forms.RadioButton rbTkTheoMaphong;
@@ -1229,8 +1238,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn lop;
         private System.Windows.Forms.DataGridViewTextBoxColumn maphong;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiuutien;
-        private System.Windows.Forms.Button btnCapnhat;
-        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnLammoi;
+        private Guna.UI2.WinForms.Guna2CircleButton btnXoas;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
     }
 }
 //>>>>>>> c9bca57 (fix loi giang)

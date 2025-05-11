@@ -33,66 +33,65 @@
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel_Top = new Guna.UI2.WinForms.Guna2Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.picGuiMail = new System.Windows.Forms.PictureBox();
             this.guna2HtmlLabel45 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
-            this.btnKyLuat = new Guna.UI2.WinForms.Guna2Button();
+            this.menuDK = new Guna.UI2.WinForms.Guna2Panel();
             this.menuCSVC = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnThietBi = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDay = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQlCSVC = new Guna.UI2.WinForms.Guna2Button();
             this.menuDV = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnTienNuoc = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTienDien = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQLDichVu = new Guna.UI2.WinForms.Guna2Button();
             this.menuNhanSu = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnQlSV = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLuongNV = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQlNhanSu = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.timeMenuNhanSu = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.timeMenuDichVu = new System.Windows.Forms.Timer(this.components);
             this.timeMenuCSVC = new System.Windows.Forms.Timer(this.components);
-            this.btnNguoiDung = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.menuDK = new Guna.UI2.WinForms.Guna2Panel();
+            this.timeMenuDangKy = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picGuiMail = new System.Windows.Forms.PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
             this.btnDSDangKy = new Guna.UI2.WinForms.Guna2Button();
             this.btnDKPhong = new Guna.UI2.WinForms.Guna2Button();
-            this.timeMenuDangKy = new System.Windows.Forms.Timer(this.components);
-            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnKyLuat = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThietBi = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPhong = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDay = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQlCSVC = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTienNuoc = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTienDien = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQLDichVu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNguoiDung = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLuongNV = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQuanLyNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQlNhanSu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSinhVien = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel_Top.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGuiMail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            this.menuDK.SuspendLayout();
             this.menuCSVC.SuspendLayout();
             this.menuDV.SuspendLayout();
             this.menuNhanSu.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            this.menuDK.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGuiMail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ControlBox3
@@ -131,27 +130,6 @@
             this.guna2Panel_Top.Size = new System.Drawing.Size(1165, 57);
             this.guna2Panel_Top.TabIndex = 7;
             this.guna2Panel_Top.UseTransparentBackground = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_chat_bubble_50;
-            this.pictureBox2.Location = new System.Drawing.Point(714, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(72, 47);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // picGuiMail
-            // 
-            this.picGuiMail.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_gmail_logo_30;
-            this.picGuiMail.Location = new System.Drawing.Point(792, 5);
-            this.picGuiMail.Name = "picGuiMail";
-            this.picGuiMail.Size = new System.Drawing.Size(43, 45);
-            this.picGuiMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picGuiMail.TabIndex = 0;
-            this.picGuiMail.TabStop = false;
-            this.picGuiMail.Click += new System.EventHandler(this.picGuiMail_Click);
             // 
             // guna2HtmlLabel45
             // 
@@ -200,19 +178,6 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(55, 38);
             this.guna2ControlBox1.TabIndex = 0;
             // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.guna2PictureBox3.FillColor = System.Drawing.Color.DimGray;
-            this.guna2PictureBox3.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_male_user_30;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(841, 5);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(38, 45);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 8;
-            this.guna2PictureBox3.TabStop = false;
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.AutoScroll = true;
@@ -231,6 +196,251 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(298, 948);
             this.guna2Panel1.TabIndex = 6;
+            // 
+            // menuDK
+            // 
+            this.menuDK.Controls.Add(this.btnDSDangKy);
+            this.menuDK.Controls.Add(this.btnDKPhong);
+            this.menuDK.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuDK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuDK.Location = new System.Drawing.Point(0, 377);
+            this.menuDK.Name = "menuDK";
+            this.menuDK.Size = new System.Drawing.Size(298, 44);
+            this.menuDK.TabIndex = 25;
+            // 
+            // menuCSVC
+            // 
+            this.menuCSVC.Controls.Add(this.btnThietBi);
+            this.menuCSVC.Controls.Add(this.btnPhong);
+            this.menuCSVC.Controls.Add(this.btnDay);
+            this.menuCSVC.Controls.Add(this.btnQlCSVC);
+            this.menuCSVC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuCSVC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuCSVC.Location = new System.Drawing.Point(0, 279);
+            this.menuCSVC.Name = "menuCSVC";
+            this.menuCSVC.Size = new System.Drawing.Size(298, 46);
+            this.menuCSVC.TabIndex = 22;
+            // 
+            // menuDV
+            // 
+            this.menuDV.Controls.Add(this.btnTienNuoc);
+            this.menuDV.Controls.Add(this.btnTienDien);
+            this.menuDV.Controls.Add(this.btnQLDichVu);
+            this.menuDV.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuDV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuDV.Location = new System.Drawing.Point(0, 231);
+            this.menuDV.Name = "menuDV";
+            this.menuDV.Size = new System.Drawing.Size(298, 48);
+            this.menuDV.TabIndex = 21;
+            // 
+            // menuNhanSu
+            // 
+            this.menuNhanSu.Controls.Add(this.btnNguoiDung);
+            this.menuNhanSu.Controls.Add(this.btnLuongNV);
+            this.menuNhanSu.Controls.Add(this.btnQuanLyNhanVien);
+            this.menuNhanSu.Controls.Add(this.btnQlNhanSu);
+            this.menuNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuNhanSu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.menuNhanSu.Location = new System.Drawing.Point(0, 181);
+            this.menuNhanSu.Name = "menuNhanSu";
+            this.menuNhanSu.Size = new System.Drawing.Size(298, 50);
+            this.menuNhanSu.TabIndex = 20;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.btnSinhVien);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 131);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(298, 50);
+            this.guna2Panel3.TabIndex = 11;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.panel3.Controls.Add(this.guna2PictureBox2);
+            this.panel3.Controls.Add(this.guna2PictureBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(298, 131);
+            this.panel3.TabIndex = 10;
+            // 
+            // timeMenuNhanSu
+            // 
+            this.timeMenuNhanSu.Interval = 10;
+            this.timeMenuNhanSu.Tick += new System.EventHandler(this.timeMenuNhanSu_Tick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panelMain);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(298, 57);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1165, 891);
+            this.panel1.TabIndex = 8;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Controls.Add(this.pictureBox1);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 67);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 0, 4, 4);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1165, 824);
+            this.panelMain.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.panel2.Controls.Add(this.lblTitle);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.ForeColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1165, 67);
+            this.panel2.TabIndex = 0;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(551, 18);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(107, 32);
+            this.lblTitle.TabIndex = 1;
+            this.lblTitle.Text = "HOME                        ";
+            // 
+            // timeMenuDichVu
+            // 
+            this.timeMenuDichVu.Interval = 10;
+            this.timeMenuDichVu.Tick += new System.EventHandler(this.timeMenuDichVu_Tick);
+            // 
+            // timeMenuCSVC
+            // 
+            this.timeMenuCSVC.Interval = 10;
+            this.timeMenuCSVC.Tick += new System.EventHandler(this.timeMenuCSVC_Tick);
+            // 
+            // timeMenuDangKy
+            // 
+            this.timeMenuDangKy.Interval = 10;
+            this.timeMenuDangKy.Tick += new System.EventHandler(this.timeMenuDangKy_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::QuanLyKyTucXa_main.Properties.Resources.large_image_956df3bc70;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1165, 824);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 59;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_chat_bubble_50;
+            this.pictureBox2.Location = new System.Drawing.Point(714, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(72, 47);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // picGuiMail
+            // 
+            this.picGuiMail.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_gmail_logo_30;
+            this.picGuiMail.Location = new System.Drawing.Point(792, 5);
+            this.picGuiMail.Name = "picGuiMail";
+            this.picGuiMail.Size = new System.Drawing.Size(43, 45);
+            this.picGuiMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picGuiMail.TabIndex = 0;
+            this.picGuiMail.TabStop = false;
+            this.picGuiMail.Click += new System.EventHandler(this.picGuiMail_Click);
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.guna2PictureBox3.FillColor = System.Drawing.Color.DimGray;
+            this.guna2PictureBox3.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_male_user_30;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(841, 5);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(38, 45);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 8;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongKe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(215)))));
+            this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnThongKe.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_circle_chart_36;
+            this.btnThongKe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnThongKe.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnThongKe.Location = new System.Drawing.Point(0, 421);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(298, 48);
+            this.btnThongKe.TabIndex = 26;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnThongKe.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            // 
+            // btnDSDangKy
+            // 
+            this.btnDSDangKy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDSDangKy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDSDangKy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDSDangKy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDSDangKy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDSDangKy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.btnDSDangKy.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnDSDangKy.ForeColor = System.Drawing.Color.White;
+            this.btnDSDangKy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.btnDSDangKy.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_stairs_up_27;
+            this.btnDSDangKy.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDSDangKy.Location = new System.Drawing.Point(0, 49);
+            this.btnDSDangKy.Name = "btnDSDangKy";
+            this.btnDSDangKy.Size = new System.Drawing.Size(298, 43);
+            this.btnDSDangKy.TabIndex = 8;
+            this.btnDSDangKy.Text = "Danh sách đăng ký ";
+            this.btnDSDangKy.Click += new System.EventHandler(this.btnDSDangKy_Click);
+            // 
+            // btnDKPhong
+            // 
+            this.btnDKPhong.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btnDKPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDKPhong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnDKPhong.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDKPhong.ForeColor = System.Drawing.Color.White;
+            this.btnDKPhong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnDKPhong.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnDKPhong.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnDKPhong.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_company_26;
+            this.btnDKPhong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDKPhong.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnDKPhong.Location = new System.Drawing.Point(0, 0);
+            this.btnDKPhong.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDKPhong.Name = "btnDKPhong";
+            this.btnDKPhong.Size = new System.Drawing.Size(298, 49);
+            this.btnDKPhong.TabIndex = 7;
+            this.btnDKPhong.Text = "Đăng ký phòng";
+            this.btnDKPhong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDKPhong.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnDKPhong.Click += new System.EventHandler(this.btnDKPhong_Click);
             // 
             // btnDangXuat
             // 
@@ -267,28 +477,15 @@
             this.btnKyLuat.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_learning_26;
             this.btnKyLuat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKyLuat.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnKyLuat.Location = new System.Drawing.Point(0, 317);
+            this.btnKyLuat.Location = new System.Drawing.Point(0, 325);
             this.btnKyLuat.Margin = new System.Windows.Forms.Padding(4);
             this.btnKyLuat.Name = "btnKyLuat";
-            this.btnKyLuat.Size = new System.Drawing.Size(298, 44);
+            this.btnKyLuat.Size = new System.Drawing.Size(298, 52);
             this.btnKyLuat.TabIndex = 23;
             this.btnKyLuat.Text = "Quản lý kỷ luật";
             this.btnKyLuat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKyLuat.TextOffset = new System.Drawing.Point(8, 0);
             this.btnKyLuat.Click += new System.EventHandler(this.btnKyLuat_Click);
-            // 
-            // menuCSVC
-            // 
-            this.menuCSVC.Controls.Add(this.btnThietBi);
-            this.menuCSVC.Controls.Add(this.btnPhong);
-            this.menuCSVC.Controls.Add(this.btnDay);
-            this.menuCSVC.Controls.Add(this.btnQlCSVC);
-            this.menuCSVC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuCSVC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.menuCSVC.Location = new System.Drawing.Point(0, 273);
-            this.menuCSVC.Name = "menuCSVC";
-            this.menuCSVC.Size = new System.Drawing.Size(298, 44);
-            this.menuCSVC.TabIndex = 22;
             // 
             // btnThietBi
             // 
@@ -373,18 +570,6 @@
             this.btnQlCSVC.TextOffset = new System.Drawing.Point(8, 0);
             this.btnQlCSVC.Click += new System.EventHandler(this.btnQlCSVC_Click);
             // 
-            // menuDV
-            // 
-            this.menuDV.Controls.Add(this.btnTienNuoc);
-            this.menuDV.Controls.Add(this.btnTienDien);
-            this.menuDV.Controls.Add(this.btnQLDichVu);
-            this.menuDV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuDV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.menuDV.Location = new System.Drawing.Point(0, 229);
-            this.menuDV.Name = "menuDV";
-            this.menuDV.Size = new System.Drawing.Size(298, 44);
-            this.menuDV.TabIndex = 21;
-            // 
             // btnTienNuoc
             // 
             this.btnTienNuoc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -448,39 +633,25 @@
             this.btnQLDichVu.TextOffset = new System.Drawing.Point(8, 0);
             this.btnQLDichVu.Click += new System.EventHandler(this.btnQLDichVu_Click);
             // 
-            // menuNhanSu
+            // btnNguoiDung
             // 
-            this.menuNhanSu.Controls.Add(this.btnNguoiDung);
-            this.menuNhanSu.Controls.Add(this.btnQlSV);
-            this.menuNhanSu.Controls.Add(this.btnLuongNV);
-            this.menuNhanSu.Controls.Add(this.btnQuanLyNhanVien);
-            this.menuNhanSu.Controls.Add(this.btnQlNhanSu);
-            this.menuNhanSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuNhanSu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.menuNhanSu.Location = new System.Drawing.Point(0, 179);
-            this.menuNhanSu.Name = "menuNhanSu";
-            this.menuNhanSu.Size = new System.Drawing.Size(298, 50);
-            this.menuNhanSu.TabIndex = 20;
-            // 
-            // btnQlSV
-            // 
-            this.btnQlSV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnQlSV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnQlSV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnQlSV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnQlSV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQlSV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.btnQlSV.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQlSV.ForeColor = System.Drawing.Color.White;
-            this.btnQlSV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.btnQlSV.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_student_male_26;
-            this.btnQlSV.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnQlSV.Location = new System.Drawing.Point(0, 151);
-            this.btnQlSV.Name = "btnQlSV";
-            this.btnQlSV.Size = new System.Drawing.Size(298, 42);
-            this.btnQlSV.TabIndex = 10;
-            this.btnQlSV.Text = "Quản lý sinh viên";
-            this.btnQlSV.Click += new System.EventHandler(this.btnQlSV_Click);
+            this.btnNguoiDung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNguoiDung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNguoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNguoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNguoiDung.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNguoiDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.btnNguoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNguoiDung.ForeColor = System.Drawing.Color.White;
+            this.btnNguoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.btnNguoiDung.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_student_male_26;
+            this.btnNguoiDung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnNguoiDung.Location = new System.Drawing.Point(0, 151);
+            this.btnNguoiDung.Name = "btnNguoiDung";
+            this.btnNguoiDung.Size = new System.Drawing.Size(298, 37);
+            this.btnNguoiDung.TabIndex = 11;
+            this.btnNguoiDung.Text = "Quản lý người dùng";
+            this.btnNguoiDung.Click += new System.EventHandler(this.btnNguoiDung_Click);
             // 
             // btnLuongNV
             // 
@@ -545,16 +716,28 @@
             this.btnQlNhanSu.TextOffset = new System.Drawing.Point(8, 0);
             this.btnQlNhanSu.Click += new System.EventHandler(this.guna2Button21_Click);
             // 
-            // panel3
+            // btnSinhVien
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.panel3.Controls.Add(this.guna2PictureBox2);
-            this.panel3.Controls.Add(this.guna2PictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(298, 131);
-            this.panel3.TabIndex = 10;
+            this.btnSinhVien.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.btnSinhVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSinhVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnSinhVien.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSinhVien.ForeColor = System.Drawing.Color.White;
+            this.btnSinhVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(215)))));
+            this.btnSinhVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
+            this.btnSinhVien.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSinhVien.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_student_male_261;
+            this.btnSinhVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSinhVien.ImageOffset = new System.Drawing.Point(8, 0);
+            this.btnSinhVien.Location = new System.Drawing.Point(0, 0);
+            this.btnSinhVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSinhVien.Name = "btnSinhVien";
+            this.btnSinhVien.Size = new System.Drawing.Size(298, 49);
+            this.btnSinhVien.TabIndex = 13;
+            this.btnSinhVien.Text = "Quản lý sinh viên";
+            this.btnSinhVien.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSinhVien.TextOffset = new System.Drawing.Point(8, 0);
+            this.btnSinhVien.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // guna2PictureBox2
             // 
@@ -582,210 +765,6 @@
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // timeMenuNhanSu
-            // 
-            this.timeMenuNhanSu.Interval = 10;
-            this.timeMenuNhanSu.Tick += new System.EventHandler(this.timeMenuNhanSu_Tick);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panelMain);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(298, 57);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1165, 891);
-            this.panel1.TabIndex = 8;
-            // 
-            // panelMain
-            // 
-            this.panelMain.Controls.Add(this.pictureBox1);
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 67);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1165, 824);
-            this.panelMain.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::QuanLyKyTucXa_main.Properties.Resources.large_image_956df3bc70;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1165, 824);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 59;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.panel2.Controls.Add(this.lblTitle);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1165, 67);
-            this.panel2.TabIndex = 0;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(551, 18);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(107, 32);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "HOME                        ";
-            // 
-            // timeMenuDichVu
-            // 
-            this.timeMenuDichVu.Interval = 10;
-            this.timeMenuDichVu.Tick += new System.EventHandler(this.timeMenuDichVu_Tick);
-            // 
-            // timeMenuCSVC
-            // 
-            this.timeMenuCSVC.Interval = 10;
-            this.timeMenuCSVC.Tick += new System.EventHandler(this.timeMenuCSVC_Tick);
-            // 
-            // btnNguoiDung
-            // 
-            this.btnNguoiDung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNguoiDung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNguoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNguoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNguoiDung.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNguoiDung.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.btnNguoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNguoiDung.ForeColor = System.Drawing.Color.White;
-            this.btnNguoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.btnNguoiDung.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_student_male_26;
-            this.btnNguoiDung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnNguoiDung.Location = new System.Drawing.Point(0, 193);
-            this.btnNguoiDung.Name = "btnNguoiDung";
-            this.btnNguoiDung.Size = new System.Drawing.Size(298, 37);
-            this.btnNguoiDung.TabIndex = 11;
-            this.btnNguoiDung.Text = "Quản lý người dùng";
-            this.btnNguoiDung.Click += new System.EventHandler(this.btnNguoiDung_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(215)))));
-            this.btnHome.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.btnHome.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_home_26__1_;
-            this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnHome.Location = new System.Drawing.Point(0, 0);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(298, 49);
-            this.btnHome.TabIndex = 13;
-            this.btnHome.Text = "Trang chủ";
-            this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnHome.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.btnHome);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 131);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(298, 48);
-            this.guna2Panel3.TabIndex = 11;
-            // 
-            // menuDK
-            // 
-            this.menuDK.Controls.Add(this.btnDSDangKy);
-            this.menuDK.Controls.Add(this.btnDKPhong);
-            this.menuDK.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuDK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.menuDK.Location = new System.Drawing.Point(0, 361);
-            this.menuDK.Name = "menuDK";
-            this.menuDK.Size = new System.Drawing.Size(298, 44);
-            this.menuDK.TabIndex = 25;
-            // 
-            // btnDSDangKy
-            // 
-            this.btnDSDangKy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDSDangKy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDSDangKy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDSDangKy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDSDangKy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDSDangKy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.btnDSDangKy.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.btnDSDangKy.ForeColor = System.Drawing.Color.White;
-            this.btnDSDangKy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.btnDSDangKy.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_stairs_up_27;
-            this.btnDSDangKy.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDSDangKy.Location = new System.Drawing.Point(0, 49);
-            this.btnDSDangKy.Name = "btnDSDangKy";
-            this.btnDSDangKy.Size = new System.Drawing.Size(298, 43);
-            this.btnDSDangKy.TabIndex = 8;
-            this.btnDSDangKy.Text = "Danh sách đăng ký ";
-            this.btnDSDangKy.Click += new System.EventHandler(this.btnDSDangKy_Click);
-            // 
-            // btnDKPhong
-            // 
-            this.btnDKPhong.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.btnDKPhong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDKPhong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.btnDKPhong.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDKPhong.ForeColor = System.Drawing.Color.White;
-            this.btnDKPhong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnDKPhong.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.btnDKPhong.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnDKPhong.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_company_26;
-            this.btnDKPhong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDKPhong.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnDKPhong.Location = new System.Drawing.Point(0, 0);
-            this.btnDKPhong.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDKPhong.Name = "btnDKPhong";
-            this.btnDKPhong.Size = new System.Drawing.Size(298, 49);
-            this.btnDKPhong.TabIndex = 7;
-            this.btnDKPhong.Text = "Đăng ký phòng";
-            this.btnDKPhong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDKPhong.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnDKPhong.Click += new System.EventHandler(this.btnDKPhong_Click);
-            // 
-            // timeMenuDangKy
-            // 
-            this.timeMenuDangKy.Interval = 10;
-            this.timeMenuDangKy.Tick += new System.EventHandler(this.timeMenuDangKy_Tick);
-            // 
-            // btnThongKe
-            // 
-            this.btnThongKe.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongKe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.ForeColor = System.Drawing.Color.White;
-            this.btnThongKe.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(220)))), ((int)(((byte)(215)))));
-            this.btnThongKe.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(107)))), ((int)(((byte)(149)))));
-            this.btnThongKe.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnThongKe.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_home_26__1_;
-            this.btnThongKe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThongKe.ImageOffset = new System.Drawing.Point(8, 0);
-            this.btnThongKe.Location = new System.Drawing.Point(0, 405);
-            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(298, 49);
-            this.btnThongKe.TabIndex = 26;
-            this.btnThongKe.Text = "Thống kê";
-            this.btnThongKe.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThongKe.TextOffset = new System.Drawing.Point(8, 0);
-            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -800,22 +779,22 @@
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.guna2Panel_Top.ResumeLayout(false);
             this.guna2Panel_Top.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGuiMail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            this.menuDK.ResumeLayout(false);
             this.menuCSVC.ResumeLayout(false);
             this.menuDV.ResumeLayout(false);
             this.menuNhanSu.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panelMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.guna2Panel3.ResumeLayout(false);
-            this.menuDK.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGuiMail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -841,7 +820,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblTitle;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel45;
-        private Guna.UI2.WinForms.Guna2Button btnQlSV;
         private Guna.UI2.WinForms.Guna2Button btnLuongNV;
         private Guna.UI2.WinForms.Guna2Panel menuCSVC;
         private Guna.UI2.WinForms.Guna2Button btnThietBi;
@@ -864,7 +842,7 @@
         private Guna.UI2.WinForms.Guna2Button btnDSDangKy;
         private Guna.UI2.WinForms.Guna2Button btnDKPhong;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Button btnHome;
+        private Guna.UI2.WinForms.Guna2Button btnSinhVien;
         private System.Windows.Forms.Timer timeMenuDangKy;
         private Guna.UI2.WinForms.Guna2Button btnThongKe;
     }
