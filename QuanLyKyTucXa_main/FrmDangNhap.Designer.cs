@@ -37,8 +37,8 @@
             this.txtTaikhoan = new System.Windows.Forms.TextBox();
             this.GBtnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1.SuspendLayout();
@@ -83,6 +83,7 @@
             this.GcbShowpassword.UncheckedState.BorderRadius = 0;
             this.GcbShowpassword.UncheckedState.BorderThickness = 0;
             this.GcbShowpassword.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.GcbShowpassword.CheckedChanged += new System.EventHandler(this.GcbShowpassword_CheckedChanged);
             // 
             // guna2Button1
             // 
@@ -160,6 +161,17 @@
             this.guna2Panel1.Size = new System.Drawing.Size(379, 424);
             this.guna2Panel1.TabIndex = 12;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(10)))), ((int)(((byte)(143)))));
+            this.pictureBox1.Image = global::QuanLyKyTucXa_main.Properties.Resources.user;
+            this.pictureBox1.Location = new System.Drawing.Point(91, 52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(177, 135);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.AutoSize = false;
@@ -171,17 +183,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(434, 47);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Hệ Thống Quản Lý Ký Túc Xá";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(10)))), ((int)(((byte)(143)))));
-            this.pictureBox1.Image = global::QuanLyKyTucXa_main.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(91, 52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 135);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 

@@ -18,7 +18,7 @@ namespace QuanLy_BLL
             thanhToanLuongNhanVien_DL = new ThanhToanLuongNhanVien_DL();
         }
 
-        public List<NhanVien> LayDanhSachNhanVien()
+        public List<NhanVien2B> LayDanhSachNhanVien()
         {
             try
             {
@@ -75,6 +75,18 @@ namespace QuanLy_BLL
                 thanhToanLuongNhanVien_DL.XoaLuongNhanVien(maHoaDon);
             }
             catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public List<LuongNhanVien> TimKiemLuongNhanVien(string keyword, bool timTheoMa)
+        {
+            try
+            {
+                return thanhToanLuongNhanVien_DL.TimKiemLuongNhanVien(keyword, timTheoMa);
+            }
+            catch (SqlException ex)
             {
                 throw ex;
             }

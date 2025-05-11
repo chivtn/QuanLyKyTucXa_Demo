@@ -11,11 +11,12 @@ namespace QuanLy_DAL
 {
     public class ThanhToanLuongNhanVien_DL : DataProvider
     {
-        public List<NhanVien> LayDanhSachNhanVien()
+
+        public List<NhanVien2B> LayDanhSachNhanVien()
         {
             string manv, tennv;
-            List<NhanVien> nhanViens = new List<NhanVien>();
-            string sql = "SELECT manv, tennv FROM NhanVien";
+            List<NhanVien2B> nhanVien2Bs = new List<NhanVien2B>();
+            string sql = "SELECT * FROM NhanVien";
             try
             {
                 Connect();
@@ -25,11 +26,11 @@ namespace QuanLy_DAL
                     manv = reader[0].ToString();
                     tennv = reader[1].ToString();
 
-                    NhanVien nhanVien = new NhanVien(manv, tennv, "", "", "", "");
-                    nhanViens.Add(nhanVien);
+                    NhanVien2B nhanVien2B = new NhanVien2B(manv, tennv);
+                    nhanVien2Bs.Add(nhanVien2B);
                 }
                 reader.Close();
-                return nhanViens;
+                return nhanVien2Bs;
             }
             catch (SqlException ex)
             {
@@ -152,6 +153,50 @@ namespace QuanLy_DAL
                 SqlCommand cmd = new SqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@maluong", maLuong);
                 cmd.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                DisConnect();
+            }
+        }
+
+        public List<LuongNhanVien> TimKiemLuongNhanVien(string keyword, bool timTheoMa)
+        {
+            List<LuongNhanVien> luongNhanViens = new List<LuongNhanVien>();
+            string sql;
+            if (timTheoMa)
+                sql = "SELECT * FROM LuongNhanVien WHERE manv LIKE @keyword";
+            else
+                sql = "SELECT * FROM LuongNhanVien WHERE thang LIKE @keyword";
+
+            try
+            {
+                Connect();
+                SqlCommand cmd = new SqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    LuongNhanVien lnv = new LuongNhanVien(
+                        reader["maluong"].ToString(),
+                        reader["manv"].ToString(),
+                        reader["tennv"].ToString(),
+                        reader["thang"].ToString(),
+                        reader["luongcoban"].ToString(),
+                        reader["phucap"].ToString(),
+                        reader["thuongphat"].ToString(),
+                        reader["ngaythanhtoan"].ToString(),
+                        reader["tongluong"].ToString()
+                    );
+                    luongNhanViens.Add(lnv);
+                }
+                reader.Close();
+                return luongNhanViens;
             }
             catch (SqlException ex)
             {

@@ -46,6 +46,7 @@
     <Compile Include="LuongNhanVien.cs" />
     <Compile Include="NguoiDung.cs" />
     <Compile Include="NhanVien.cs" />
+    <Compile Include="NhanVien2B.cs" />
     <Compile Include="Phong.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyNguoiDung.cs" />

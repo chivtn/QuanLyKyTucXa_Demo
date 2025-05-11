@@ -19,14 +19,54 @@ namespace QuanLyKyTucXa_main
         {
             InitializeComponent();
             thanhToanLuongNhanVien_BL = new ThanhToanLuongNhanVien_BL();
+
         }
 
+        private void FrmThanhToanLuongNhanVien_Load_1(object sender, EventArgs e)
+        {
+            dgvLuongnhanvien.DataSource = thanhToanLuongNhanVien_BL.LayDanhSachLuongNhanVien();
+            
+
+            dtpThang.Value = DateTime.Now;
+            dtpNgaythanhtoan.Value = DateTime.Now;
+
+            LoadPhuCapCombobox();
+            LoadLuongCoBanCombobox();
+
+        }
+
+        private void LoadPhuCapCombobox()
+        {
+            cbPhucap.Items.Clear();
+            cbPhucap.Items.Add("100000");
+            cbPhucap.Items.Add("200000");
+            cbPhucap.Items.Add("300000");
+            cbPhucap.Items.Add("400000");
+            cbPhucap.Items.Add("500000");
+        }
+
+        private void LoadLuongCoBanCombobox()
+        {
+            cbLuongcoban.Items.Clear();
+            cbLuongcoban.Items.Add("5000000");
+            cbLuongcoban.Items.Add("6000000");
+            cbLuongcoban.Items.Add("7000000");
+            cbLuongcoban.Items.Add("8000000");
+            cbLuongcoban.Items.Add("9000000");
+            cbLuongcoban.Items.Add("10000000");
+        }
+
+        public void SetNhanVien(string manv, string tennv)
+        {
+            txtManv.Text = manv;
+            txtTennv.Text = tennv;
+        }
         private void GBtnTinhluong_Click(object sender, EventArgs e)
         {
             try
             {
-                decimal luongCoBan = decimal.Parse(txtLuongcoban.Text);
-                decimal phuCap = decimal.Parse(txtPhucap.Text);
+                decimal luongCoBan = decimal.Parse(cbLuongcoban.Text);
+                decimal phuCap = decimal.Parse(cbPhucap.Text);
                 decimal thuongPhat = decimal.Parse(txtThuongphat.Text);
                 decimal tongLuong = luongCoBan + phuCap + thuongPhat;
 
@@ -37,8 +77,8 @@ namespace QuanLyKyTucXa_main
                     txtManv.Text,
                     txtTennv.Text,
                     dtpThang.Value.ToString("MM-yyyy"), // Định dạng tháng
-                    txtLuongcoban.Text,
-                    txtPhucap.Text,
+                    cbLuongcoban.Text,
+                    cbPhucap.Text,
                     txtThuongphat.Text,
                     dtpNgaythanhtoan.Value.ToString("yyyy-MM-dd"), // Ngày thanh toán
                     tongLuong.ToString()
@@ -63,8 +103,8 @@ namespace QuanLyKyTucXa_main
                     txtManv.Text,
                     txtTennv.Text,
                     dtpThang.Value.ToString("yyyy-MM-dd"),
-                    txtLuongcoban.Text,
-                    txtPhucap.Text,
+                    cbLuongcoban.Text,
+                    cbPhucap.Text,
                     txtThuongphat.Text,
                     dtpNgaythanhtoan.Value.ToString("yyyy-MM-dd"),
                     txtTongluong.Text
@@ -101,24 +141,7 @@ namespace QuanLyKyTucXa_main
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
-        }
-
-
-        private void dgvNhanvien_CellClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dgvNhanvien.Rows[e.RowIndex];
-                txtManv.Text = row.Cells["maNhanVien"].Value.ToString();
-                txtTennv.Text = row.Cells["tenNhanVien"].Value.ToString();
-            }
-        }
-
-        private void FrmThanhToanLuongNhanVien_Load_1(object sender, EventArgs e)
-        {
-            dgvLuongnhanvien.DataSource = thanhToanLuongNhanVien_BL.LayDanhSachLuongNhanVien();
-            dgvNhanvien.DataSource = thanhToanLuongNhanVien_BL.LayDanhSachNhanVien();
-        }
+        }     
 
         private void dgvLuongnhanvien_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
@@ -129,25 +152,57 @@ namespace QuanLyKyTucXa_main
                 txtManv.Text = row.Cells["manv"].Value.ToString();
                 txtTennv.Text = row.Cells["tennv"].Value.ToString();
                 dtpThang.Value = DateTime.ParseExact(row.Cells["thang"].Value.ToString(), "MM-yyyy", null);
-                txtLuongcoban.Text = row.Cells["luongcoban"].Value.ToString();
-                txtPhucap.Text = row.Cells["phucap"].Value.ToString();
+                cbLuongcoban.Text = row.Cells["luongcoban"].Value.ToString();
+                cbPhucap.Text = row.Cells["phucap"].Value.ToString();
                 txtThuongphat.Text = row.Cells["thuongphat"].Value.ToString();
                 dtpNgaythanhtoan.Value = DateTime.Parse(row.Cells["ngaythanhtoan"].Value.ToString());
                 txtTongluong.Text = row.Cells["tongluong"].Value.ToString();
             }
         }
 
-        private void dgvNhanvien_CellClick_2(object sender, DataGridViewCellEventArgs e)
+        private void GBtnLamsach_Click(object sender, EventArgs e)
         {
-            if (e.RowIndex >= 0)
+            txtMaluong.Text = "";
+            txtManv.Text = "";
+            cbPhucap.Text = "";
+            txtTennv.Text = "";
+            cbLuongcoban.Text = "";
+            txtTongluong.Text = "";
+            txtThuongphat.Text = "";
+        }
+
+        private void GBtnChonnhanvien_Click(object sender, EventArgs e)
+        {
+            DanhSachNhanVien dsNhanVien = new DanhSachNhanVien(this);
+            dsNhanVien.ShowDialog();
+        }
+
+        private void GBtnTimkiem_Click(object sender, EventArgs e)
+        {
+            try
             {
-                DataGridViewRow row = dgvNhanvien.Rows[e.RowIndex];
-                //txtManv.Text = row.Cells["manv"].Value.ToString();
-                //txtTennv.Text = row.Cells["tennv"].Value.ToString();
+                string keyword = txtTimkiem.Text.Trim();
+                bool timTheoMa = rbTktheoma.Checked;
 
-                txtManv.Text = row.Cells[0].Value?.ToString() ?? "";
-                txtTennv.Text = row.Cells[1].Value?.ToString() ?? "";
+                if (string.IsNullOrEmpty(keyword))
+                {
+                    // Nếu ô tìm kiếm trống, load lại toàn bộ danh sách
+                    dgvLuongnhanvien.DataSource = thanhToanLuongNhanVien_BL.LayDanhSachLuongNhanVien();
+                    return;
+                }
 
+                // Gọi BLL để tìm kiếm
+                List<LuongNhanVien> ketQua = thanhToanLuongNhanVien_BL.TimKiemLuongNhanVien(keyword, timTheoMa);
+
+                // Hiển thị kết quả lên DataGridView
+                dgvLuongnhanvien.DataSource = ketQua;
+
+                if (ketQua.Count == 0)
+                    MessageBox.Show("Không tìm thấy nhân viên phù hợp!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
     }

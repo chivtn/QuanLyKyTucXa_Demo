@@ -62,5 +62,10 @@ namespace QuanLyKyTucXa_main
         {
             this.Close();
         }
+
+        private void GcbShowpassword_CheckedChanged(object sender, EventArgs e)
+        {
+            txtMatkhau.PasswordChar = GcbShowpassword.Checked ? '\0' : '*';
+        }
     }  
 }
