@@ -137,8 +137,8 @@ CREATE TABLE KyLuat (
 
 -- Dãy
 INSERT INTO Day VALUES
-(N'd1', N'Dãy 1', N'Thái Long', N'Bình thường'),
-(N'd2', N'Dãy 2', N'Thái Long', N'Bình thường');
+(N'd1', N'Dãy 1', N'Thái Long', N'Đang hoạt động'),
+(N'd2', N'Dãy 2', N'Thái Long', N'Đang hoạt động');
 
 -- Phòng
 INSERT INTO Phong VALUES
@@ -151,15 +151,15 @@ INSERT INTO Phong VALUES
 
 -- Sinh viên
 INSERT INTO SinhVien VALUES
-(N'sv01', N'Nguyễn Hùng', N'Nam', CAST(N'2021-05-26' AS Date), N'Hà Nội', 'hung@gmail.com' ,N'K13', N'CNTT1', N'Bình thường',N'p101'),
-(N'sv02', N'Chung An', N'Nam', CAST(N'2000-05-26' AS Date), N'Hải Phòng', 'hung@gmail.com' ,N'K11', N'CNTT2', N'Bình thường',N'p101'),
-(N'sv03', N'Trung Anh', N'Nam', CAST(N'2000-07-03' AS Date), N'Nam Định', 'hung@gmail.com' ,N'K12', N'CNTT3', N'Gia đình thương binh liệt sĩ', N'p102'),
-(N'sv04', N'Khánh Ly', N'Nữ', CAST(N'2000-03-14' AS Date), N'Bình Thuận','hung@gmail.com' ,N'K13', N'CNTT4', N'Bình thường', N'p103'),
-(N'sv05', N'Thu Lăng', N'Nữ', CAST(N'2000-03-15' AS Date), N'Bình Dương', 'hung@gmail.com' ,N'K13', N'CNTT5', N'Bình thường', N'p103'),
-(N'sv06', N'Exodia', N'Nữ', CAST(N'2001-02-14' AS Date), N'Mexico', 'hung@gmail.com' ,N'K13', N'CNTT6', N'Du học sinh', N'p103'),
-(N'sv08', N'Phúc Bồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Tây Nguyên', 'hung@gmail.com' ,N'K11', N'KHMT1', N'Bình thường', N'p101'),
-(N'sv09', N'Minh Quân', N'Nam', CAST(N'2000-06-02' AS Date), N'Hạ Long', 'hung@gmail.com' ,N'K10', N'CNTT1', N'Bình thường',  N'p101'),
-(N'sv10', N'Lam Hồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Cao Bằng','hung@gmail.com', N'K11',  N'KHMT2', N'Du học sinh', N'p102');
+(N'sv01', N'Nguyễn Hùng', N'Nam', CAST(N'2021-05-26' AS Date), N'Hà Nội', 'hung@gmail.com' ,N'K21', N'CNTT1', N'Bình thường',N'p101'),
+(N'sv02', N'Chung An', N'Nam', CAST(N'2000-05-26' AS Date), N'Hải Phòng', 'hung@gmail.com' ,N'K21', N'CNTT2', N'Bình thường',N'p101'),
+(N'sv03', N'Trung Anh', N'Nam', CAST(N'2000-07-03' AS Date), N'Nam Định', 'hung@gmail.com' ,N'K21', N'CNTT3', N'Gia đình thương binh liệt sĩ', N'p102'),
+(N'sv04', N'Khánh Ly', N'Nữ', CAST(N'2000-03-14' AS Date), N'Bình Thuận','hung@gmail.com' ,N'K21', N'CNTT4', N'Bình thường', N'p103'),
+(N'sv05', N'Thu Lăng', N'Nữ', CAST(N'2000-03-15' AS Date), N'Bình Dương', 'hung@gmail.com' ,N'K21', N'CNTT5', N'Bình thường', N'p103'),
+(N'sv06', N'Exodia', N'Nữ', CAST(N'2001-02-14' AS Date), N'Mexico', 'hung@gmail.com' ,N'K21', N'CNTT6', N'Du học sinh', N'p103'),
+(N'sv08', N'Phúc Bồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Tây Nguyên', 'hung@gmail.com' ,N'K21', N'KHMT1', N'Bình thường', N'p101'),
+(N'sv09', N'Minh Quân', N'Nam', CAST(N'2000-06-02' AS Date), N'Hạ Long', 'hung@gmail.com' ,N'K21', N'CNTT1', N'Bình thường',  N'p101'),
+(N'sv10', N'Lam Hồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Cao Bằng','hung@gmail.com', N'K21',  N'KHMT2', N'Du học sinh', N'p102');
 
 
 -- Sinh viên đăng ký
@@ -227,4 +227,3 @@ INSERT INTO NguoiDung (tendangnhap, matkhau) VALUES
 INSERT INTO KyLuat (masv, kyluat, ngaykyluat, tienphat) VALUES
 (N'sv01', N'Dập cầu dao ký túc xá', '2021-06-01', 100000),
 (N'sv02', N'Đánh nhau', '2021-05-31', 50000);
-
