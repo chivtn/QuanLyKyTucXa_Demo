@@ -81,24 +81,6 @@
     <Compile Include="DanhSachNhanVien.Designer.cs">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBaoCaoNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmBaoCaoNhanVien.Designer.cs">
-      <DependentUpon>FrmBaoCaoNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmBaoCaoSinhVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmBaoCaoSinhVien.Designer.cs">
-      <DependentUpon>FrmBaoCaoSinhVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmBaoCaoTienDien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmBaoCaoTienDien.Designer.cs">
-      <DependentUpon>FrmBaoCaoTienDien.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,15 +219,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhSachNhanVien.resx">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmBaoCaoNhanVien.resx">
-      <DependentUpon>FrmBaoCaoNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmBaoCaoSinhVien.resx">
-      <DependentUpon>FrmBaoCaoSinhVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmBaoCaoTienDien.resx">
-      <DependentUpon>FrmBaoCaoTienDien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
