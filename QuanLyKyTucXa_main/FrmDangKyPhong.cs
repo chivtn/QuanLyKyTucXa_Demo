@@ -41,11 +41,11 @@ namespace QuanLyKyTucXa_main
 
         private void LoadKhoaCombobox()
         {
-            cbLoaiuutien.Items.Clear();
-            cbLoaiuutien.Items.Add("K21");
-            cbLoaiuutien.Items.Add("K22");
-            cbLoaiuutien.Items.Add("K23");
-            cbLoaiuutien.Items.Add("K24");
+            cbKhoa.Items.Clear();
+            cbKhoa.Items.Add("K21");
+            cbKhoa.Items.Add("K22");
+            cbKhoa.Items.Add("K23");
+            cbKhoa.Items.Add("K24");
         }
 
         // Phương thức xóa form
