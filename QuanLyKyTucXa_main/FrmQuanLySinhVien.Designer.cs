@@ -590,9 +590,11 @@
             this.lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maphong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaiuutien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnLammoi = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnXoas = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnExcel = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnXoas = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnLammoi = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2CircleButton();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
@@ -752,7 +754,7 @@
             this.groupBox1.Controls.Add(this.rbTktheoten);
             this.groupBox1.Controls.Add(this.btnTimkiem);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(1096, 13);
+            this.groupBox1.Location = new System.Drawing.Point(1086, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -957,6 +959,7 @@
             this.dgvSinhVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvSinhVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSinhVien.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvSinhVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvSinhVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvSinhVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -1079,25 +1082,37 @@
             this.loaiuutien.MinimumWidth = 6;
             this.loaiuutien.Name = "loaiuutien";
             // 
-            // btnLammoi
+            // guna2CustomGradientPanel4
             // 
-            this.btnLammoi.BackColor = System.Drawing.Color.White;
-            this.btnLammoi.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_synchronize_100__1_;
-            this.btnLammoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnLammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLammoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLammoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLammoi.FillColor = System.Drawing.Color.Transparent;
-            this.btnLammoi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLammoi.ForeColor = System.Drawing.Color.White;
-            this.btnLammoi.Location = new System.Drawing.Point(51, 8);
-            this.btnLammoi.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLammoi.Name = "btnLammoi";
-            this.btnLammoi.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnLammoi.Size = new System.Drawing.Size(84, 73);
-            this.btnLammoi.TabIndex = 58;
-            this.btnLammoi.Click += new System.EventHandler(this.btnLammoi_Click);
+            this.guna2CustomGradientPanel4.BorderRadius = 30;
+            this.guna2CustomGradientPanel4.Controls.Add(this.btnAdd);
+            this.guna2CustomGradientPanel4.Controls.Add(this.btnExcel);
+            this.guna2CustomGradientPanel4.Controls.Add(this.btnXoas);
+            this.guna2CustomGradientPanel4.Controls.Add(this.btnLammoi);
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(492, 305);
+            this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(540, 92);
+            this.guna2CustomGradientPanel4.TabIndex = 77;
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.BackColor = System.Drawing.Color.White;
+            this.btnExcel.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_google_sheets_60;
+            this.btnExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExcel.FillColor = System.Drawing.Color.Transparent;
+            this.btnExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExcel.ForeColor = System.Drawing.Color.White;
+            this.btnExcel.Location = new System.Drawing.Point(426, 18);
+            this.btnExcel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnExcel.Size = new System.Drawing.Size(71, 63);
+            this.btnExcel.TabIndex = 60;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // btnXoas
             // 
@@ -1111,7 +1126,7 @@
             this.btnXoas.FillColor = System.Drawing.Color.Transparent;
             this.btnXoas.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXoas.ForeColor = System.Drawing.Color.White;
-            this.btnXoas.Location = new System.Drawing.Point(183, 10);
+            this.btnXoas.Location = new System.Drawing.Point(313, 8);
             this.btnXoas.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoas.Name = "btnXoas";
             this.btnXoas.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -1119,15 +1134,45 @@
             this.btnXoas.TabIndex = 59;
             this.btnXoas.Click += new System.EventHandler(this.btnXoas_Click);
             // 
-            // guna2CustomGradientPanel4
+            // btnLammoi
             // 
-            this.guna2CustomGradientPanel4.BorderRadius = 30;
-            this.guna2CustomGradientPanel4.Controls.Add(this.btnXoas);
-            this.guna2CustomGradientPanel4.Controls.Add(this.btnLammoi);
-            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(608, 305);
-            this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
-            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(424, 92);
-            this.guna2CustomGradientPanel4.TabIndex = 77;
+            this.btnLammoi.BackColor = System.Drawing.Color.White;
+            this.btnLammoi.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_synchronize_100__1_;
+            this.btnLammoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLammoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLammoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLammoi.FillColor = System.Drawing.Color.Transparent;
+            this.btnLammoi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLammoi.ForeColor = System.Drawing.Color.White;
+            this.btnLammoi.Location = new System.Drawing.Point(190, 8);
+            this.btnLammoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLammoi.Name = "btnLammoi";
+            this.btnLammoi.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnLammoi.Size = new System.Drawing.Size(84, 73);
+            this.btnLammoi.TabIndex = 58;
+            this.btnLammoi.Click += new System.EventHandler(this.btnLammoi_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_plus_100__1_2;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdd.FillColor = System.Drawing.Color.Transparent;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(56, 8);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnAdd.Size = new System.Drawing.Size(84, 73);
+            this.btnAdd.TabIndex = 61;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // FrmQuanLySinhVien
             // 
@@ -1240,6 +1285,8 @@
         private Guna.UI2.WinForms.Guna2CircleButton btnLammoi;
         private Guna.UI2.WinForms.Guna2CircleButton btnXoas;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
+        private Guna.UI2.WinForms.Guna2CircleButton btnExcel;
+        private Guna.UI2.WinForms.Guna2CircleButton btnAdd;
     }
 }
 //>>>>>>> c9bca57 (fix loi giang)

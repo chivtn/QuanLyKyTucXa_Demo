@@ -29,52 +29,14 @@ namespace QuanLyKyTucXa_main
             cbMaphong.DataSource = mpBL.GetMaPhong();
             cbMaphong.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-        
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-
-            try
-            {
-                // Kiểm tra dữ liệu nhập
-                if (string.IsNullOrEmpty(txtMasv.Text))
-                    throw new Exception("Mã SV không được trống");
-                if (string.IsNullOrEmpty(txtTensv.Text))
-                    throw new Exception("Tên SV không được trống");
-                // Thêm các điều kiện kiểm tra khác...
-
-                // Tạo đối tượng nhân viên
-                SinhVien sv = new SinhVien(
-                    txtMasv.Text,
-                    txtTensv.Text,
-                    cbGioitinh.Text,
-                    dtpNgaysinh.Value.ToString("yyyy-MM-dd"),
-                    txtQuequan.Text,
-                    txtEmail.Text,
-                    cbKhoa.Text,
-                    txtLop.Text,
-                    cbLoaiuutien.Text,
-                    cbMaphong.Text
-                );
-              
-
-                // Gọi BLL để thêm
-                bool result = quanLySinhVien_BLL.ThemSinhVien(sv);
-
-                if (result)
-                {
-                    MessageBox.Show("Thêm thành công!");
-                    // Cập nhật lại DataGridView
-                    dgvSinhVien.DataSource = quanLySinhVien_BLL.LayDanhSachSinhVien();
-
-                    // Xóa trắng các ô nhập
-                    ClearControls();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
 
         }
         // Phương thức xóa trắng control
@@ -230,6 +192,54 @@ namespace QuanLyKyTucXa_main
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            // Khởi tạo Excel
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+
+            // Lấy Sheet đầu tiên
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.Sheets[1];
+            worksheet = workbook.ActiveSheet;
+            app.Visible = true;
+
+            // Ghi tiêu đề cột từ DataGridView
+            for (int i = 0; i < dgvSinhVien.Columns.Count; i++)
+            {
+                worksheet.Cells[1, i + 1] = dgvSinhVien.Columns[i].HeaderText;
+            }
+
+            // Ghi dữ liệu từ DataGridView
+            int rowExcel = 2; // bắt đầu từ dòng 2 vì dòng 1 là tiêu đề
+            foreach (DataGridViewRow row in dgvSinhVien.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                for (int col = 0; col < dgvSinhVien.Columns.Count; col++)
+                {
+                    object value = row.Cells[col].Value;
+                    worksheet.Cells[rowExcel, col + 1] = value?.ToString() ?? "";
+                }
+
+                rowExcel++;
+            }
+
+            // Định dạng: in đậm, màu đỏ, căn giữa dòng tiêu đề
+            string endColumn = ((char)('A' + dgvSinhVien.Columns.Count - 1)).ToString(); // Ví dụ: G
+            worksheet.Range[$"A1", $"{endColumn}1"].Font.Bold = true;
+            worksheet.Range[$"A1", $"{endColumn}1"].Font.ColorIndex = 3;
+            worksheet.Range[$"A1", $"{endColumn}1"].HorizontalAlignment = 3;
+
+            // Font toàn bảng và viền
+            worksheet.Range[$"A1", $"{endColumn}{rowExcel - 1}"].Font.Name = "Times New Roman";
+            worksheet.Range[$"A1", $"{endColumn}{rowExcel - 1}"].Borders.LineStyle = 1;
+
+            // Tự động điều chỉnh độ rộng cột
+            worksheet.Columns.AutoFit();
+        }
+
+       
     }
 }
 

@@ -15,9 +15,9 @@ namespace QuanLy_DAL
 
         public DataProvider()
         {
-            // Link của chi, mn đổi cái khác nha
-            //string cnStr = "Data Source=DESKTOP-8862V4F\\LEGIANG2;Initial Catalog=QuanLyKyTucXa;Integrated Security=True;TrustServerCertificate=True";
-            string cnStr = "Data Source=DESKTOP-AA20CEC\\LITTLETEETH;Initial Catalog=QuanLyKyTucXa;Integrated Security=True";
+            //Link của chi, mn đổi cái khác nha
+            string cnStr = "Data Source=DESKTOP-8862V4F\\LEGIANG2;Initial Catalog=QuanLyKyTucXa;Integrated Security=True;TrustServerCertificate=True";
+            //string cnStr = "Data Source=DESKTOP-AA20CEC\\LITTLETEETH;Initial Catalog=QuanLyKyTucXa;Integrated Security=True";
 
             //string cnStr = "Data Source=LAPTOP-MAMQ0DB1\\LION;Initial Catalog=QuanLyKyTucXa;Integrated Security=True";
             //string cnStr = "Data Source=DESKTOP-8862V4F\\LEGIANG2;Initial Catalog=QuanLyKyTucXa;Integrated Security=True;Trust Server Certificate=True";

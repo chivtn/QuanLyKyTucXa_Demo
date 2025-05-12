@@ -113,6 +113,16 @@ namespace QuanLyKyTucXa_main.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bunk_bed_261 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bunk-bed-261", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cancel_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cancel-40", resourceCulture);
@@ -316,6 +326,16 @@ namespace QuanLyKyTucXa_main.Properties {
         internal static System.Drawing.Bitmap icons8_gmail_logo_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-gmail-logo-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_google_sheets_60 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-google-sheets-60", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

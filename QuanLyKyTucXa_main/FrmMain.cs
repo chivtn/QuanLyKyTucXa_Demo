@@ -109,11 +109,7 @@ namespace QuanLyKyTucXa_main
             //LoadUserControl(homeControl);
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FrmQuanLySinhVien(), new Size(180, 26), new Point(325, 15));
-
-        }
+        
 
         private void LoadUserControl(UserControl uc)
         {
@@ -224,30 +220,13 @@ namespace QuanLyKyTucXa_main
             this.Close(); // Đóng hẳn FrmMainMenu sau
         }
 
-
-        // Phần này t tự thêm vào sửa lại nhé
-        private void btnQuanlynguoidung_Click(object sender, EventArgs e)
-        {
-            //openChildForm(new FrmQuanLyNguoiDung(), new Size(192, 26), new Point(325, 15));
-        }
-
-        private void btnDanhSachPhong_Click(object sender, EventArgs e)
-        {
-            //openChildForm(new DanhSachDangKy(), new Size(192, 26), new Point(325, 15));
-        }
-
-        private void BtnDangkyphong_Click(object sender, EventArgs e)
-        {
-            //openChildForm(new FrmDangKyPhong(), new Size(192, 26), new Point(325, 15));
-        }
-
-
+//QUẢN LÝ ĐĂNG KÝ PHÒNG
         private void timeMenuDangKy_Tick(object sender, EventArgs e)
         {
             if (menuNSExpand == false)
             {
                 menuDK.Height += 10;
-                if (menuDK.Height >= 142)
+                if (menuDK.Height >= 115)
                 {
                     timeMenuDangKy.Stop();
                     menuNSExpand = true;
@@ -263,14 +242,18 @@ namespace QuanLyKyTucXa_main
                 }
             }
         }
-
-        private void btnDKPhong_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
             timeMenuDangKy.Start();
+            openChildForm(new FrmQuanLySinhVien(), new Size(180, 26), new Point(325, 15));
+
+        }
+        private void btnDangKyPhongs_Click(object sender, EventArgs e)
+        {
             openChildForm(new FrmDangKyPhong(), new Size(192, 26), new Point(325, 15));
         }
 
-        private void btnDSDangKy_Click(object sender, EventArgs e)
+        private void btnDSDangKys_Click(object sender, EventArgs e)
         {
             openChildForm(new DanhSachDangKy(), new Size(192, 26), new Point(325, 15));
         }
@@ -284,5 +267,7 @@ namespace QuanLyKyTucXa_main
         {
             chatBotControl1.Visible = !chatBotControl1.Visible;
         }
+
+        
     }
 }
