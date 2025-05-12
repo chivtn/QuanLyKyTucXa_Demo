@@ -413,7 +413,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "FrmQuanLyThietBi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmQuanLyThietBi";
+            this.Text = "Quản Lý Thiết Bị";
             this.Load += new System.EventHandler(this.FrmQuanLyThietBi_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
