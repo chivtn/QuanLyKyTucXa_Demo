@@ -81,6 +81,12 @@
     <Compile Include="DanhSachNhanVien.Designer.cs">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBaoCaoLuongNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaoCaoLuongNhanVien.Designer.cs">
+      <DependentUpon>FrmBaoCaoLuongNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>

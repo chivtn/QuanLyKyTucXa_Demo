@@ -91,5 +91,9 @@ namespace QuanLy_BLL
                 throw ex;
             }
         }
+        public List<LuongNhanVien> GetLuongThangNam(int thang, int nam)
+        {
+            return thanhToanLuongNhanVien_DL.LayLuongTheoThangNam(thang, nam);
+        }
     }
 }

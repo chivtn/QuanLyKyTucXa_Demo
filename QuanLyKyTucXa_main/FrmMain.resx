@@ -124,15 +124,16 @@
   <data name="btnDangXuat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAc1JREFUaEPtmU1KQzEUhetAQZ3pSOtcXIpFqIjiQDcgOhPcRF2IONQ1CCLqBkTF
-        1h9ER/6MFD65JUI4PLB9SV4t5Jveyzn3lLwkpLVaJpPJ/GuAMWAHOAU+iMMncA7sAZPqGQ1gFrhU98hc
-        AwvqHYz75VMP/0sbmNYZgnDLpkr2dYYg3Jr3ObIlpX1lAOrAgeg/aF8QwLsY1LUnBGAcePL029oThCfc
-        ResxABpAB7gFFrUeRBUBkpIDDJqqAgBrwKvtQsCy1ktTRQBgBHjxbL6Ade0rhSfaReuxAJ7FKk4IEU0Z
-        YMUN7RMeQgSTBTCA1YIQ38Cm9vaMiCUNYEQPIUKFAdxJaqdoSixU/7uTqmjdAO61LxEd9f4TVdC64e4x
-        VdD/RU8VtG7YBQy40d7IpFtCMXEnctFHvKG9PSFCSQNEH94QsWQBgGbB8MNzkBVsBOHDGyKaMsCjZxNn
-        eMMT7aL1WLglZM8qtps1tV6aqgIkIwcYNFUEAJbcR2wXwobWgwDeJMPQPWzp0+JxrBDAHHAo+tGfFrfF
-        IDUtnSEI97x+oS6JuAOmdIZggBn3T0pKroB59Y4GMApsAScFL9Zlsb+qzoBdYEI9M5lMZnj4AfjiWnJK
-        UOg3AAAAAElFTkSuQmCC
+        DAAACwwBP0AiyAAAAhpJREFUaEPtmU1qFUEUhZ+DBExmZmSSeXApCUJEFAdxA5LMBDehCwkOkzUIQdQN
+        iIr5USQZ+TNSeH6370lVd+MgL33rYUF/cAbvVNe5tx79R/VkZGRk5P9mOp0uoj10hH6iCH6hN+gZWlap
+        eAhfRe9QST6gOyoZB6H2z5du/pJjtKLSMRBop808eaHSMRBo53ybA7Sq4UGQs4b2LbTFmYZjIPCH5ybW
+        NBQCeTfR1ybZOdZQDApNyA6F2C10gj6hTdkxENhBdj2o74TselDfCdn1oL4TssMh+iG6QGfonuzhENZB
+        dijE3kDnTQHnN3qk4WF4XkZ2OER/8wqJmEV4VkZ2OETfR9Z0m+GL8JyM7CIQ/wD1F/EHPdYhs+MZGdnF
+        oETsInx+RnYHbHuS2lO0JLao2e9OPjcjuwP2qY8W50Qlr44mJmR3wLb3mHkw+4ueJiZkd8DeRB+bA8pR
+        7hSKhBL2RP7XRbyjQ2bD52dkF4H42OYNz8jIDofobdRv3n7X8SAjun8jGN684VkZ2eEQ/cUrNMQ0b3he
+        RnY4RNspZNsqdjfblj0cwjrIrgf1nZBdD+o7Ibse1HdCdijE3kV2EdsL4ZbsGAj8jtpUt7HV31o8RCGL
+        IGcdvbTQFuFbi7ueOzeeq3QMBNr2+tsmujyf0S2VjoPQ28i+pJTkPdpQyXgIX0BP0CvU37G+Lvap6jV6
+        ipZUamRkZKQ6JpO/+OJacvCbmLsAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="timeMenuNhanSu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -146,6 +147,9 @@
   </metadata>
   <metadata name="timeMenuDangKy.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1248, 17</value>
+  </metadata>
+  <metadata name="timeMenuTK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>634, 58</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>193</value>
