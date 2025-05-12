@@ -42,6 +42,32 @@ BEGIN
 END
 GO
 
+-- Sửa stored procedure: tự động sinh mã sinh viên
+CREATE PROCEDURE sp_ThemSinhVienMoi 
+    @HoTen NVARCHAR(50),
+    @GioiTinh NVARCHAR(5),
+    @NgaySinh DATE,
+    @QueQuan NVARCHAR(100),
+    @Email nvarchar(100),
+    @Khoa NVARCHAR(50),
+    @Lop NVARCHAR(50),
+    @LoaiUuTien NVARCHAR(50),
+    @MaPhong NVARCHAR(10)
+AS
+BEGIN
+    DECLARE @MaMoi NVARCHAR(10)
+
+    -- Sinh mã mới dạng SV001, SV002...
+    SELECT @MaMoi = 'sv' + RIGHT('00' + CAST(
+        ISNULL(MAX(CAST(SUBSTRING(masv, 3, 10) AS INT)) + 1, 1) AS VARCHAR), 2)
+FROM SinhVien
+
+    -- Thêm sinh viên
+    INSERT INTO SinhVien(masv, tensv, gioitinh, ngaysinh, quequan,email, khoa, lop, loaiuutien, maphong)
+    VALUES (@MaMoi, @HoTen, @GioiTinh, @NgaySinh, @QueQuan,@Email, @Khoa, @Lop, @LoaiUuTien, @MaPhong)
+END
+GO
+
 -- 3. Cập nhật sinh viên
 
 CREATE PROCEDURE sp_SuaSinhVien

@@ -547,10 +547,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label11 = new System.Windows.Forms.Label();
             this.rbTktheoma = new System.Windows.Forms.RadioButton();
             this.rbTkTheoMaphong = new System.Windows.Forms.RadioButton();
@@ -595,6 +595,7 @@
             this.btnXoas = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnLammoi = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnAdd = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnReset = new Guna.UI2.WinForms.Guna2CircleButton();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
@@ -950,27 +951,27 @@
             // dgvSinhVien
             // 
             this.dgvSinhVien.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightCyan;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvSinhVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvSinhVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightCyan;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvSinhVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvSinhVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvSinhVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSinhVien.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvSinhVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvSinhVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvSinhVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(105)))), ((int)(((byte)(148)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSinhVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(105)))), ((int)(((byte)(148)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSinhVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvSinhVien.ColumnHeadersHeight = 62;
             this.dgvSinhVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.masv,
@@ -983,27 +984,27 @@
             this.lop,
             this.maphong,
             this.loaiuutien});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightCyan;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSinhVien.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LightCyan;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSinhVien.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvSinhVien.EnableHeadersVisualStyles = false;
             this.dgvSinhVien.Location = new System.Drawing.Point(43, 414);
             this.dgvSinhVien.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSinhVien.Name = "dgvSinhVien";
             this.dgvSinhVien.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSinhVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSinhVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvSinhVien.RowHeadersVisible = false;
             this.dgvSinhVien.RowHeadersWidth = 62;
             this.dgvSinhVien.RowTemplate.Height = 28;
@@ -1085,13 +1086,14 @@
             // guna2CustomGradientPanel4
             // 
             this.guna2CustomGradientPanel4.BorderRadius = 30;
+            this.guna2CustomGradientPanel4.Controls.Add(this.btnReset);
             this.guna2CustomGradientPanel4.Controls.Add(this.btnAdd);
             this.guna2CustomGradientPanel4.Controls.Add(this.btnExcel);
             this.guna2CustomGradientPanel4.Controls.Add(this.btnXoas);
             this.guna2CustomGradientPanel4.Controls.Add(this.btnLammoi);
-            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(492, 305);
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(396, 305);
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
-            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(540, 92);
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(636, 92);
             this.guna2CustomGradientPanel4.TabIndex = 77;
             // 
             // btnExcel
@@ -1137,7 +1139,7 @@
             // btnLammoi
             // 
             this.btnLammoi.BackColor = System.Drawing.Color.White;
-            this.btnLammoi.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_synchronize_100__1_;
+            this.btnLammoi.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_done_100;
             this.btnLammoi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -1174,6 +1176,26 @@
             this.btnAdd.TabIndex = 61;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.White;
+            this.btnReset.BackgroundImage = global::QuanLyKyTucXa_main.Properties.Resources.icons8_synchronize_100__1_1;
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReset.FillColor = System.Drawing.Color.Transparent;
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(519, 8);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnReset.Size = new System.Drawing.Size(84, 73);
+            this.btnReset.TabIndex = 62;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // FrmQuanLySinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1197,51 +1219,7 @@
 
         }
 
-        //<<<<<<< HEAD
-        //        #endregion
-
-        //        private System.Windows.Forms.Button btnCapnhat;
-        //        private System.Windows.Forms.Button btnXoa;
-        //        private System.Windows.Forms.DataGridViewTextBoxColumn maphong;
-        //        private System.Windows.Forms.DataGridViewTextBoxColumn loaiuutien;
-        //        private System.Windows.Forms.DataGridViewTextBoxColumn lop;
-        //        private System.Windows.Forms.Label label11;
-        //        private System.Windows.Forms.RadioButton rbTktheoma;
-        //        private System.Windows.Forms.RadioButton rbTkTheoMaphong;
-        //        private System.Windows.Forms.ComboBox cbLoaiuutien;
-        //        private System.Windows.Forms.ComboBox cbMaphong;
-        //        private System.Windows.Forms.ComboBox cbKhoa;
-        //        private System.Windows.Forms.DateTimePicker dtpNgaysinh;
-        //        private System.Windows.Forms.ComboBox cbGioitinh;
-        //        private System.Windows.Forms.TextBox txtTimkiem;
-        //        private System.Windows.Forms.RadioButton rbTktheoten;
-        //        private System.Windows.Forms.Button btnTimkiem;
-        //        private System.Windows.Forms.GroupBox groupBox1;
-        //        private System.Windows.Forms.DataGridViewTextBoxColumn khoa;
-        //        private System.Windows.Forms.DataGridView dgvSinhvien;
-        //        private System.Windows.Forms.DataGridViewTextBoxColumn masv;
-        //        private System.Windows.Forms.DataGridViewTextBoxColumn tensv;
-        //        private System.Windows.Forms.DataGridViewTextBoxColumn gioitinh;
-        //        private System.Windows.Forms.DataGridViewTextBoxColumn ngaysinh;
-        //        private System.Windows.Forms.DataGridViewTextBoxColumn quequan;
-        //        private System.Windows.Forms.TextBox txtQuequan;
-        //        private System.Windows.Forms.TextBox txtLop;
-        //        private System.Windows.Forms.TextBox txtTensv;
-        //        private System.Windows.Forms.TextBox txtMasv;
-        //        private System.Windows.Forms.Label label9;
-        //        private System.Windows.Forms.Label label8;
-        //        private System.Windows.Forms.Label label7;
-        //        private System.Windows.Forms.Label label6;
-        //        private System.Windows.Forms.Label label5;
-        //        private System.Windows.Forms.Label label4;
-        //        private System.Windows.Forms.Label label3;
-        //        private System.Windows.Forms.Label label2;
-        //        private System.Windows.Forms.Label label1;
-        //        private System.Windows.Forms.TextBox textBox1;
-        //        private System.Windows.Forms.Label label10;
-        //    }
-        //}
-        //=======
+       
         #endregion
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RadioButton rbTktheoma;
@@ -1287,6 +1265,7 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
         private Guna.UI2.WinForms.Guna2CircleButton btnExcel;
         private Guna.UI2.WinForms.Guna2CircleButton btnAdd;
+        private Guna.UI2.WinForms.Guna2CircleButton btnReset;
     }
 }
-//>>>>>>> c9bca57 (fix loi giang)
+

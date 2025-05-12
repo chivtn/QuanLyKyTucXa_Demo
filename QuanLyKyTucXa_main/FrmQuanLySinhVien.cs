@@ -28,17 +28,58 @@ namespace QuanLyKyTucXa_main
             BLL_Phong mpBL = new BLL_Phong(); // hoặc dùng lớp BLL tương ứng
             cbMaphong.DataSource = mpBL.GetMaPhong();
             cbMaphong.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtMasv.ReadOnly = true;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Kiểm tra dữ liệu nhập
+                //if (string.IsNullOrEmpty(txtMasv.Text))
+                //    throw new Exception("Mã SV không được trống");
+                //if (string.IsNullOrEmpty(txtTensv.Text))
+                //    throw new Exception("Tên SV không được trống");
+                // Thêm các điều kiện kiểm tra khác...
+
+
+                // Tạo đối tượng nhân viên
+                SinhVien sv = new SinhVien(
+                    //txtMasv.Text,
+                    txtTensv.Text,
+                    cbGioitinh.Text,
+                    dtpNgaysinh.Value.ToString("yyyy-MM-dd"),
+                    txtQuequan.Text,
+                    txtEmail.Text,
+                    cbKhoa.Text,
+                    txtLop.Text,
+                    cbLoaiuutien.Text,
+                    cbMaphong.Text
+                );
+
+
+                // Gọi BLL để thêm
+                bool result = quanLySinhVien_BLL.ThemSinhVien(sv);
+
+
+                if (result)
+                {
+                    MessageBox.Show("Thêm thành công!");
+                    // Cập nhật lại DataGridView
+                    dgvSinhVien.DataSource = quanLySinhVien_BLL.LayDanhSachSinhVien();
+
+                    // Xóa trắng các ô nhập
+                    ClearControls();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
 
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
 
-        }
         // Phương thức xóa trắng control
         private void ClearControls()
         {
@@ -53,7 +94,7 @@ namespace QuanLyKyTucXa_main
             txtLop.Clear();
             cbLoaiuutien.SelectedIndex = -1;
             cbMaphong.SelectedIndex = -1;
-            
+
 
         }
 
@@ -63,14 +104,14 @@ namespace QuanLyKyTucXa_main
             {
                 string keyword = txtTimkiem.Text.Trim();
 
-              
+
                 if (string.IsNullOrEmpty(keyword))
                 {
                     // Nếu ô tìm kiếm trống, load lại toàn bộ danh sách
                     dgvSinhVien.DataSource = quanLySinhVien_BLL.LayDanhSachSinhVien();
                     return;
                 }
-         
+
 
                 // Xác định kiểu tìm kiếm dựa trên RadioButton
                 KieuTimKiem kieuTimKiem;
@@ -88,7 +129,7 @@ namespace QuanLyKyTucXa_main
 
                 // Hiển thị kết quả lên DataGridView
                 dgvSinhVien.DataSource = ketQua;
-               
+
 
                 if (ketQua.Count == 0)
                     MessageBox.Show("Không tìm thấy sinh viên nào!");
@@ -99,7 +140,7 @@ namespace QuanLyKyTucXa_main
             }
         }
 
-        
+
 
         private void dgvSinhVien_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
@@ -239,7 +280,11 @@ namespace QuanLyKyTucXa_main
             worksheet.Columns.AutoFit();
         }
 
-       
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            FrmQuanLySinhVien_Load(sender, e);
+            ClearControls();
+        }
     }
 }
 

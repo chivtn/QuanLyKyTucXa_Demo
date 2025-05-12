@@ -32,6 +32,19 @@ namespace TransferObject
             this.loaiuutien = loaiUuTien;
             this.maphong = maPhong;
         }
+        public SinhVien(string tenSV, string gioiTinh, string ngaySinh,
+           string queQuan, string eMail, string Khoa, string Lop, string loaiUuTien, string maPhong)
+        {
+            this.tensv = tenSV;
+            this.gioitinh = gioiTinh;
+            this.ngaysinh = ngaySinh;
+            this.quequan = queQuan;
+            this.email = eMail;
+            this.khoa = Khoa;
+            this.lop = Lop;
+            this.loaiuutien = loaiUuTien;
+            this.maphong = maPhong;
+        }
 
     }
     public enum KieuTimKiem

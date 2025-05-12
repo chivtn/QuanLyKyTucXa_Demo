@@ -9,7 +9,7 @@ using TransferObject;
 
 namespace QuanLy_DAL
 {
-    public class QuanLySinhVien_DL: DataProvider
+    public class QuanLySinhVien_DL : DataProvider
     {
 
         public List<SinhVien> LayDanhSachSinhVien()
@@ -90,24 +90,28 @@ namespace QuanLy_DAL
 
         public bool ThemSinhVien(SinhVien sv)
         {
-            string sql = "sp_ThemSinhVien";
+            string sql = "sp_ThemSinhVienMoi";
             try
             {
                 Connect();
 
                 List<SqlParameter> parameters = new List<SqlParameter>();
-                parameters.Add(new SqlParameter("@MaSV", sv.masv));
+                //parameters.Add(new SqlParameter("@MaSV", sv.masv));
                 parameters.Add(new SqlParameter("@HoTen", sv.tensv));
                 parameters.Add(new SqlParameter("@GioiTinh", sv.gioitinh));
                 parameters.Add(new SqlParameter("@NgaySinh", DateTime.Parse(sv.ngaysinh)));
                 parameters.Add(new SqlParameter("@QueQuan", sv.quequan));
+                parameters.Add(new SqlParameter("@Email", sv.email));
                 parameters.Add(new SqlParameter("@Khoa", sv.khoa));
                 parameters.Add(new SqlParameter("@Lop", sv.lop));
                 parameters.Add(new SqlParameter("@LoaiUuTien", sv.loaiuutien));
                 parameters.Add(new SqlParameter("@MaPhong", sv.maphong));
 
-                return MyExecuteNonQuery(sql, CommandType.StoredProcedure, parameters) >0;
+                return MyExecuteNonQuery(sql, CommandType.StoredProcedure, parameters) > 0;
+
+
             }
+
             catch (SqlException ex)
             {
                 throw ex;
@@ -192,7 +196,7 @@ namespace QuanLy_DAL
                 parameters.Add(new SqlParameter("@GioiTinh", sv.gioitinh));
                 parameters.Add(new SqlParameter("@NgaySinh", DateTime.Parse(sv.ngaysinh)));
                 parameters.Add(new SqlParameter("@QueQuan", sv.quequan));
-                parameters.Add(new SqlParameter("@Email", sv.email)); // <- thêm dòng này
+                parameters.Add(new SqlParameter("@Email", sv.email));
                 parameters.Add(new SqlParameter("@Khoa", sv.khoa));
                 parameters.Add(new SqlParameter("@Lop", sv.lop));
                 parameters.Add(new SqlParameter("@LoaiUuTien", sv.loaiuutien));
