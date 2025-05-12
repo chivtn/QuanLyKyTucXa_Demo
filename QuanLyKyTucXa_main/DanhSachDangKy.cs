@@ -135,19 +135,103 @@ namespace QuanLyKyTucXa_main
             }
         }
 
-        private void dgvSVDaDuyet_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void GBtnGuimailSVkhxepphong_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Lấy danh sách sinh viên chưa được xếp phòng từ DataGridView
+                var dsKhongXepDuoc = (List<SinhVienDangKy>)dgvSVChoDuyet.DataSource;
 
+                if (dsKhongXepDuoc == null || dsKhongXepDuoc.Count == 0)
+                {
+                    MessageBox.Show("Không có sinh viên nào chưa được xếp phòng!");
+                    return;
+                }
+
+                // Gửi email hàng loạt
+                foreach (var sv in dsKhongXepDuoc)
+                {
+                    GuiEmailThongBaoKhongXepDuoc(sv.email);
+                }
+
+                MessageBox.Show("Đã gửi email thông báo cho sinh viên chưa xếp phòng!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi gửi email: " + ex.Message);
+            }
         }
 
-        private void GBtnDong_Click(object sender, EventArgs e)
+        private void GuiEmailThongBaoKhongXepDuoc(string emailNhan)
         {
-            this.Close();
+            try
+            {
+                // Thông tin SMTP của Gmail
+                string emailGui = "hethongktx@gmail.com";
+                string matKhau = "ytma rcuq qtnn pfrc";
+
+                var client = new SmtpClient("smtp.gmail.com", 587)
+                {
+                    EnableSsl = true,
+                    Credentials = new NetworkCredential(emailGui, matKhau)
+                };
+
+                // Tạo nội dung email
+                var mail = new MailMessage(
+                    from: emailGui,
+                    to: emailNhan,
+                    subject: "Thông báo từ Ký túc xá",
+                    body: $@"
+                    Chào bạn,
+
+                    Hiện tại chúng tôi chưa thể xếp phòng cho bạn do hết phòng trống. 
+                    Vui lòng liên hệ ban quản lý KTX để biết thêm chi tiết.
+
+                    Trân trọng,
+                    Ban quản lý KTX"
+                );
+
+                // Gửi email
+                client.Send(mail);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Lỗi gửi email cho {emailNhan}: {ex.Message}");
+            }
         }
 
-        private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
+        private void GBtnXoa_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DialogResult result = MessageBox.Show(
+                    "Bạn có chắc chắn muốn xóa toàn bộ sinh viên đăng ký?",
+                    "Xác nhận xóa",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning
+                );
 
+                if (result == DialogResult.Yes)
+                {
+                    bool success = danhSachDangKy_BL.XoaTatCaSinhVienDangKy();
+
+                    if (success)
+                    {
+                        // Cập nhật DataSource thay vì xóa trực tiếp các dòng
+                        dgvSVChoDuyet.DataSource = null;
+                        dgvSVChoDuyet.DataSource = danhSachDangKy_BL.LayDSSinhVienDangKy();
+                        MessageBox.Show("Đã xóa toàn bộ sinh viên đăng ký!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không có dữ liệu để xóa!");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xóa: " + ex.Message);
+            }
         }
     }
 }

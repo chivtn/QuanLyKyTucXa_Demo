@@ -34,26 +34,24 @@ namespace QuanLyKyTucXa_main
             cbQuanly.DisplayMember = "tennv";
             cbQuanly.ValueMember = "manv";
 
-            LoadPhuCapCombobox();
+            //Load dữ liệu vào combobox
+            LoadTrangThaiCombobox();
+            LoadGioiTinhdayCombobox();
         }
 
-        private void LoadPhuCapCombobox()
+        private void LoadTrangThaiCombobox()
         {
             cbTrangthai.Items.Clear();
             cbTrangthai.Items.Add("Đang hoạt động");
             cbTrangthai.Items.Add("Đang vệ sinh");
             cbTrangthai.Items.Add("Đang bảo trì");
         }
-        private void dgvDay_CellClick(object sender, DataGridViewCellEventArgs e)
+
+        private void LoadGioiTinhdayCombobox()
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dgvDay.Rows[e.RowIndex];
-                txtMaday.Text = row.Cells["maday"].Value.ToString();
-                txtTenday.Text = row.Cells["tenday"].Value.ToString();
-                cbQuanly.Text = row.Cells["quanly"].Value.ToString(); // Giả sử ComboBox bind ValueMember là manv
-                cbTrangthai.Text = row.Cells["trangthai"].Value.ToString();
-            }
+            cbDaygioitinh.Items.Clear();
+            cbDaygioitinh.Items.Add("Nam");
+            cbDaygioitinh.Items.Add("Nữ");
         }
 
         private void GBtnXoa_Click(object sender, EventArgs e)
@@ -83,10 +81,9 @@ namespace QuanLyKyTucXa_main
                     {
                         MessageBox.Show("Xóa dãy thành công!");
                         dgvDay.DataSource = quanLyDay_BL.LayDanhSachDay(); // Load lại danh sách
-                                                                           // Xóa trắng các ô nhập
-                        txtMaday.Clear();
-                        txtTenday.Clear();
-                        cbTrangthai.Items.Clear();
+                        
+                        // Xóa trắng các ô nhập
+                        LamSach();
                     }
                     else
                     {
@@ -126,7 +123,8 @@ namespace QuanLyKyTucXa_main
                     txtMaday.Text.Trim(),
                     txtTenday.Text.Trim(),
                     cbQuanly.Text.Trim(), // Lấy mã NV từ ValueMember
-                    cbTrangthai.Text.Trim()
+                    cbTrangthai.Text.Trim(),
+                    cbDaygioitinh.Text.Trim()
                 );
 
                 // Gọi BL để cập nhật vào database
@@ -138,9 +136,7 @@ namespace QuanLyKyTucXa_main
                     // Load lại DataGridView
                     dgvDay.DataSource = quanLyDay_BL.LayDanhSachDay();
                     // Xóa trắng các ô nhập
-                    txtMaday.Clear();
-                    txtTenday.Clear();
-                    cbTrangthai.Items.Clear();
+                    LamSach();
                 }
                 else
                 {
@@ -172,7 +168,8 @@ namespace QuanLyKyTucXa_main
                     txtMaday.Text.Trim(),
                     txtTenday.Text.Trim(),
                     cbQuanly.Text.Trim(), // Lấy mã NV từ ValueMember
-                    cbTrangthai.Text.Trim()
+                    cbTrangthai.Text.Trim(),
+                    cbDaygioitinh.Text.Trim()
                 );
 
                 // Gọi BL để thêm vào database
@@ -184,9 +181,7 @@ namespace QuanLyKyTucXa_main
                     // Load lại DataGridView
                     dgvDay.DataSource = quanLyDay_BL.LayDanhSachDay();
                     // Xóa trắng các ô nhập
-                    txtMaday.Clear();
-                    txtTenday.Clear();
-                    cbTrangthai.Items.Clear();
+                    LamSach();
                 }
                 else
                 {
@@ -199,19 +194,36 @@ namespace QuanLyKyTucXa_main
             }
         }
 
-        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void GBtnDongg_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void LamSach()
         {
+            txtMaday.Clear();
+            txtTenday.Clear();
+            cbQuanly.SelectedIndex = -1;
+            cbTrangthai.SelectedIndex = -1;
+            cbDaygioitinh.SelectedIndex = -1;
+        }
 
+        private void GBtnLamsach_Click(object sender, EventArgs e)
+        {
+            LamSach();
+        }
+
+        private void dgvDay_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvDay.Rows[e.RowIndex];
+                txtMaday.Text = row.Cells["maday"].Value.ToString();
+                txtTenday.Text = row.Cells["tenday"].Value.ToString();
+                cbQuanly.Text = row.Cells["quanly"].Value.ToString(); // Giả sử ComboBox bind ValueMember là manv
+                cbTrangthai.Text = row.Cells["trangthai"].Value.ToString();
+                cbDaygioitinh.Text = row.Cells["daygioitinh"].Value.ToString();
+            }
         }
     }
 }

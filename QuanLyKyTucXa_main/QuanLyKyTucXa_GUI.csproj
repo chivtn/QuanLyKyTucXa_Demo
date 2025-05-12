@@ -197,6 +197,7 @@
     <Compile Include="QuanLyDay.Designer.cs">
       <DependentUpon>QuanLyDay.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\icons8-delete-100 %282%292.png" />
     <None Include="Resources\icons8-google-sheets-60.png" />
     <None Include="Resources\icons8-bunk-bed-261.png" />
     <EmbeddedResource Include="ChatBotControl.resx">

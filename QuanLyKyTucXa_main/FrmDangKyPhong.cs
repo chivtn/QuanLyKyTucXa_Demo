@@ -11,6 +11,7 @@ using TransferObject;
 using QuanLy_BLL;
 using System.Data.SqlClient;
 using iTextSharp.text;
+using static System.Net.WebRequestMethods;
 
 namespace QuanLyKyTucXa_main
 {
@@ -28,6 +29,7 @@ namespace QuanLyKyTucXa_main
         {
             LoadLoaiUuTienCombobox();
             LoadKhoaCombobox();
+            LoadLopCombobox();
         }
 
         private void LoadLoaiUuTienCombobox()
@@ -48,6 +50,20 @@ namespace QuanLyKyTucXa_main
             cbKhoa.Items.Add("K24");
         }
 
+        private void LoadLopCombobox()
+        {
+            cbLop.Items.Clear();
+            cbLop.Items.Add("CNTT1");
+            cbLop.Items.Add("CNTT2");
+            cbLop.Items.Add("CNTT3");
+            cbLop.Items.Add("KHMT1");
+            cbLop.Items.Add("KHMT2");
+            cbLop.Items.Add("KHMT3");
+            cbLop.Items.Add("HTTT1");
+            cbLop.Items.Add("HTTT2");
+            cbLop.Items.Add("HTTT3");
+        }
+
         // Phương thức xóa form
         private void ClearForm()
         {
@@ -56,14 +72,10 @@ namespace QuanLyKyTucXa_main
             cbGioitinh.SelectedIndex = -1;
             dtpNgaysinh.Value = DateTime.Now;
             txtQuequan.Clear();
+            txtEmail.Clear();
             cbKhoa.SelectedIndex = -1;
-            txtLop.Clear();
+            cbLop.SelectedIndex = -1;
             cbLoaiuutien.SelectedIndex = -1;
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void GBtnDangky_Click(object sender, EventArgs e)
@@ -75,7 +87,7 @@ namespace QuanLyKyTucXa_main
                 string.IsNullOrEmpty(txtQuequan.Text) ||
                 string.IsNullOrEmpty(txtEmail.Text) ||
                 string.IsNullOrEmpty(cbKhoa.Text) ||
-                string.IsNullOrEmpty(txtLop.Text) ||
+                string.IsNullOrEmpty(cbLop.Text) ||
                 string.IsNullOrEmpty(cbLoaiuutien.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -98,7 +110,7 @@ namespace QuanLyKyTucXa_main
                 txtQuequan.Text,
                 txtEmail.Text,
                 cbKhoa.Text,
-                txtLop.Text,
+                cbLop.Text,
                 cbLoaiuutien.Text
             );
             // Thêm vào database
@@ -124,9 +136,7 @@ namespace QuanLyKyTucXa_main
 
         private void GBtnHuybo_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        
+            ClearForm();
+        } 
     }
 }

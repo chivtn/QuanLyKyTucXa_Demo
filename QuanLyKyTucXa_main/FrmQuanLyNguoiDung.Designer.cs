@@ -48,6 +48,7 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.GBtnLamsach = new Guna.UI2.WinForms.Guna2Button();
             this.GBtnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.GBtnSua = new Guna.UI2.WinForms.Guna2Button();
             this.GBtnThem = new Guna.UI2.WinForms.Guna2Button();
@@ -78,7 +79,6 @@
             this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm theo";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // rbTendangnhap
             // 
@@ -103,7 +103,6 @@
             this.rbManv.TabStop = true;
             this.rbManv.Text = "Mã nhân viên";
             this.rbManv.UseVisualStyleBackColor = true;
-            this.rbManv.CheckedChanged += new System.EventHandler(this.rbManv_CheckedChanged);
             // 
             // txtTimkiem
             // 
@@ -234,6 +233,7 @@
             this.dgvNguoidung.ThemeStyle.RowsStyle.Height = 24;
             this.dgvNguoidung.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvNguoidung.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvNguoidung.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNguoidung_CellClick);
             // 
             // id
             // 
@@ -280,6 +280,7 @@
             // guna2CustomGradientPanel2
             // 
             this.guna2CustomGradientPanel2.BorderRadius = 30;
+            this.guna2CustomGradientPanel2.Controls.Add(this.GBtnLamsach);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnXoa);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnSua);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnThem);
@@ -287,6 +288,25 @@
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(768, 150);
             this.guna2CustomGradientPanel2.TabIndex = 54;
+            // 
+            // GBtnLamsach
+            // 
+            this.GBtnLamsach.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.GBtnLamsach.BorderRadius = 25;
+            this.GBtnLamsach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnLamsach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnLamsach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GBtnLamsach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GBtnLamsach.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.GBtnLamsach.ForeColor = System.Drawing.Color.White;
+            this.GBtnLamsach.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_synchronize_100__1_1;
+            this.GBtnLamsach.ImageSize = new System.Drawing.Size(40, 40);
+            this.GBtnLamsach.Location = new System.Drawing.Point(590, 44);
+            this.GBtnLamsach.Name = "GBtnLamsach";
+            this.GBtnLamsach.Size = new System.Drawing.Size(157, 68);
+            this.GBtnLamsach.TabIndex = 79;
+            this.GBtnLamsach.Text = "Làm sạch";
+            this.GBtnLamsach.Click += new System.EventHandler(this.GBtnLamsach_Click);
             // 
             // GBtnXoa
             // 
@@ -300,7 +320,7 @@
             this.GBtnXoa.ForeColor = System.Drawing.Color.White;
             this.GBtnXoa.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_delete_100__2_;
             this.GBtnXoa.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnXoa.Location = new System.Drawing.Point(555, 44);
+            this.GBtnXoa.Location = new System.Drawing.Point(400, 44);
             this.GBtnXoa.Name = "GBtnXoa";
             this.GBtnXoa.Size = new System.Drawing.Size(162, 68);
             this.GBtnXoa.TabIndex = 57;
@@ -319,7 +339,7 @@
             this.GBtnSua.ForeColor = System.Drawing.Color.White;
             this.GBtnSua.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_edit_100;
             this.GBtnSua.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnSua.Location = new System.Drawing.Point(307, 44);
+            this.GBtnSua.Location = new System.Drawing.Point(211, 44);
             this.GBtnSua.Name = "GBtnSua";
             this.GBtnSua.Size = new System.Drawing.Size(162, 68);
             this.GBtnSua.TabIndex = 56;
@@ -338,7 +358,7 @@
             this.GBtnThem.ForeColor = System.Drawing.Color.White;
             this.GBtnThem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_plus_100__1_;
             this.GBtnThem.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnThem.Location = new System.Drawing.Point(70, 44);
+            this.GBtnThem.Location = new System.Drawing.Point(20, 44);
             this.GBtnThem.Name = "GBtnThem";
             this.GBtnThem.Size = new System.Drawing.Size(162, 68);
             this.GBtnThem.TabIndex = 55;
@@ -437,5 +457,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel3;
         private Guna.UI2.WinForms.Guna2Button GBtnTimkiem;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
+        private Guna.UI2.WinForms.Guna2Button GBtnLamsach;
     }
 }

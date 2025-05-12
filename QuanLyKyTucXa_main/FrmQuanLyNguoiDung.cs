@@ -54,8 +54,7 @@ namespace QuanLyKyTucXa_main
                     // Làm mới DataGridView
                     dgvNguoidung.DataSource = quanLyNguoiDung_BL.LayDanhSachNguoiDung();
                     // Xóa dữ liệu nhập
-                    txtTendangnhap.Clear();
-                    txtMatkhau.Clear();
+                    LamSach();
                 }
                 else
                 {
@@ -91,6 +90,8 @@ namespace QuanLyKyTucXa_main
                 {
                     MessageBox.Show("Cập nhật thành công!");
                     dgvNguoidung.DataSource = quanLyNguoiDung_BL.LayDanhSachNguoiDung();
+
+                    LamSach();
                 }
                 else
                 {
@@ -129,9 +130,7 @@ namespace QuanLyKyTucXa_main
                         MessageBox.Show("Xóa thành công!");
                         dgvNguoidung.DataSource = quanLyNguoiDung_BL.LayDanhSachNguoiDung();
                         // Xóa dữ liệu trên form
-                        txtId.Clear();
-                        txtTendangnhap.Clear();
-                        txtMatkhau.Clear();
+                        LamSach();
                     }
                     else
                     {
@@ -143,11 +142,6 @@ namespace QuanLyKyTucXa_main
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
-        }
-
-        private void rbManv_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void GBtnTimkiem_Click(object sender, EventArgs e)
@@ -179,9 +173,26 @@ namespace QuanLyKyTucXa_main
             }
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void LamSach()
         {
+            txtId.Text = "";
+            txtTendangnhap.Text = "";
+            txtMatkhau.Text = "";
+        }
+        private void GBtnLamsach_Click(object sender, EventArgs e)
+        {
+            LamSach();
+        }
 
+        private void dgvNguoidung_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvNguoidung.Rows[e.RowIndex];
+                txtId.Text = row.Cells["id"].Value.ToString();
+                txtTendangnhap.Text = row.Cells["tendangnhap"].Value.ToString();
+                txtMatkhau.Text = row.Cells["matkhau"].Value.ToString();
+            }
         }
     }
 }

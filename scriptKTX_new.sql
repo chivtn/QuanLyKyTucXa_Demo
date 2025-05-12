@@ -10,7 +10,8 @@ CREATE TABLE Day (
     maday NCHAR(10) PRIMARY KEY,
     tenday NVARCHAR(50),
     quanly NVARCHAR(50),
-    trangthai NVARCHAR(50)
+    trangthai NVARCHAR(50),
+	daygioitinh NVARCHAR(50)
 );
 
 -- Bảng Phong
@@ -137,8 +138,8 @@ CREATE TABLE KyLuat (
 
 -- Dãy
 INSERT INTO Day VALUES
-(N'd1', N'Dãy 1', N'Thái Long', N'Đang hoạt động'),
-(N'd2', N'Dãy 2', N'Thái Long', N'Đang hoạt động');
+(N'd1', N'Dãy 1', N'Thái Long', N'Đang hoạt động', N'Nam'),
+(N'd2', N'Dãy 2', N'Thái Long', N'Đang hoạt động', N'Nữ');
 
 -- Phòng
 INSERT INTO Phong VALUES
@@ -146,7 +147,7 @@ INSERT INTO Phong VALUES
 (N'p102', N'Phòng 102', 5, 5, N'Đủ', N'Nam', N'Vip', N'd1'),
 (N'p103', N'Phòng 103', 3, 5, N'Thiếu', N'Nữ', N'Thường', N'd2'),
 (N'p104', N'Phòng 104', 1, 5, N'Thiếu', N'Nữ', N'Thường', N'd2'),
-(N'p105', N'Phòng 105', 1, 5, N'Thiếu', N'Nam', N'Thường', N'd2'),
+(N'p105', N'Phòng 105', 1, 5, N'Thiếu', N'Nữ', N'Thường', N'd2'),
 (N'p106', N'Phòng 106', 1, 5, N'Thiếu', N'Nam', N'Thường', N'd1');
 
 -- Sinh viên
@@ -154,9 +155,9 @@ INSERT INTO SinhVien VALUES
 (N'sv01', N'Nguyễn Hùng', N'Nam', CAST(N'2021-05-26' AS Date), N'Hà Nội', 'hung@gmail.com' ,N'K21', N'CNTT1', N'Bình thường',N'p101'),
 (N'sv02', N'Chung An', N'Nam', CAST(N'2000-05-26' AS Date), N'Hải Phòng', 'hung@gmail.com' ,N'K21', N'CNTT2', N'Bình thường',N'p101'),
 (N'sv03', N'Trung Anh', N'Nam', CAST(N'2000-07-03' AS Date), N'Nam Định', 'hung@gmail.com' ,N'K21', N'CNTT3', N'Gia đình thương binh liệt sĩ', N'p102'),
-(N'sv04', N'Khánh Ly', N'Nữ', CAST(N'2000-03-14' AS Date), N'Bình Thuận','hung@gmail.com' ,N'K21', N'CNTT4', N'Bình thường', N'p103'),
-(N'sv05', N'Thu Lăng', N'Nữ', CAST(N'2000-03-15' AS Date), N'Bình Dương', 'hung@gmail.com' ,N'K21', N'CNTT5', N'Bình thường', N'p103'),
-(N'sv06', N'Exodia', N'Nữ', CAST(N'2001-02-14' AS Date), N'Mexico', 'hung@gmail.com' ,N'K21', N'CNTT6', N'Du học sinh', N'p103'),
+(N'sv04', N'Khánh Ly', N'Nữ', CAST(N'2000-03-14' AS Date), N'Bình Thuận','hung@gmail.com' ,N'K21', N'CNTT3', N'Bình thường', N'p103'),
+(N'sv05', N'Thu Lăng', N'Nữ', CAST(N'2000-03-15' AS Date), N'Bình Dương', 'hung@gmail.com' ,N'K21', N'CNTT2', N'Bình thường', N'p103'),
+(N'sv06', N'Exodia', N'Nữ', CAST(N'2001-02-14' AS Date), N'Mexico', 'hung@gmail.com' ,N'K21', N'CNTT2', N'Du học sinh', N'p103'),
 (N'sv08', N'Phúc Bồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Tây Nguyên', 'hung@gmail.com' ,N'K21', N'KHMT1', N'Bình thường', N'p101'),
 (N'sv09', N'Minh Quân', N'Nam', CAST(N'2000-06-02' AS Date), N'Hạ Long', 'hung@gmail.com' ,N'K21', N'CNTT1', N'Bình thường',  N'p101'),
 (N'sv10', N'Lam Hồ', N'Nam', CAST(N'2000-06-02' AS Date), N'Cao Bằng','hung@gmail.com', N'K21',  N'KHMT2', N'Du học sinh', N'p102');
@@ -167,22 +168,22 @@ INSERT INTO SinhVienDangKy VALUES
 (N'sv11', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chiiiconan@gmail.com' , N'K21', N'CNTT1', N'Bình thường'),
 (N'sv12', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chiiiconan@gmail.com' , N'K22', N'CNTT2', N'Bình thường'),
 (N'sv13', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chiiiconan@gmail.com' , N'K21', N'CNTT3', N'Bình thường'),
-(N'sv14', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chiiiconan@gmail.com' , N'K23', N'CNTT4', N'Bình thường'),
-(N'sv15', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com' , N'K24', N'CNTT4', N'Bình thường'),
-(N'sv16', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com' , N'K22', N'CNTT5', N'Bình thường'),
-(N'sv17', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com' , N'K24', N'CNTT4', N'Bình thường'),
+(N'sv14', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chiiiconan@gmail.com' , N'K23', N'HTTT1', N'Bình thường'),
+(N'sv15', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com' , N'K24', N'HTTT2', N'Bình thường'),
+(N'sv16', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com' , N'K22', N'KHMT1', N'Bình thường'),
+(N'sv17', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com' , N'K24', N'KHMT2', N'Bình thường'),
 (N'sv18', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com' , N'K23', N'CNTT1', N'Bình thường'),
 (N'sv19', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com' , N'K22', N'CNTT3', N'Bình thường'),
 (N'sv20', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com', N'K21', N'CNTT2', N'Bình thường'),
 (N'sv21', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'chi.vtn.lly@gmail.com', N'K22', N'CNTT1', N'Bình thường'),
 (N'sv22', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K23', N'CNTT2', N'Bình thường'),
 (N'sv23', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K24', N'CNTT3', N'Bình thường'),
-(N'sv24', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K23', N'CNTT4', N'Bình thường'),
-(N'sv25', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K24', N'CNTT5', N'Bình thường'),
+(N'sv24', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K23', N'CNTT1', N'Bình thường'),
+(N'sv25', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K24', N'HTTT1', N'Bình thường'),
 (N'sv26', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K21', N'CNTT1', N'Bình thường'),
 (N'sv27', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K22', N'CNTT2', N'Bình thường'),
 (N'sv28', N'Nguyễn Tiến', N'Nam', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K23', N'CNTT3', N'Bình thường'),
-(N'sv29', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K24', N'CNTT4', N'Bình thường');
+(N'sv29', N'Nguyễn Tiến', N'Nữ', CAST(N'2000-06-04' AS Date), N'Ninh Bình', 'huyenhannguyen2004@gmail.com', N'K24', N'KHMT2', N'Bình thường');
 
 -- Thiết bị
 INSERT INTO ThietBi (Maphong, TenThietBi, SoLuong, TinhTrang) VALUES 
@@ -213,9 +214,6 @@ INSERT INTO NhanVien (manv, tennv, gioitinh, ngaysinh, diachi, sodienthoai) VALU
 (N'nv02', N'Thái Long', N'Nam', '2001-05-18', N'Hải Phòng', N'09122134');
 
 -- Lương nhân viên
-INSERT INTO LuongNhanVien (manv, tennv, thang, luongcoban, phucap, thuongphat) VALUES
-(N'nv01', N'Phạm Hiếu', N'05-2025' , 5000000,500000, 200000),
-(N'nv02', N'Thái Long', N'05-2025', 8000000,400000, 200000);
 
 
 -- Người dùng

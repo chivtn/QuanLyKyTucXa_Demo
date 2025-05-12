@@ -39,9 +39,13 @@
             this.txtMaday = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.cbDaygioitinh = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbTrangthai = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.GBtnLamsach = new Guna.UI2.WinForms.Guna2Button();
             this.GBtnThem = new Guna.UI2.WinForms.Guna2Button();
             this.GBtnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.GBtnSua = new Guna.UI2.WinForms.Guna2Button();
@@ -50,9 +54,9 @@
             this.tenday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quanly = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.daygioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.cbTrangthai = new System.Windows.Forms.ComboBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel4.SuspendLayout();
@@ -64,7 +68,7 @@
             // 
             this.cbQuanly.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbQuanly.FormattingEnabled = true;
-            this.cbQuanly.Location = new System.Drawing.Point(257, 412);
+            this.cbQuanly.Location = new System.Drawing.Point(285, 412);
             this.cbQuanly.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbQuanly.Name = "cbQuanly";
             this.cbQuanly.Size = new System.Drawing.Size(242, 39);
@@ -74,7 +78,7 @@
             // 
             this.txtTenday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTenday.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenday.Location = new System.Drawing.Point(257, 346);
+            this.txtTenday.Location = new System.Drawing.Point(285, 346);
             this.txtTenday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenday.Name = "txtTenday";
             this.txtTenday.Size = new System.Drawing.Size(242, 38);
@@ -85,7 +89,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(112, 419);
+            this.label5.Location = new System.Drawing.Point(76, 414);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 31);
             this.label5.TabIndex = 32;
@@ -96,7 +100,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(112, 354);
+            this.label3.Location = new System.Drawing.Point(76, 349);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 31);
             this.label3.TabIndex = 30;
@@ -107,7 +111,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(112, 286);
+            this.label2.Location = new System.Drawing.Point(76, 281);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 31);
             this.label2.TabIndex = 33;
@@ -117,7 +121,7 @@
             // 
             this.txtMaday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaday.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaday.Location = new System.Drawing.Point(257, 279);
+            this.txtMaday.Location = new System.Drawing.Point(285, 279);
             this.txtMaday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaday.Name = "txtMaday";
             this.txtMaday.Size = new System.Drawing.Size(242, 38);
@@ -128,7 +132,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(112, 485);
+            this.label4.Location = new System.Drawing.Point(76, 480);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 31);
             this.label4.TabIndex = 31;
@@ -137,6 +141,8 @@
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BorderRadius = 30;
+            this.guna2CustomGradientPanel1.Controls.Add(this.cbDaygioitinh);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label7);
             this.guna2CustomGradientPanel1.Controls.Add(this.cbTrangthai);
             this.guna2CustomGradientPanel1.Controls.Add(this.pictureBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
@@ -151,7 +157,37 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(633, 683);
             this.guna2CustomGradientPanel1.TabIndex = 36;
-            this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
+            // 
+            // cbDaygioitinh
+            // 
+            this.cbDaygioitinh.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDaygioitinh.FormattingEnabled = true;
+            this.cbDaygioitinh.Location = new System.Drawing.Point(285, 548);
+            this.cbDaygioitinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbDaygioitinh.Name = "cbDaygioitinh";
+            this.cbDaygioitinh.Size = new System.Drawing.Size(242, 39);
+            this.cbDaygioitinh.TabIndex = 80;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(76, 551);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(145, 31);
+            this.label7.TabIndex = 79;
+            this.label7.Text = "Dãy giới tính";
+            // 
+            // cbTrangthai
+            // 
+            this.cbTrangthai.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTrangthai.FormattingEnabled = true;
+            this.cbTrangthai.Location = new System.Drawing.Point(285, 477);
+            this.cbTrangthai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbTrangthai.Name = "cbTrangthai";
+            this.cbTrangthai.Size = new System.Drawing.Size(242, 39);
+            this.cbTrangthai.TabIndex = 78;
             // 
             // pictureBox1
             // 
@@ -178,6 +214,7 @@
             // guna2CustomGradientPanel4
             // 
             this.guna2CustomGradientPanel4.BorderRadius = 30;
+            this.guna2CustomGradientPanel4.Controls.Add(this.GBtnLamsach);
             this.guna2CustomGradientPanel4.Controls.Add(this.GBtnThem);
             this.guna2CustomGradientPanel4.Controls.Add(this.GBtnXoa);
             this.guna2CustomGradientPanel4.Controls.Add(this.GBtnSua);
@@ -185,6 +222,25 @@
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(924, 112);
             this.guna2CustomGradientPanel4.TabIndex = 76;
+            // 
+            // GBtnLamsach
+            // 
+            this.GBtnLamsach.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.GBtnLamsach.BorderRadius = 25;
+            this.GBtnLamsach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnLamsach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnLamsach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GBtnLamsach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GBtnLamsach.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.GBtnLamsach.ForeColor = System.Drawing.Color.White;
+            this.GBtnLamsach.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_synchronize_100__1_1;
+            this.GBtnLamsach.ImageSize = new System.Drawing.Size(40, 40);
+            this.GBtnLamsach.Location = new System.Drawing.Point(726, 23);
+            this.GBtnLamsach.Name = "GBtnLamsach";
+            this.GBtnLamsach.Size = new System.Drawing.Size(157, 68);
+            this.GBtnLamsach.TabIndex = 80;
+            this.GBtnLamsach.Text = "Làm sạch";
+            this.GBtnLamsach.Click += new System.EventHandler(this.GBtnLamsach_Click);
             // 
             // GBtnThem
             // 
@@ -198,9 +254,9 @@
             this.GBtnThem.ForeColor = System.Drawing.Color.White;
             this.GBtnThem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_plus_100__1_1;
             this.GBtnThem.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnThem.Location = new System.Drawing.Point(22, 23);
+            this.GBtnThem.Location = new System.Drawing.Point(73, 23);
             this.GBtnThem.Name = "GBtnThem";
-            this.GBtnThem.Size = new System.Drawing.Size(161, 63);
+            this.GBtnThem.Size = new System.Drawing.Size(161, 68);
             this.GBtnThem.TabIndex = 77;
             this.GBtnThem.Text = "Thêm";
             this.GBtnThem.Click += new System.EventHandler(this.GBtnThem_Click);
@@ -217,9 +273,9 @@
             this.GBtnXoa.ForeColor = System.Drawing.Color.White;
             this.GBtnXoa.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_delete_100__2_1;
             this.GBtnXoa.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnXoa.Location = new System.Drawing.Point(716, 23);
+            this.GBtnXoa.Location = new System.Drawing.Point(514, 23);
             this.GBtnXoa.Name = "GBtnXoa";
-            this.GBtnXoa.Size = new System.Drawing.Size(160, 63);
+            this.GBtnXoa.Size = new System.Drawing.Size(160, 68);
             this.GBtnXoa.TabIndex = 77;
             this.GBtnXoa.Text = "Xóa";
             this.GBtnXoa.Click += new System.EventHandler(this.GBtnXoa_Click);
@@ -236,9 +292,9 @@
             this.GBtnSua.ForeColor = System.Drawing.Color.White;
             this.GBtnSua.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_edit_1001;
             this.GBtnSua.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnSua.Location = new System.Drawing.Point(377, 23);
+            this.GBtnSua.Location = new System.Drawing.Point(298, 23);
             this.GBtnSua.Name = "GBtnSua";
-            this.GBtnSua.Size = new System.Drawing.Size(160, 63);
+            this.GBtnSua.Size = new System.Drawing.Size(160, 68);
             this.GBtnSua.TabIndex = 76;
             this.GBtnSua.Text = " Sửa";
             this.GBtnSua.Click += new System.EventHandler(this.GBtnSua_Click);
@@ -261,7 +317,8 @@
             this.maday,
             this.tenday,
             this.quanly,
-            this.trangthai});
+            this.trangthai,
+            this.daygioitinh});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -299,6 +356,7 @@
             this.dgvDay.ThemeStyle.RowsStyle.Height = 24;
             this.dgvDay.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDay.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvDay.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDay_CellClick);
             // 
             // maday
             // 
@@ -328,6 +386,13 @@
             this.trangthai.MinimumWidth = 6;
             this.trangthai.Name = "trangthai";
             // 
+            // daygioitinh
+            // 
+            this.daygioitinh.DataPropertyName = "daygioitinh";
+            this.daygioitinh.HeaderText = "Dãy giới tính";
+            this.daygioitinh.MinimumWidth = 6;
+            this.daygioitinh.Name = "daygioitinh";
+            // 
             // guna2CustomGradientPanel2
             // 
             this.guna2CustomGradientPanel2.BorderRadius = 35;
@@ -348,17 +413,6 @@
             this.label6.Size = new System.Drawing.Size(208, 25);
             this.label6.TabIndex = 78;
             this.label6.Text = "Danh sách Dãy Phòng";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // cbTrangthai
-            // 
-            this.cbTrangthai.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTrangthai.FormattingEnabled = true;
-            this.cbTrangthai.Location = new System.Drawing.Point(257, 477);
-            this.cbTrangthai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbTrangthai.Name = "cbTrangthai";
-            this.cbTrangthai.Size = new System.Drawing.Size(242, 39);
-            this.cbTrangthai.TabIndex = 78;
             // 
             // FrmQuanLyDay
             // 
@@ -400,12 +454,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDay;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbTrangthai;
+        private System.Windows.Forms.ComboBox cbDaygioitinh;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridViewTextBoxColumn maday;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenday;
         private System.Windows.Forms.DataGridViewTextBoxColumn quanly;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangthai;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cbTrangthai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn daygioitinh;
+        private Guna.UI2.WinForms.Guna2Button GBtnLamsach;
     }
 }

@@ -14,7 +14,7 @@ namespace QuanLy_DAL
         // Tải Danh sách lên để chờ duyệt
         public List<DayPhong> LayDanhSachDay()
         {
-            string maday, tenday, quanly, trangthai;
+            string maday, tenday, quanly, trangthai, daygioitinh;
             List<DayPhong> dayPhongs = new List<DayPhong>();
             string sql = "SELECT * FROM Day";
             try
@@ -27,8 +27,9 @@ namespace QuanLy_DAL
                     tenday = reader[1].ToString();
                     quanly = reader[2].ToString();
                     trangthai = reader[3].ToString();
+                    daygioitinh = reader[4].ToString();
 
-                    DayPhong dayPhong = new DayPhong(maday, tenday, quanly, trangthai);
+                    DayPhong dayPhong = new DayPhong(maday, tenday, quanly, trangthai, daygioitinh);
                     dayPhongs.Add(dayPhong);
                 }
                 reader.Close();
@@ -75,7 +76,7 @@ namespace QuanLy_DAL
 
         public bool ThemDay(DayPhong dayPhong)
         {
-            string sql = "INSERT INTO Day(maday, tenday, quanly, trangthai) VALUES(@ma, @ten, @ql, @tt)";
+            string sql = "INSERT INTO Day(maday, tenday, quanly, trangthai, daygioitinh) VALUES(@ma, @ten, @ql, @tt, @dgt)";
             try
             {
                 Connect();
@@ -84,6 +85,8 @@ namespace QuanLy_DAL
                 cmd.Parameters.AddWithValue("@ten", dayPhong.tenday);
                 cmd.Parameters.AddWithValue("@ql", dayPhong.quanly);
                 cmd.Parameters.AddWithValue("@tt", dayPhong.trangthai);
+                cmd.Parameters.AddWithValue("@dgt", dayPhong.daygioitinh);
+
                 int result = cmd.ExecuteNonQuery();
                 return result > 0;
             }
@@ -99,7 +102,7 @@ namespace QuanLy_DAL
 
         public bool SuaDay(DayPhong dayPhong)
         {
-            string sql = "UPDATE Day SET tenday = @ten, quanly = @ql, trangthai = @tt WHERE maday = @ma";
+            string sql = "UPDATE Day SET tenday = @ten, quanly = @ql, trangthai = @tt, daygioitinh = @dgt WHERE maday = @ma";
             try
             {
                 Connect();
@@ -108,6 +111,7 @@ namespace QuanLy_DAL
                 cmd.Parameters.AddWithValue("@ten", dayPhong.tenday);
                 cmd.Parameters.AddWithValue("@ql", dayPhong.quanly);
                 cmd.Parameters.AddWithValue("@tt", dayPhong.trangthai);
+                cmd.Parameters.AddWithValue("@dgt", dayPhong.daygioitinh);
                 int result = cmd.ExecuteNonQuery();
                 return result > 0;
             }

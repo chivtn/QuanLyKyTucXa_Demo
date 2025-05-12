@@ -39,7 +39,6 @@
             this.dtpThang = new System.Windows.Forms.DateTimePicker();
             this.txtTongluong = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtThuongphat = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTennv = new System.Windows.Forms.TextBox();
@@ -70,12 +69,13 @@
             this.tongluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTimkiem = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rbTktheoten = new System.Windows.Forms.RadioButton();
-            this.rbTktheoma = new System.Windows.Forms.RadioButton();
             this.GBtnTimkiem = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbTktheoma = new System.Windows.Forms.RadioButton();
+            this.rbTktheoten = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTimkiem = new System.Windows.Forms.TextBox();
+            this.cbThuongphat = new System.Windows.Forms.ComboBox();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel4.SuspendLayout();
@@ -173,16 +173,6 @@
             this.label7.TabIndex = 59;
             this.label7.Text = "Tổng lương";
             // 
-            // txtThuongphat
-            // 
-            this.txtThuongphat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtThuongphat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtThuongphat.Location = new System.Drawing.Point(534, 274);
-            this.txtThuongphat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtThuongphat.Name = "txtThuongphat";
-            this.txtThuongphat.Size = new System.Drawing.Size(160, 24);
-            this.txtThuongphat.TabIndex = 57;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -263,6 +253,7 @@
             this.guna2CustomGradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel2.BorderRadius = 30;
+            this.guna2CustomGradientPanel2.Controls.Add(this.cbThuongphat);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnChonnhanvien);
             this.guna2CustomGradientPanel2.Controls.Add(this.cbLuongcoban);
             this.guna2CustomGradientPanel2.Controls.Add(this.cbPhucap);
@@ -282,7 +273,6 @@
             this.guna2CustomGradientPanel2.Controls.Add(this.label10);
             this.guna2CustomGradientPanel2.Controls.Add(this.dtpThang);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtTongluong);
-            this.guna2CustomGradientPanel2.Controls.Add(this.txtThuongphat);
             this.guna2CustomGradientPanel2.Controls.Add(this.label7);
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(12, 10);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
@@ -585,6 +575,23 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(569, 329);
             this.guna2CustomGradientPanel1.TabIndex = 76;
             // 
+            // GBtnTimkiem
+            // 
+            this.GBtnTimkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnTimkiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnTimkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GBtnTimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GBtnTimkiem.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GBtnTimkiem.ForeColor = System.Drawing.Color.White;
+            this.GBtnTimkiem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_search_100;
+            this.GBtnTimkiem.ImageSize = new System.Drawing.Size(40, 40);
+            this.GBtnTimkiem.Location = new System.Drawing.Point(72, 242);
+            this.GBtnTimkiem.Name = "GBtnTimkiem";
+            this.GBtnTimkiem.Size = new System.Drawing.Size(435, 45);
+            this.GBtnTimkiem.TabIndex = 53;
+            this.GBtnTimkiem.Text = "Tìm kiếm";
+            this.GBtnTimkiem.Click += new System.EventHandler(this.GBtnTimkiem_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -602,24 +609,17 @@
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             // 
-            // txtTimkiem
+            // rbTktheoma
             // 
-            this.txtTimkiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimkiem.Location = new System.Drawing.Point(16, 125);
-            this.txtTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTimkiem.Name = "txtTimkiem";
-            this.txtTimkiem.Size = new System.Drawing.Size(186, 28);
-            this.txtTimkiem.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Nhập thông tin tìm kiếm:";
+            this.rbTktheoma.AutoSize = true;
+            this.rbTktheoma.Location = new System.Drawing.Point(16, 37);
+            this.rbTktheoma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbTktheoma.Name = "rbTktheoma";
+            this.rbTktheoma.Size = new System.Drawing.Size(163, 24);
+            this.rbTktheoma.TabIndex = 0;
+            this.rbTktheoma.TabStop = true;
+            this.rbTktheoma.Text = "Tìm kiếm theo mã";
+            this.rbTktheoma.UseVisualStyleBackColor = true;
             // 
             // rbTktheoten
             // 
@@ -633,34 +633,33 @@
             this.rbTktheoten.Text = "Tìm kiếm theo tháng";
             this.rbTktheoten.UseVisualStyleBackColor = true;
             // 
-            // rbTktheoma
+            // label1
             // 
-            this.rbTktheoma.AutoSize = true;
-            this.rbTktheoma.Location = new System.Drawing.Point(16, 37);
-            this.rbTktheoma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rbTktheoma.Name = "rbTktheoma";
-            this.rbTktheoma.Size = new System.Drawing.Size(163, 24);
-            this.rbTktheoma.TabIndex = 0;
-            this.rbTktheoma.TabStop = true;
-            this.rbTktheoma.Text = "Tìm kiếm theo mã";
-            this.rbTktheoma.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Nhập thông tin tìm kiếm:";
             // 
-            // GBtnTimkiem
+            // txtTimkiem
             // 
-            this.GBtnTimkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GBtnTimkiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GBtnTimkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GBtnTimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GBtnTimkiem.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBtnTimkiem.ForeColor = System.Drawing.Color.White;
-            this.GBtnTimkiem.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_search_100;
-            this.GBtnTimkiem.ImageSize = new System.Drawing.Size(40, 40);
-            this.GBtnTimkiem.Location = new System.Drawing.Point(72, 242);
-            this.GBtnTimkiem.Name = "GBtnTimkiem";
-            this.GBtnTimkiem.Size = new System.Drawing.Size(435, 45);
-            this.GBtnTimkiem.TabIndex = 53;
-            this.GBtnTimkiem.Text = "Tìm kiếm";
-            this.GBtnTimkiem.Click += new System.EventHandler(this.GBtnTimkiem_Click);
+            this.txtTimkiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimkiem.Location = new System.Drawing.Point(16, 125);
+            this.txtTimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTimkiem.Name = "txtTimkiem";
+            this.txtTimkiem.Size = new System.Drawing.Size(186, 28);
+            this.txtTimkiem.TabIndex = 2;
+            // 
+            // cbThuongphat
+            // 
+            this.cbThuongphat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbThuongphat.FormattingEnabled = true;
+            this.cbThuongphat.Location = new System.Drawing.Point(534, 265);
+            this.cbThuongphat.Name = "cbThuongphat";
+            this.cbThuongphat.Size = new System.Drawing.Size(160, 26);
+            this.cbThuongphat.TabIndex = 76;
             // 
             // FrmThanhToanLuongNhanVien
             // 
@@ -696,7 +695,6 @@
         private System.Windows.Forms.DateTimePicker dtpThang;
         private System.Windows.Forms.TextBox txtTongluong;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtThuongphat;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtTennv;
@@ -733,5 +731,6 @@
         private System.Windows.Forms.RadioButton rbTktheoten;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTimkiem;
+        private System.Windows.Forms.ComboBox cbThuongphat;
     }
 }

@@ -44,19 +44,6 @@ namespace QuanLy_BLL
             }
         }
 
-
-        public bool CapNhatSinhVienDangKy(SinhVienDangKy sv)
-        {
-            try
-            {
-                return danhSachDangKyDL.CapNhatSinhVienDangKy(sv);
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-        }
-
         public void XepPhongTuDong(List<SinhVienDangKy> dsDangKy)
         {
 
@@ -112,11 +99,11 @@ namespace QuanLy_BLL
             danhSachDangKyDL.CapNhatSoSV(phong.Maphong); // Cập nhật số SV và tình trạng phòng
         }
 
-        public List<Phong> LayPhongTrong()
+        public bool XoaTatCaSinhVienDangKy()
         {
             try
             {
-                return danhSachDangKyDL.LayPhongTrong();
+                return danhSachDangKyDL.XoaTatCaSinhVienDangKy();
             }
             catch (SqlException ex)
             {

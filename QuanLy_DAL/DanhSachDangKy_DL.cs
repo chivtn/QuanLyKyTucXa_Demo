@@ -237,38 +237,18 @@ namespace QuanLy_DAL
             finally { DisConnect(); }
         }
 
-        public List<Phong> LayPhongTrong()
+        public bool XoaTatCaSinhVienDangKy()
         {
-            List<Phong> phongs = new List<Phong>();
-            string sql = @"SELECT * FROM Phong 
-                 WHERE tinhtrang = N'Thiếu' 
-                   AND sosv < sosvtoida";
+            string sql = "DELETE FROM SinhVienDangKy";
             try
             {
                 Connect();
                 SqlCommand cmd = new SqlCommand(sql, cn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    Phong phong = new Phong(
-                        reader["maphong"].ToString(),
-                        reader["tenphong"].ToString(),
-                        reader["sosv"].ToString(),
-                        reader["sosvtoida"].ToString(),
-                        reader["tinhtrang"].ToString(),
-                        reader["loaiphong"].ToString(),
-                        reader["xeploai"].ToString(),
-                        reader["day"].ToString()
-                    );
-                    phongs.Add(phong);
-                }
-                reader.Close();
-                return phongs;
+                int rowsAffected = cmd.ExecuteNonQuery();
+                return rowsAffected > 0;
             }
             catch (SqlException ex) { throw ex; }
             finally { DisConnect(); }
         }
-
-
     }
 }

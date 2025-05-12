@@ -32,6 +32,7 @@ namespace QuanLyKyTucXa_main
 
             LoadPhuCapCombobox();
             LoadLuongCoBanCombobox();
+            LoadThuongPhatCombobox();
 
         }
 
@@ -56,20 +57,59 @@ namespace QuanLyKyTucXa_main
             cbLuongcoban.Items.Add("10000000");
         }
 
+        private void LoadThuongPhatCombobox()
+        {
+            cbThuongphat.Items.Clear();
+            cbThuongphat.Items.Add("100000");
+            cbThuongphat.Items.Add("200000");
+            cbThuongphat.Items.Add("300000");
+            cbThuongphat.Items.Add("400000");
+            cbThuongphat.Items.Add("500000");
+            cbThuongphat.Items.Add("-100000");
+            cbThuongphat.Items.Add("-200000");
+            cbThuongphat.Items.Add("-300000");
+            cbThuongphat.Items.Add("-400000");
+            cbThuongphat.Items.Add("-500000");
+        }
+
+        private void LamSach()
+        {
+            txtMaluong.Text = "";
+            txtManv.Text = "";
+            cbPhucap.Text = "";
+            txtTennv.Text = "";
+            cbLuongcoban.Text = "";
+            txtTongluong.Text = "";
+            cbThuongphat.Text = "";
+        }
+
         public void SetNhanVien(string manv, string tennv)
         {
             txtManv.Text = manv;
             txtTennv.Text = tennv;
         }
-        private void GBtnTinhluong_Click(object sender, EventArgs e)
+
+        private decimal TinhLuong()
         {
             try
             {
                 decimal luongCoBan = decimal.Parse(cbLuongcoban.Text);
                 decimal phuCap = decimal.Parse(cbPhucap.Text);
-                decimal thuongPhat = decimal.Parse(txtThuongphat.Text);
-                decimal tongLuong = luongCoBan + phuCap + thuongPhat;
+                decimal thuongPhat = decimal.Parse(cbThuongphat.Text);
+                return luongCoBan + phuCap + thuongPhat;
+            }
+            catch
+            {
+                throw new Exception("Vui lòng nhập đúng định dạng lương, phụ cấp và thưởng/phạt.");
+            }
+        }
 
+
+        private void GBtnTinhluong_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                decimal tongLuong = TinhLuong();
                 txtTongluong.Text = tongLuong.ToString("N0");
 
                 LuongNhanVien luongNV = new LuongNhanVien(
@@ -79,13 +119,16 @@ namespace QuanLyKyTucXa_main
                     dtpThang.Value.ToString("MM-yyyy"), // Định dạng tháng
                     cbLuongcoban.Text,
                     cbPhucap.Text,
-                    txtThuongphat.Text,
+                    cbThuongphat.Text,
                     dtpNgaythanhtoan.Value.ToString("yyyy-MM-dd"), // Ngày thanh toán
                     tongLuong.ToString()
                 );
 
                 thanhToanLuongNhanVien_BL.ThemHoacCapNhatLuong(luongNV);
                 dgvLuongnhanvien.DataSource = thanhToanLuongNhanVien_BL.LayDanhSachLuongNhanVien();
+
+                // Làm sạch
+                LamSach();
             }
             catch (Exception ex) { MessageBox.Show("Lỗi: " + ex.Message); }
         }
@@ -97,21 +140,27 @@ namespace QuanLyKyTucXa_main
                 if (string.IsNullOrEmpty(txtMaluong.Text))
                     throw new Exception("Vui lòng chọn hóa đơn cần sửa");
 
+                decimal tongLuong = TinhLuong();
+                txtTongluong.Text = tongLuong.ToString("N0");
+
                 // Tạo đối tượng cập nhật
                 LuongNhanVien luongNV = new LuongNhanVien(
                     txtMaluong.Text,
                     txtManv.Text,
                     txtTennv.Text,
-                    dtpThang.Value.ToString("yyyy-MM-dd"),
+                    dtpThang.Value.ToString("MM-yyyy"),
                     cbLuongcoban.Text,
                     cbPhucap.Text,
-                    txtThuongphat.Text,
+                    cbThuongphat.Text,
                     dtpNgaythanhtoan.Value.ToString("yyyy-MM-dd"),
                     txtTongluong.Text
                 );
 
                 // Gọi phương thức cập nhật
                 thanhToanLuongNhanVien_BL.CapNhatLuongNhanVien(luongNV);
+
+                // Làm sạch
+                LamSach();
 
                 // Làm mới DataGridView
                 dgvLuongnhanvien.DataSource = thanhToanLuongNhanVien_BL.LayDanhSachLuongNhanVien();
@@ -132,6 +181,9 @@ namespace QuanLyKyTucXa_main
 
                 // Gọi phương thức xóa
                 thanhToanLuongNhanVien_BL.XoaLuongNhanVien(txtMaluong.Text);
+
+                // Làm sạch
+                LamSach();
 
                 // Làm mới DataGridView
                 dgvLuongnhanvien.DataSource = thanhToanLuongNhanVien_BL.LayDanhSachLuongNhanVien();
@@ -154,7 +206,7 @@ namespace QuanLyKyTucXa_main
                 dtpThang.Value = DateTime.ParseExact(row.Cells["thang"].Value.ToString(), "MM-yyyy", null);
                 cbLuongcoban.Text = row.Cells["luongcoban"].Value.ToString();
                 cbPhucap.Text = row.Cells["phucap"].Value.ToString();
-                txtThuongphat.Text = row.Cells["thuongphat"].Value.ToString();
+                cbThuongphat.Text = row.Cells["thuongphat"].Value.ToString();
                 dtpNgaythanhtoan.Value = DateTime.Parse(row.Cells["ngaythanhtoan"].Value.ToString());
                 txtTongluong.Text = row.Cells["tongluong"].Value.ToString();
             }
@@ -162,13 +214,7 @@ namespace QuanLyKyTucXa_main
 
         private void GBtnLamsach_Click(object sender, EventArgs e)
         {
-            txtMaluong.Text = "";
-            txtManv.Text = "";
-            cbPhucap.Text = "";
-            txtTennv.Text = "";
-            cbLuongcoban.Text = "";
-            txtTongluong.Text = "";
-            txtThuongphat.Text = "";
+            LamSach();
         }
 
         private void GBtnChonnhanvien_Click(object sender, EventArgs e)

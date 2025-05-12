@@ -35,7 +35,6 @@
             this.dtpNgaysinh = new System.Windows.Forms.DateTimePicker();
             this.cbGioitinh = new System.Windows.Forms.ComboBox();
             this.txtQuequan = new System.Windows.Forms.TextBox();
-            this.txtLop = new System.Windows.Forms.TextBox();
             this.txtTensv = new System.Windows.Forms.TextBox();
             this.txtMasv = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.GBtnHuybo = new Guna.UI2.WinForms.Guna2Button();
             this.GBtnDangky = new Guna.UI2.WinForms.Guna2Button();
+            this.cbLop = new System.Windows.Forms.ComboBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2CustomGradientPanel2.SuspendLayout();
@@ -131,16 +131,6 @@
             this.txtQuequan.Name = "txtQuequan";
             this.txtQuequan.Size = new System.Drawing.Size(159, 30);
             this.txtQuequan.TabIndex = 64;
-            // 
-            // txtLop
-            // 
-            this.txtLop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLop.Location = new System.Drawing.Point(660, 189);
-            this.txtLop.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLop.Name = "txtLop";
-            this.txtLop.Size = new System.Drawing.Size(160, 30);
-            this.txtLop.TabIndex = 66;
             // 
             // txtTensv
             // 
@@ -299,10 +289,10 @@
             // guna2CustomGradientPanel2
             // 
             this.guna2CustomGradientPanel2.BorderRadius = 50;
+            this.guna2CustomGradientPanel2.Controls.Add(this.cbLop);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnHuybo);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnDangky);
             this.guna2CustomGradientPanel2.Controls.Add(this.cbKhoa);
-            this.guna2CustomGradientPanel2.Controls.Add(this.txtLop);
             this.guna2CustomGradientPanel2.Controls.Add(this.label6);
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(410, 256);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
@@ -349,6 +339,16 @@
             this.GBtnDangky.Text = "Đăng Ký";
             this.GBtnDangky.Click += new System.EventHandler(this.GBtnDangky_Click);
             // 
+            // cbLop
+            // 
+            this.cbLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLop.FormattingEnabled = true;
+            this.cbLop.Location = new System.Drawing.Point(661, 205);
+            this.cbLop.Margin = new System.Windows.Forms.Padding(4);
+            this.cbLop.Name = "cbLop";
+            this.cbLop.Size = new System.Drawing.Size(160, 33);
+            this.cbLop.TabIndex = 76;
+            // 
             // FrmDangKyPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -394,7 +394,6 @@
         private System.Windows.Forms.DateTimePicker dtpNgaysinh;
         private System.Windows.Forms.ComboBox cbGioitinh;
         private System.Windows.Forms.TextBox txtQuequan;
-        private System.Windows.Forms.TextBox txtLop;
         private System.Windows.Forms.TextBox txtTensv;
         private System.Windows.Forms.TextBox txtMasv;
         private System.Windows.Forms.Label label9;
@@ -411,5 +410,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2Button GBtnDangky;
         private Guna.UI2.WinForms.Guna2Button GBtnHuybo;
+        private System.Windows.Forms.ComboBox cbLop;
     }
 }

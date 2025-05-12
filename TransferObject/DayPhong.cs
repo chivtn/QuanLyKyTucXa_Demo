@@ -12,12 +12,15 @@ namespace TransferObject
         public string tenday { get; set; }
         public string quanly { get; set; }
         public string trangthai { get; set; }
-        public DayPhong(string maDay, string tenDay, string quanLy, string trangThai)
+
+        public string daygioitinh { get; set; } 
+        public DayPhong(string maDay, string tenDay, string quanLy, string trangThai, string dayGioiTinh)
         {
             maday = maDay;
             tenday = tenDay;
             quanly = quanLy;
             trangthai = trangThai;
+            daygioitinh = dayGioiTinh;
         }
     }
 }

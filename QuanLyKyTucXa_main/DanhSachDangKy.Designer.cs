@@ -47,8 +47,6 @@
             this.dgvtbcLoaiUuTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.GBtnGuiemail = new Guna.UI2.WinForms.Guna2Button();
-            this.GBtnXepphong = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.dgvSVDaDuyet = new Guna.UI2.WinForms.Guna2DataGridView();
             this.masvdky = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,8 +61,12 @@
             this.maphong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.GBtnXoa = new Guna.UI2.WinForms.Guna2Button();
+            this.GBtnGuimailSVkhxepphong = new Guna.UI2.WinForms.Guna2Button();
+            this.GBtnGuiemail = new Guna.UI2.WinForms.Guna2Button();
+            this.GBtnXepphong = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSVChoDuyet)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
@@ -213,75 +215,35 @@
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2CustomGradientPanel1.BorderRadius = 50;
             this.guna2CustomGradientPanel1.Controls.Add(this.dgvSVChoDuyet);
             this.guna2CustomGradientPanel1.Controls.Add(this.label11);
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(310, 147);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(61, 145);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1207, 323);
             this.guna2CustomGradientPanel1.TabIndex = 66;
             // 
             // guna2CustomGradientPanel2
             // 
+            this.guna2CustomGradientPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2CustomGradientPanel2.BorderRadius = 25;
+            this.guna2CustomGradientPanel2.Controls.Add(this.GBtnXoa);
+            this.guna2CustomGradientPanel2.Controls.Add(this.GBtnGuimailSVkhxepphong);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnGuiemail);
             this.guna2CustomGradientPanel2.Controls.Add(this.GBtnXepphong);
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(1082, 499);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(410, 487);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(432, 101);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(858, 101);
             this.guna2CustomGradientPanel2.TabIndex = 72;
-            this.guna2CustomGradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel2_Paint);
-            // 
-            // GBtnGuiemail
-            // 
-            this.GBtnGuiemail.BackColor = System.Drawing.Color.White;
-            this.GBtnGuiemail.BorderRadius = 20;
-            this.GBtnGuiemail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GBtnGuiemail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GBtnGuiemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GBtnGuiemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GBtnGuiemail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
-            this.GBtnGuiemail.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBtnGuiemail.ForeColor = System.Drawing.Color.White;
-            this.GBtnGuiemail.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_gmail_logo_100;
-            this.GBtnGuiemail.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GBtnGuiemail.ImageSize = new System.Drawing.Size(30, 30);
-            this.GBtnGuiemail.Location = new System.Drawing.Point(238, 19);
-            this.GBtnGuiemail.Name = "GBtnGuiemail";
-            this.GBtnGuiemail.Size = new System.Drawing.Size(177, 62);
-            this.GBtnGuiemail.TabIndex = 68;
-            this.GBtnGuiemail.Text = "Gửi email";
-            this.GBtnGuiemail.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.GBtnGuiemail.Click += new System.EventHandler(this.GBtnGuiemail_Click);
-            // 
-            // GBtnXepphong
-            // 
-            this.GBtnXepphong.BackColor = System.Drawing.Color.White;
-            this.GBtnXepphong.BorderRadius = 20;
-            this.GBtnXepphong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GBtnXepphong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GBtnXepphong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GBtnXepphong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GBtnXepphong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
-            this.GBtnXepphong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GBtnXepphong.ForeColor = System.Drawing.Color.White;
-            this.GBtnXepphong.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_sorting_arrows_horizontal_100;
-            this.GBtnXepphong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.GBtnXepphong.ImageSize = new System.Drawing.Size(30, 30);
-            this.GBtnXepphong.Location = new System.Drawing.Point(19, 19);
-            this.GBtnXepphong.Name = "GBtnXepphong";
-            this.GBtnXepphong.Size = new System.Drawing.Size(177, 62);
-            this.GBtnXepphong.TabIndex = 67;
-            this.GBtnXepphong.Text = "Xếp phòng";
-            this.GBtnXepphong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.GBtnXepphong.Click += new System.EventHandler(this.GBtnXepphong_Click);
             // 
             // guna2CustomGradientPanel3
             // 
+            this.guna2CustomGradientPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2CustomGradientPanel3.BorderRadius = 50;
             this.guna2CustomGradientPanel3.Controls.Add(this.dgvSVDaDuyet);
             this.guna2CustomGradientPanel3.Controls.Add(this.label1);
-            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(305, 632);
+            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(64, 606);
             this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
             this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(1209, 287);
             this.guna2CustomGradientPanel3.TabIndex = 73;
@@ -433,6 +395,7 @@
             // 
             // guna2CustomGradientPanel4
             // 
+            this.guna2CustomGradientPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2CustomGradientPanel4.BorderRadius = 25;
             this.guna2CustomGradientPanel4.Controls.Add(this.pictureBox1);
             this.guna2CustomGradientPanel4.Controls.Add(this.label2);
@@ -440,21 +403,10 @@
             this.guna2CustomGradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
             this.guna2CustomGradientPanel4.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
             this.guna2CustomGradientPanel4.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
-            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(380, -22);
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(135, -20);
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
-            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(1090, 152);
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(1090, 143);
             this.guna2CustomGradientPanel4.TabIndex = 74;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
-            this.pictureBox1.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_contacts_94;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 62;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -467,12 +419,111 @@
             this.label2.TabIndex = 61;
             this.label2.Text = "Sắp Xếp Phòng Cho Danh Sách Sinh Viên Đăng Ký Ký Túc Xá";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
+            this.pictureBox1.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_contacts_94;
+            this.pictureBox1.Location = new System.Drawing.Point(32, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 62;
+            this.pictureBox1.TabStop = false;
+            // 
+            // GBtnXoa
+            // 
+            this.GBtnXoa.BackColor = System.Drawing.Color.White;
+            this.GBtnXoa.BorderRadius = 20;
+            this.GBtnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GBtnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GBtnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
+            this.GBtnXoa.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.GBtnXoa.ForeColor = System.Drawing.Color.White;
+            this.GBtnXoa.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_delete_100__2_2;
+            this.GBtnXoa.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GBtnXoa.ImageSize = new System.Drawing.Size(30, 30);
+            this.GBtnXoa.Location = new System.Drawing.Point(657, 19);
+            this.GBtnXoa.Name = "GBtnXoa";
+            this.GBtnXoa.Size = new System.Drawing.Size(168, 62);
+            this.GBtnXoa.TabIndex = 70;
+            this.GBtnXoa.Text = "Xóa ";
+            this.GBtnXoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.GBtnXoa.Click += new System.EventHandler(this.GBtnXoa_Click);
+            // 
+            // GBtnGuimailSVkhxepphong
+            // 
+            this.GBtnGuimailSVkhxepphong.BackColor = System.Drawing.Color.White;
+            this.GBtnGuimailSVkhxepphong.BorderRadius = 20;
+            this.GBtnGuimailSVkhxepphong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnGuimailSVkhxepphong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnGuimailSVkhxepphong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GBtnGuimailSVkhxepphong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GBtnGuimailSVkhxepphong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
+            this.GBtnGuimailSVkhxepphong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GBtnGuimailSVkhxepphong.ForeColor = System.Drawing.Color.White;
+            this.GBtnGuimailSVkhxepphong.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_gmail_logo_100;
+            this.GBtnGuimailSVkhxepphong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GBtnGuimailSVkhxepphong.ImageSize = new System.Drawing.Size(30, 30);
+            this.GBtnGuimailSVkhxepphong.Location = new System.Drawing.Point(430, 19);
+            this.GBtnGuimailSVkhxepphong.Name = "GBtnGuimailSVkhxepphong";
+            this.GBtnGuimailSVkhxepphong.Size = new System.Drawing.Size(194, 62);
+            this.GBtnGuimailSVkhxepphong.TabIndex = 69;
+            this.GBtnGuimailSVkhxepphong.Text = "Gửi email hủy";
+            this.GBtnGuimailSVkhxepphong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.GBtnGuimailSVkhxepphong.Click += new System.EventHandler(this.GBtnGuimailSVkhxepphong_Click);
+            // 
+            // GBtnGuiemail
+            // 
+            this.GBtnGuiemail.BackColor = System.Drawing.Color.White;
+            this.GBtnGuiemail.BorderRadius = 20;
+            this.GBtnGuiemail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnGuiemail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnGuiemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GBtnGuiemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GBtnGuiemail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
+            this.GBtnGuiemail.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GBtnGuiemail.ForeColor = System.Drawing.Color.White;
+            this.GBtnGuiemail.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_gmail_logo_100;
+            this.GBtnGuiemail.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GBtnGuiemail.ImageSize = new System.Drawing.Size(30, 30);
+            this.GBtnGuiemail.Location = new System.Drawing.Point(218, 19);
+            this.GBtnGuiemail.Name = "GBtnGuiemail";
+            this.GBtnGuiemail.Size = new System.Drawing.Size(190, 62);
+            this.GBtnGuiemail.TabIndex = 68;
+            this.GBtnGuiemail.Text = "Gửi email";
+            this.GBtnGuiemail.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.GBtnGuiemail.Click += new System.EventHandler(this.GBtnGuiemail_Click);
+            // 
+            // GBtnXepphong
+            // 
+            this.GBtnXepphong.BackColor = System.Drawing.Color.White;
+            this.GBtnXepphong.BorderRadius = 20;
+            this.GBtnXepphong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnXepphong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GBtnXepphong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GBtnXepphong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GBtnXepphong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(2)))), ((int)(((byte)(155)))));
+            this.GBtnXepphong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GBtnXepphong.ForeColor = System.Drawing.Color.White;
+            this.GBtnXepphong.Image = global::QuanLyKyTucXa_main.Properties.Resources.icons8_sorting_arrows_horizontal_100;
+            this.GBtnXepphong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GBtnXepphong.ImageSize = new System.Drawing.Size(30, 30);
+            this.GBtnXepphong.Location = new System.Drawing.Point(19, 19);
+            this.GBtnXepphong.Name = "GBtnXepphong";
+            this.GBtnXepphong.Size = new System.Drawing.Size(177, 62);
+            this.GBtnXepphong.TabIndex = 67;
+            this.GBtnXepphong.Text = "Xếp phòng";
+            this.GBtnXepphong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.GBtnXepphong.Click += new System.EventHandler(this.GBtnXepphong_Click);
+            // 
             // DanhSachDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Plum;
-            this.ClientSize = new System.Drawing.Size(1779, 997);
+            this.ClientSize = new System.Drawing.Size(1365, 997);
             this.Controls.Add(this.guna2CustomGradientPanel4);
             this.Controls.Add(this.guna2CustomGradientPanel3);
             this.Controls.Add(this.guna2CustomGradientPanel2);
@@ -527,5 +578,7 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button GBtnGuimailSVkhxepphong;
+        private Guna.UI2.WinForms.Guna2Button GBtnXoa;
     }
 }
