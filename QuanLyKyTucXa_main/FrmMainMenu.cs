@@ -185,8 +185,8 @@ namespace QuanLyKyTucXa_main
 
         private void btnBaoCaoSinhVien_Click(object sender, EventArgs e)
         {
-            openChildForm(new FrmBaoCaoSinhVien(), new Size(129, 26), new Point(308, 15));
-            //hideSubmenu();
+            //openChildForm(new FrmBaoCaoSinhVien(), new Size(129, 26), new Point(308, 15));
+            ////hideSubmenu();
         }
 
         private void btnBaoCaoNhanVien_Click(object sender, EventArgs e)
