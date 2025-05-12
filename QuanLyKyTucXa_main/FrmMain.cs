@@ -258,17 +258,42 @@ namespace QuanLyKyTucXa_main
             openChildForm(new DanhSachDangKy(), new Size(192, 26), new Point(325, 15));
         }
 
-        private void btnThongKe_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FrmHome(), new Size(192, 26), new Point(325, 15));
-        }
 
         private void btnToggleChatBot_Click(object sender, EventArgs e)
         {
             chatBotControl1.Visible = !chatBotControl1.Visible;
         }
 
+        private void timeMenuTK_Tick(object sender, EventArgs e)
+        {
+            if (menuNSExpand == false)
+            {
+                menuTK.Height += 10;
+                if (menuTK.Height >= 100)
+                {
+                    timeMenuTK.Stop();
+                    menuNSExpand = true;
+                }
+            }
+            else
+            {
+                menuTK.Height -= 10;
+                if (menuTK.Height <= 41)
+                {
+                    timeMenuTK.Stop();
+                    menuNSExpand = false;
+                }
+            }
+        }
+        private void btnThongKes_Click(object sender, EventArgs e)
+        {
+            timeMenuTK.Start();
+            openChildForm(new FrmHome(), new Size(192, 26), new Point(325, 15));
+        }
 
-       
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmBaoCaoLuongNhanVien(), new Size(192, 26), new Point(325, 15));
+        }
     }
 }

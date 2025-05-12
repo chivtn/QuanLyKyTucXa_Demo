@@ -207,5 +207,53 @@ namespace QuanLy_DAL
                 DisConnect();
             }
         }
+        public List<LuongNhanVien> LayLuongTheoThangNam(int thang, int nam)
+        {
+            List<LuongNhanVien> dsLuong = new List<LuongNhanVien>();
+            string query = @"
+            SELECT * 
+            FROM LuongNhanVien 
+            WHERE MONTH(ngaythanhtoan) = @thang 
+            AND YEAR(ngaythanhtoan) = @nam";
+
+            try
+            {
+                // Kết nối tới cơ sở dữ liệu
+                Connect();
+                SqlCommand cmd = new SqlCommand(query, cn);
+                cmd.Parameters.AddWithValue("@thang", thang);
+                cmd.Parameters.AddWithValue("@nam", nam);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                // Đọc dữ liệu từ SqlDataReader và chuyển đổi thành đối tượng DTO
+                while (reader.Read())
+                {
+                    LuongNhanVien luong = new LuongNhanVien(
+                            reader["maluong"].ToString(),
+                            reader["manv"].ToString(),
+                            reader["tennv"].ToString(),
+                            reader["thang"].ToString(),
+                            reader["luongcoban"].ToString(),
+                            reader["phucap"].ToString(),
+                            reader["thuongphat"].ToString(),
+                            reader["ngaythanhtoan"].ToString(),
+                            reader["tongluong"].ToString());
+                    dsLuong.Add(luong);
+                }
+                reader.Close();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                // Đóng kết nối sau khi thực thi xong
+                DisConnect();
+            }
+
+            return dsLuong;
+        }
     }
 }
