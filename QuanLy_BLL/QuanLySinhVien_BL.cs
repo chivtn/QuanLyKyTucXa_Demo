@@ -31,17 +31,17 @@ namespace QuanLy_BLL
             }
         }
 
-        public bool ThemSinhVien(SinhVien sv)
-        {
-            try
-            {
-                return quanLySinhVien_DAL.ThemSinhVien(sv);
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-        }
+        //public bool ThemSinhVien(SinhVien sv)
+        //{
+        //    try
+        //    {
+        //        return quanLySinhVien_DAL.ThemSinhVien(sv);
+        //    }
+        //    catch (SqlException ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
         public bool CapNhatSinhVien(SinhVien sv)
         {
             try
@@ -76,17 +76,6 @@ namespace QuanLy_BLL
             }
         }
 
-        //public List<SinhVien> TimKiemSinhVien(string keyword, bool timTheoMa)
-        //{
-        //    try
-        //    {
-        //        return quanLySinhVien_DAL.TimKiemSinhVien(keyword, timTheoMa);
-        //    }
-        //    catch (SqlException ex)
-        //    {
-        //        throw ex;
-        //    }
-        //}
 
         public List<string> SelectMaSinhVien()
         {

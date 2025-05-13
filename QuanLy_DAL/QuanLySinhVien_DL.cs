@@ -51,139 +51,42 @@ namespace QuanLy_DAL
         }
 
 
-        //public List<SinhVien> LayDanhSachSinhVien()
-        //{
-        //    string masv, tensv, gioitinh, ngaysinh, quequan, khoa, lop, loaiuutien, maphong;
-        //    List<SinhVien> sinhViens = new List<SinhVien>();
-        //    string sql = "SELECT * FROM SinhVien";
-        //    try
-        //    {
-        //        Connect();
-        //        SqlDataReader reader = MyExecuteReader(sql, CommandType.Text);
-        //        while (reader.Read())
-        //        {
-        //            masv = reader[0].ToString();
-        //            tensv = reader[1].ToString();
-        //            gioitinh = reader[2].ToString();
-        //            ngaysinh = reader[3].ToString();
-        //            quequan = reader[4].ToString();
-        //            khoa = reader[5].ToString();
-        //            lop = reader[6].ToString();
-        //            loaiuutien = reader[7].ToString();
-        //            maphong = reader[8].ToString();
-
-        //            SinhVien sinhVien = new SinhVien(masv, tensv, gioitinh, ngaysinh, quequan, khoa, lop, loaiuutien, maphong);
-        //            sinhViens.Add(sinhVien);
-        //        }
-        //        reader.Close();
-        //        return sinhViens;
-        //    }
-        //    catch (SqlException ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        DisConnect();
-        //    }
-        //}
-
-        public bool ThemSinhVien(SinhVien sv)
-        {
-            string sql = "sp_ThemSinhVienMoi";
-            try
-            {
-                Connect();
-
-                List<SqlParameter> parameters = new List<SqlParameter>();
-                //parameters.Add(new SqlParameter("@MaSV", sv.masv));
-                parameters.Add(new SqlParameter("@HoTen", sv.tensv));
-                parameters.Add(new SqlParameter("@GioiTinh", sv.gioitinh));
-                parameters.Add(new SqlParameter("@NgaySinh", DateTime.Parse(sv.ngaysinh)));
-                parameters.Add(new SqlParameter("@QueQuan", sv.quequan));
-                parameters.Add(new SqlParameter("@Email", sv.email));
-                parameters.Add(new SqlParameter("@Khoa", sv.khoa));
-                parameters.Add(new SqlParameter("@Lop", sv.lop));
-                parameters.Add(new SqlParameter("@LoaiUuTien", sv.loaiuutien));
-                parameters.Add(new SqlParameter("@MaPhong", sv.maphong));
-
-                return MyExecuteNonQuery(sql, CommandType.StoredProcedure, parameters) > 0;
-
-
-            }
-
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                DisConnect();
-            }
-        }
 
         //public bool ThemSinhVien(SinhVien sv)
         //{
-        //    string sql = "sp_ThemSinhVien";
-        //    try
-        //    {
-        //        Connect();
-        //        SqlCommand cmd = new SqlCommand(sql, cn);
-        //        cmd.CommandType = CommandType.StoredProcedure;
+            //string sql = "sp_ThemSinhVienMoi";
+            //try
+            //{
+            //    Connect();
 
-        //        cmd.Parameters.AddWithValue("@MaSV", sv.masv);
-        //        cmd.Parameters.AddWithValue("@HoTen", sv.tensv);
-        //        cmd.Parameters.AddWithValue("@GioiTinh", sv.gioitinh);
-        //        cmd.Parameters.AddWithValue("@NgaySinh", DateTime.Parse(sv.ngaysinh));
-        //        cmd.Parameters.AddWithValue("@QueQuan", sv.quequan);
-        //        cmd.Parameters.AddWithValue("@Khoa", sv.khoa);
-        //        cmd.Parameters.AddWithValue("@Lop", sv.lop);
-        //        cmd.Parameters.AddWithValue("@LoaiUuTien", sv.loaiuutien);
-        //        cmd.Parameters.AddWithValue("@MaPhong", sv.maphong);
+            //    List<SqlParameter> parameters = new List<SqlParameter>();
+            //    //parameters.Add(new SqlParameter("@MaSV", sv.masv));
+            //    parameters.Add(new SqlParameter("@HoTen", sv.tensv));
+            //    parameters.Add(new SqlParameter("@GioiTinh", sv.gioitinh));
+            //    parameters.Add(new SqlParameter("@NgaySinh", DateTime.Parse(sv.ngaysinh)));
+            //    parameters.Add(new SqlParameter("@QueQuan", sv.quequan));
+            //    parameters.Add(new SqlParameter("@Email", sv.email));
+            //    parameters.Add(new SqlParameter("@Khoa", sv.khoa));
+            //    parameters.Add(new SqlParameter("@Lop", sv.lop));
+            //    parameters.Add(new SqlParameter("@LoaiUuTien", sv.loaiuutien));
+            //    parameters.Add(new SqlParameter("@MaPhong", sv.maphong));
 
-        //        cmd.ExecuteNonQuery();
-        //        return true;
-        //    }
-        //    catch (SqlException ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        DisConnect();
-        //    }
+            //    return MyExecuteNonQuery(sql, CommandType.StoredProcedure, parameters) > 0;
+
+
+            //}
+
+            //catch (SqlException ex)
+            //{
+            //    throw ex;
+            //}
+            //finally
+            //{
+            //    DisConnect();
+            //}
         //}
 
-
-        //public bool ThemSinhVien(SinhVien sv)
-        //{
-        //    string sql = "INSERT INTO SinhVien VALUES(@masv, @tensv, @gioitinh, @ngaysinh, @quequan, @khoa, @lop, @loaiuutien, @maphong)";
-        //    try
-        //    {
-        //        Connect();
-        //        SqlCommand cmd = new SqlCommand(sql, cn);
-        //        cmd.Parameters.AddWithValue("@masv", sv.masv);
-        //        cmd.Parameters.AddWithValue("@tensv", sv.tensv);
-        //        cmd.Parameters.AddWithValue("@gioitinh", sv.gioitinh);
-        //        cmd.Parameters.AddWithValue("@ngaysinh", DateTime.Parse(sv.ngaysinh));
-        //        cmd.Parameters.AddWithValue("@quequan", sv.quequan);
-        //        cmd.Parameters.AddWithValue("@khoa", sv.khoa);
-        //        cmd.Parameters.AddWithValue("@lop", sv.lop);
-        //        cmd.Parameters.AddWithValue("@loaiuutien", sv.loaiuutien);
-        //        cmd.Parameters.AddWithValue("@maphong", sv.maphong);
-        //        cmd.ExecuteNonQuery();
-        //        return true;
-        //    }
-        //    catch (SqlException ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        DisConnect();
-        //    }
-        //}
-
+       
         public bool CapNhatSinhVien(SinhVien sv)
         {
             string sql = "sp_SuaSinhVien";
@@ -212,37 +115,8 @@ namespace QuanLy_DAL
                 DisConnect();
             }
         }
-        //public bool CapNhatSinhVien(SinhVien sv)
-        //{
-        //    string sql = "sp_SuaSinhVien";
-        //    try
-        //    {
-        //        Connect();
-        //        SqlCommand cmd = new SqlCommand(sql, cn);
-        //        cmd.CommandType = CommandType.StoredProcedure;
-
-        //        cmd.Parameters.AddWithValue("@MaSV", sv.masv);
-        //        cmd.Parameters.AddWithValue("@HoTen", sv.tensv);
-        //        cmd.Parameters.AddWithValue("@GioiTinh", sv.gioitinh);
-        //        cmd.Parameters.AddWithValue("@NgaySinh", DateTime.Parse(sv.ngaysinh));
-        //        cmd.Parameters.AddWithValue("@QueQuan", sv.quequan);
-        //        cmd.Parameters.AddWithValue("@Khoa", sv.khoa);
-        //        cmd.Parameters.AddWithValue("@Lop", sv.lop);
-        //        cmd.Parameters.AddWithValue("@LoaiUuTien", sv.loaiuutien);
-        //        cmd.Parameters.AddWithValue("@MaPhong", sv.maphong);
-
-        //        int rowsAffected = cmd.ExecuteNonQuery();
-        //        return rowsAffected > 0;
-        //    }
-        //    catch (SqlException ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        DisConnect();
-        //    }
-        //}
+      
+       
 
         //public bool CapNhatSinhVien(SinhVien sv)
         //{

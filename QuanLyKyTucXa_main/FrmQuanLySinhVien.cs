@@ -33,46 +33,46 @@ namespace QuanLyKyTucXa_main
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (string.IsNullOrEmpty(txtTensv.Text))
-                    throw new Exception("Tên SV không được trống");
-                if (string.IsNullOrEmpty(txtEmail.Text))
-                    throw new Exception("Tên SV không được trống");
+            //try
+            //{
+            //    if (string.IsNullOrEmpty(txtTensv.Text))
+            //        throw new Exception("Tên SV không được trống");
+            //    if (string.IsNullOrEmpty(txtEmail.Text))
+            //        throw new Exception("Tên SV không được trống");
 
-                // Tạo đối tượng nhân viên
-                SinhVien sv = new SinhVien(
-                    //txtMasv.Text,
-                    txtTensv.Text,
-                    cbGioitinh.Text,
-                    dtpNgaysinh.Value.ToString("yyyy-MM-dd"),
-                    txtQuequan.Text,
-                    txtEmail.Text,
-                    cbKhoa.Text,
-                    txtLop.Text,
-                    cbLoaiuutien.Text,
-                    cbMaphong.Text
-                );
-
-
-                // Gọi BLL để thêm
-                bool result = quanLySinhVien_BLL.ThemSinhVien(sv);
+            //    // Tạo đối tượng nhân viên
+            //    SinhVien sv = new SinhVien(
+            //        //txtMasv.Text,
+            //        txtTensv.Text,
+            //        cbGioitinh.Text,
+            //        dtpNgaysinh.Value.ToString("yyyy-MM-dd"),
+            //        txtQuequan.Text,
+            //        txtEmail.Text,
+            //        cbKhoa.Text,
+            //        txtLop.Text,
+            //        cbLoaiuutien.Text,
+            //        cbMaphong.Text
+            //    );
 
 
-                if (result)
-                {
-                    MessageBox.Show("Thêm thành công!");
-                    // Cập nhật lại DataGridView
-                    dgvSinhVien.DataSource = quanLySinhVien_BLL.LayDanhSachSinhVien();
+            //    // Gọi BLL để thêm
+            //    bool result = quanLySinhVien_BLL.ThemSinhVien(sv);
 
-                    // Xóa trắng các ô nhập
-                    ClearControls();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            //    if (result)
+            //    {
+            //        MessageBox.Show("Thêm thành công!");
+            //        // Cập nhật lại DataGridView
+            //        dgvSinhVien.DataSource = quanLySinhVien_BLL.LayDanhSachSinhVien();
+
+            //        // Xóa trắng các ô nhập
+            //        ClearControls();
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
 
         }
 

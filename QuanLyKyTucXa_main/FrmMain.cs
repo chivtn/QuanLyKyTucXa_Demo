@@ -34,15 +34,15 @@ namespace QuanLyKyTucXa_main
             panelMain.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            //thay doi title
+            
             lblTitle.Text = childForm.Text;
             lblTitle.AutoSize = true;
 
-            // Đảm bảo không bị giới hạn chiều rộng
-            lblTitle.MaximumSize = new Size(panel2.Width, 0); // nếu cần
+           
+            lblTitle.MaximumSize = new Size(panel2.Width, 0); 
             lblTitle.Left = (panel2.Width - lblTitle.PreferredWidth) / 2;
 
-            //ly them chatbot 
+           
             chatBotControl1.BringToFront();
             btnToggleChatBot.BringToFront();
         }
@@ -100,7 +100,7 @@ namespace QuanLyKyTucXa_main
         private void FrmMain_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            chatBotControl1.Visible = false; //ly 
+            chatBotControl1.Visible = false; 
 
             
         }
@@ -210,10 +210,10 @@ namespace QuanLyKyTucXa_main
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            this.Hide(); // Ẩn tạm FrmMainMenu đi trước
+            this.Hide(); 
             FrmDangNhap dangNhap = new FrmDangNhap();
-            dangNhap.ShowDialog(); // Chờ đăng nhập xong
-            this.Close(); // Đóng hẳn FrmMainMenu sau
+            dangNhap.ShowDialog(); 
+            this.Close(); 
         }
 
 //QUẢN LÝ ĐĂNG KÝ PHÒNG
