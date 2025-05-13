@@ -33,25 +33,7 @@ namespace QuanLyKyTucXa_main
             int nam = dateTimePicker1.Value.Year;
             int thang = dateTimePicker1.Value.Month;
             FillChartLuong(thang, nam);
-            //int thang = dateTimePickerThang.Value.Month;
-            //int nam = dateTimePickerNam.Value.Year;
-
-            //var dsLuong = bll.GetLuongThangNam(thang, nam);
-
-            //chart1.Series.Clear();
-            //chart1.ChartAreas[0].AxisX.Title = "Nhân viên";
-            //chart1.ChartAreas[0].AxisY.Title = "Tổng lương";
-
-            //Series luongSeries = new Series("Tổng lương");
-            //luongSeries.ChartType = SeriesChartType.Column;
-            //luongSeries.Color = Color.Orange;
-
-            //foreach (var item in dsLuong)
-            //{
-            //    luongSeries.Points.AddXY(item.TenNV, item.TongLuong);
-            //}
-
-            //chart1.Series.Add(luongSeries);
+            
         }
         private void FillChartLuong(int thang, int nam)
         {

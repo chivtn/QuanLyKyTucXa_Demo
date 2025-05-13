@@ -21,15 +21,12 @@ namespace QuanLyKyTucXa_main
         }
 
 
-        //private Homecontrol homeControl;
+        
 
 
         private void openChildForm(Form childForm, Size size, Point point)
         {
-            //if (activeForm != null)
-            //    activeForm.Close();
-            ////panelControl.Visible = false;
-            //activeForm = childForm;
+           
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
@@ -105,8 +102,7 @@ namespace QuanLyKyTucXa_main
             this.WindowState = FormWindowState.Maximized;
             chatBotControl1.Visible = false; //ly 
 
-            //homeControl = new Homecontrol();
-            //LoadUserControl(homeControl);
+            
         }
 
         

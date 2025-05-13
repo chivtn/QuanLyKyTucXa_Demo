@@ -177,23 +177,11 @@
     <Compile Include="FrmThongBaoSinhVien.Designer.cs">
       <DependentUpon>FrmThongBaoSinhVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmThongKeTienDien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmThongKeTienDien.Designer.cs">
-      <DependentUpon>FrmThongKeTienDien.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmQuanLySinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmQuanLySinhVien.Designer.cs">
       <DependentUpon>FrmQuanLySinhVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Homecontrol.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Homecontrol.Designer.cs">
-      <DependentUpon>Homecontrol.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -214,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhSachNhanVien.resx">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaoCaoLuongNhanVien.resx">
+      <DependentUpon>FrmBaoCaoLuongNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
@@ -262,12 +253,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThongBaoSinhVien.resx">
       <DependentUpon>FrmThongBaoSinhVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmThongKeTienDien.resx">
-      <DependentUpon>FrmThongKeTienDien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Homecontrol.resx">
-      <DependentUpon>Homecontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -63,9 +63,9 @@
             this.guna2CustomGradientPanel2.Controls.Add(this.dateTimePicker1);
             this.guna2CustomGradientPanel2.Controls.Add(this.btnVeBieuDo);
             this.guna2CustomGradientPanel2.Controls.Add(this.btnXuatExcel);
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(154, 118);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(75, 118);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1282, 100);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1444, 100);
             this.guna2CustomGradientPanel2.TabIndex = 1;
             // 
             // dateTimePicker1
@@ -153,7 +153,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBaoCaoLuong.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvBaoCaoLuong.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvBaoCaoLuong.Location = new System.Drawing.Point(154, 224);
+            this.dgvBaoCaoLuong.Location = new System.Drawing.Point(75, 224);
             this.dgvBaoCaoLuong.Name = "dgvBaoCaoLuong";
             this.dgvBaoCaoLuong.RowHeadersVisible = false;
             this.dgvBaoCaoLuong.RowHeadersWidth = 51;
@@ -260,13 +260,13 @@
             this.chart12.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart12.Legends.Add(legend1);
-            this.chart12.Location = new System.Drawing.Point(774, 224);
+            this.chart12.Location = new System.Drawing.Point(695, 224);
             this.chart12.Name = "chart12";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Tổng lương";
             this.chart12.Series.Add(series1);
-            this.chart12.Size = new System.Drawing.Size(662, 550);
+            this.chart12.Size = new System.Drawing.Size(824, 550);
             this.chart12.TabIndex = 3;
             this.chart12.Text = "chart1";
             // 
@@ -278,9 +278,9 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(154, 12);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(75, 12);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1282, 100);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1444, 100);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             // 
             // label1
@@ -289,7 +289,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(404, 34);
+            this.label1.Location = new System.Drawing.Point(433, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(430, 32);
             this.label1.TabIndex = 0;

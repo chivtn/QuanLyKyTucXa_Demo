@@ -25,7 +25,7 @@ namespace QuanLyKyTucXa_main
         {
             dgvSinhVien.DataSource = quanLySinhVien_BLL.LayDanhSachSinhVien();
 
-            BLL_Phong mpBL = new BLL_Phong(); // hoặc dùng lớp BLL tương ứng
+            BLL_Phong mpBL = new BLL_Phong(); 
             cbMaphong.DataSource = mpBL.GetMaPhong();
             cbMaphong.DropDownStyle = ComboBoxStyle.DropDownList;
             txtMasv.ReadOnly = true;
@@ -35,13 +35,10 @@ namespace QuanLyKyTucXa_main
         {
             try
             {
-                // Kiểm tra dữ liệu nhập
-                //if (string.IsNullOrEmpty(txtMasv.Text))
-                //    throw new Exception("Mã SV không được trống");
-                //if (string.IsNullOrEmpty(txtTensv.Text))
-                //    throw new Exception("Tên SV không được trống");
-                // Thêm các điều kiện kiểm tra khác...
-
+                if (string.IsNullOrEmpty(txtTensv.Text))
+                    throw new Exception("Tên SV không được trống");
+                if (string.IsNullOrEmpty(txtEmail.Text))
+                    throw new Exception("Tên SV không được trống");
 
                 // Tạo đối tượng nhân viên
                 SinhVien sv = new SinhVien(
@@ -74,7 +71,7 @@ namespace QuanLyKyTucXa_main
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi: " + ex.Message);
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -88,7 +85,7 @@ namespace QuanLyKyTucXa_main
             cbGioitinh.SelectedIndex = -1;
             dtpNgaysinh.Value = DateTime.Now;
             txtQuequan.Clear();
-            txtEmail.Clear(); // ← THÊM DÒNG NÀY
+            txtEmail.Clear(); 
             cbKhoa.SelectedIndex = -1;
             cbKhoa.Text = "";
             txtLop.Clear();
@@ -136,7 +133,7 @@ namespace QuanLyKyTucXa_main
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi: " + ex.Message);
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -153,11 +150,11 @@ namespace QuanLyKyTucXa_main
                 cbGioitinh.Text = row.Cells["gioitinh"].Value.ToString();
                 dtpNgaysinh.Value = DateTime.Parse(row.Cells["ngaysinh"].Value.ToString());
                 txtQuequan.Text = row.Cells["quequan"].Value.ToString();
-                txtEmail.Text = row.Cells["email"].Value.ToString(); // <- thêm dòng này
+                txtEmail.Text = row.Cells["email"].Value.ToString();
                 cbKhoa.Text = row.Cells["khoa"].Value.ToString();
                 txtLop.Text = row.Cells["lop"].Value.ToString();
                 cbLoaiuutien.Text = row.Cells["loaiuutien"].Value.ToString();
-                //cbMaphong.Text = row.Cells["maphong"].Value.ToString();
+                
                 cbMaphong.SelectedItem = row.Cells["maphong"].Value.ToString();
             }
         }
