@@ -38,6 +38,18 @@ namespace QuanLyKyTucXa_main
             diaChi = txtDiachi.Text.Trim();
             soDienThoai = txtSodienthoai.Text.Trim();
 
+            // Kiểm tra dữ liệu đầu vào
+            if (string.IsNullOrEmpty(maNV) ||
+                string.IsNullOrEmpty(tenNV) ||
+                string.IsNullOrEmpty(gioiTinh) ||
+                string.IsNullOrEmpty(ngaySinh) ||
+                string.IsNullOrEmpty(diaChi) ||
+                string.IsNullOrEmpty(soDienThoai))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin nhân viên.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             NhanVien nhanVien = new NhanVien(maNV, tenNV, gioiTinh, ngaySinh, diaChi, soDienThoai);
 
             try
