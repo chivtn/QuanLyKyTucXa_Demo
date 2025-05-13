@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using TransferObject;
 
 namespace QuanLyKyTucXa_main
 {
@@ -41,10 +42,9 @@ namespace QuanLyKyTucXa_main
         }
         private void fillchart_thang(int nam)
         {
-            // Xóa dữ liệu cũ
-            chart1.Series.Clear();
+            chart1.Series.Clear(); 
 
-            // Thiết lập trục
+            // Thiết lập trục X
             chart1.ChartAreas["ChartArea1"].AxisX.Title = "Tháng";
             chart1.ChartAreas["ChartArea1"].AxisY.Title = "Lượng tiêu thụ";
             chart1.ChartAreas["ChartArea1"].AxisX.Maximum = 12;
@@ -52,31 +52,41 @@ namespace QuanLyKyTucXa_main
             chart1.ChartAreas["ChartArea1"].AxisX.Interval = 1;
             chart1.ChartAreas["ChartArea1"].AxisX.MajorGrid.Enabled = false;
 
-            // --- Series 1: Lượng điện ---
-            Series dienSeries = new Series("Lượng điện");
-            dienSeries.ChartType = SeriesChartType.Column;
-            dienSeries.Color = Color.DeepSkyBlue;
+            
+            Series seriesDien = new Series("Lượng điện");
+            seriesDien.ChartType = SeriesChartType.Column;
+            seriesDien.Color = Color.DeepSkyBlue;
 
-            var dsDien = thongkedBL.LayLuongDienCacThang(nam);
-            foreach (var item in dsDien)
+            var danhSachDien = thongkedBL.LayLuongDienCacThang(nam);
+            foreach (var item in danhSachDien)
             {
-                dienSeries.Points.AddXY(item.Thang, item.SoDienTieuThu);
+                seriesDien.Points.AddXY(item.Thang, item.SoDienTieuThu);
             }
 
-            chart1.Series.Add(dienSeries);
+            
+            Series seriesNuoc = new Series("Lượng nước");
+            seriesNuoc.ChartType = SeriesChartType.Column;
+            seriesNuoc.Color = Color.LightGreen;
 
-            // --- Series 2: Lượng nước ---
-            Series nuocSeries = new Series("Lượng nước");
-            nuocSeries.ChartType = SeriesChartType.Column;
-            nuocSeries.Color = Color.LightGreen;
-
-            var dsNuoc = thongkenBL.LayLuongNuocCacThang(nam);
-            foreach (var item in dsNuoc)
+            var danhSachNuoc = thongkenBL.LayLuongNuocCacThang(nam);
+            foreach (var item in danhSachNuoc)
             {
-                nuocSeries.Points.AddXY(item.Thang, item.SoKhoiTieuThu);
+                seriesNuoc.Points.AddXY(item.Thang, item.SoKhoiTieuThu);
             }
 
-            chart1.Series.Add(nuocSeries);
+            
+            chart1.Series.Add(seriesDien);
+            chart1.Series.Add(seriesNuoc);
+
+            
+            double maxDien = danhSachDien.Max(x => x.SoDienTieuThu);
+            double maxNuoc = danhSachNuoc.Max(x => x.SoKhoiTieuThu);
+            double maxValue = Math.Max(maxDien, maxNuoc);
+            double roundedMax = Math.Ceiling((maxValue + 1) / 10.0) * 10;
+
+            chart1.ChartAreas["ChartArea1"].AxisY.Minimum = 0;
+            chart1.ChartAreas["ChartArea1"].AxisY.Maximum = roundedMax;
+            chart1.ChartAreas["ChartArea1"].AxisY.Interval = roundedMax / 5;
         }
 
     }
