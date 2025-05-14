@@ -20,7 +20,9 @@ namespace QuanLy_Assistant
                 { "số sinh viên hiện tại và tối đa", "Số sinh viên hiện tại là số lượng đang ở. Số tối đa là giới hạn sinh viên cho phép." },
                 { "phòng trống là gì", "Phòng trống là phòng còn chỗ chưa đủ số sinh viên tối đa." },
                 { "tìm phòng nhanh", "Sử dụng khung tìm kiếm, chọn trường phù hợp (Mã phòng, Tên phòng, Mã dãy) để tìm kiếm nhanh." },
-                //chi
+                { "chuyển phòng", "Sử dụng khung tìm kiếm tìm sinh viên cần chuyển,chọn cập nhật và điền thông tin." },
+                { "đăng ký phòng", "Bạn vào mục 'Quản lý sinh viên', điền đầy đủ thông tin." },
+
                 { "thêm sinh viên", "Bạn vào mục 'Quản lý sinh viên', chọn Thêm mới và điền đầy đủ thông tin." },
                 { "thêm nhân viên", "Bạn vào mục 'Quản lý nhân viên', nhấn nút Thêm mới và điền đầy đủ thông tin nhân viên." },
                 { "xóa nhân viên", "Bạn vào mục 'Quản lý nhân viên', chọn nhân viên cần xóa và nhấn nút Xóa." },
@@ -37,6 +39,7 @@ namespace QuanLy_Assistant
                 { "phân công quản lý dãy", "Bạn vào mục 'Quản lý dãy phòng', chọn dãy và cập nhật thông tin người quản lý." },
                 { "thống kê lương", "Vào mục 'Báo cáo lương' để xem tổng hợp lương theo tháng/năm." },
                 { "đổi quản lý dãy", "Bạn vào mục 'Quản lý dãy phòng', chọn dãy và cập nhật trường 'Quản lý'." },
+                { "thống kê lượng điện nước", "Vào mục 'Thống kê' để xem tổng hợp lượng điện theo tháng/năm." },
             };
         }
 
