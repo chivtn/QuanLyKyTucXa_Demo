@@ -1,4 +1,4 @@
-**# QuanLyKTXg**# 🏢 Dormitory Management System (Quản lý Ký túc xá)
+# 🏢 Dormitory Management System (Quản lý Ký túc xá)
 
 Ứng dụng quản lý ký túc xá được xây dựng nhằm hỗ trợ nhà trường/ban quản lý trong việc:
 
