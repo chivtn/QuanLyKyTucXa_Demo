@@ -90,13 +90,11 @@ QuanLyKyTucXa_main/
 ### **3) Cấu hình chuỗi kết nối**
 Mở file `App.config` và chỉnh:
 
-```xml
 <connectionStrings>
     <add name="MyConnectionString"
          connectionString="Data Source=YOUR_SERVER;Initial Catalog=KTX_DB;Integrated Security=True" />
 </connectionStrings>
 
----
 ### **4) Build & Run**
 
 Mở file DormitoryManagementSystem.sln bằng Visual Studio
